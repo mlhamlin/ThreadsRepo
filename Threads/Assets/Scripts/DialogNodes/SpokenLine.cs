@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Newtonsoft.Json;
-
 
 public class SpokenLine : DialogNode
 {

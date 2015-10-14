@@ -7,11 +7,21 @@ using Newtonsoft.Json;
 public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
 {
     Dictionary<string, DialogNode> nodes;
-    public string fileName = "DialogTest";
+    public string fileName = "DialogMain";
+    public bool load;
+    JsonSerializerSettings settings;
 
     public void Start()
     {
         nodes = new Dictionary<string, DialogNode>();
+
+        settings = new JsonSerializerSettings();
+        settings.TypeNameHandling = TypeNameHandling.Objects;
+
+        if(load)
+        {
+            DialogDictionary.LoadDictionary();
+        }
     }
 
     public static DialogNode GetNode(string ID)
@@ -30,11 +40,12 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
         Instance.nodes[value.NodeID] = value;
     }
 
+    //Only for testing purposes.
     public static void SaveDictionary()
     {
         print(Application.persistentDataPath);
 
-        string text = JsonConvert.SerializeObject(Instance.nodes);
+        string text = JsonConvert.SerializeObject(Instance.nodes, Instance.settings);
 
         File.WriteAllText(Application.persistentDataPath + "\\" + Instance.fileName + ".txt", text);
     }
@@ -43,9 +54,11 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
     {
         //print(Application.persistentDataPath);
 
-        string text = File.ReadAllText(Application.persistentDataPath + "\\" + Instance.fileName + ".txt");
+        TextAsset DialogInfo = Resources.Load<TextAsset>("DialogFiles/" + Instance.fileName);
+        //TextAsset DialogInfo = Resources.Load<TextAsset>("DialogFiles/DialogMain");
 
-        //TODO: Doesn't know what specific type each item is
-        Instance.nodes = JsonConvert.DeserializeObject<Dictionary<string, DialogNode>>(text);
+        //string text = File.ReadAllText(Application.persistentDataPath + "\\" + Instance.fileName + ".txt");
+
+        Instance.nodes = JsonConvert.DeserializeObject<Dictionary<string, DialogNode>>(DialogInfo.text, Instance.settings);
     }
 }

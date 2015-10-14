@@ -2,6 +2,7 @@
 
 public class GameStateDictionary : UnitySingletonPersistent<GameStateDictionary>
 {
+    //TODO: Save/Load GameState
 
     Dictionary<string, bool> flags;
 

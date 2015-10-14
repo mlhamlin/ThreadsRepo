@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class RandomLine : DialogNode {
 
-    List<string> LineOptions;
+    public List<string> LineOptions;
 
     public RandomLine(string ID, List<string> PossibleLines)
     {

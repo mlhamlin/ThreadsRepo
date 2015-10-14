@@ -17,7 +17,6 @@ public class DialogController : UnitySingleton<DialogController> {
     public Image Char2Pointer;
 
     public Text SpokenWords;
-    public Button nextButton;
 
     public GameObject ChoiceScroll;
     public GameObject Content;
@@ -28,57 +27,20 @@ public class DialogController : UnitySingleton<DialogController> {
 
 	// Use this for initialization
 	void Start () {
-        DialogDictionary.SetNode(new SpokenLine("L1", "Shawn", "sly", "Shawn", "Huyu", "neutral", "Huyu", "This is a test...", true, "L2"));
-        DialogDictionary.SetNode(new SpokenLine("L2", "Shawn", "crazy", "Shawn", "Huyu", "annoyed", "Huyu", "a very circular test", true, "L3"));
-        DialogDictionary.SetNode(new SpokenLine("L3", "Shawn", "crazy", "Shawn", "Huyu", "angry", "Huyu", "Haven't you already said that?", false, "L4"));
-        DialogDictionary.SetNode(new SpokenLine("L4", "Shawn", "confused", "Shawn", "Huyu", "annoyed", "Huyu", "Have I? I can't seem to remember...", true, "L5"));
-        DialogDictionary.SetNode(new SpokenLine("L5", "Shawn", "sad", "Shawn", "Huyu", "mad", "Huyu", "YES YOU HAVE!", false, "L6"));
-        DialogDictionary.SetNode(new SpokenLine("L6", "Shawn", "neutral", "Shawn", "Huyu", "angry", "Huyu", "Please just stop.", false, "DC1"));
+        DialogWindow.SetActive(false);
+    }
 
-        List<DialogChoice.Choice> choices = new List<DialogChoice.Choice>();
-        DialogChoice.Choice c1 = new DialogChoice.Choice();
-        c1.playerChoiceLine = "Hmm... no!";
-        c1.flag = "true";
-        c1.setFlagsFalse = new List<string>();
-        c1.setFlagsTrue = new List<string>();
-        c1.setFlagsTrue.Add("SpokeOnce");
-        DialogDictionary.SetNode(new SpokenLine("L8a", "Shawn", "neutral", "Shawn", "Huyu", "annoyed", "Huyu", "Darn it.", false, "L1"));
-        c1.choiceResult = "L8a";
-        choices.Add(c1);
-
-        DialogChoice.Choice c2 = new DialogChoice.Choice();
-        c2.playerChoiceLine = "Sure...";
-        c2.flag = "true";
-        c2.setFlagsFalse = new List<string>();
-        c2.setFlagsTrue = new List<string>();
-        c2.setFlagsTrue.Add("SpokeOnce");
-        DialogDictionary.SetNode(new SpokenLine("L8b1", "Shawn", "neutral", "Shawn", "Huyu", "amazed", "Huyu", "Really?.", false, "L8b2"));
-        c2.choiceResult = "L8b1";
-        DialogDictionary.SetNode(new SpokenLine("L8b2", "Shawn", "pleased", "Shawn", "Huyu", "surprised", "Huyu", "Nope!", true, "L8b2"));
-        DialogDictionary.SetNode(new SpokenLine("L8b3", "Shawn", "pleased", "Shawn", "Huyu", "annoyed", "Huyu", "darn it.", false, "L1"));
-        choices.Add(c2);
-
-        DialogChoice.Choice c3 = new DialogChoice.Choice();
-        c3.playerChoiceLine = "Of Course not!";
-        c3.flag = "SpokeOnce";
-        c3.setFlagsFalse = new List<string>();
-        c3.setFlagsTrue = new List<string>();
-        c3.choiceResult = "L8c";
-        DialogDictionary.SetNode(new SpokenLine("L8c", "Shawn", "neutral", "Shawn", "Huyu", "annoyed", "Huyu", "Why did I even ask...", false, "L1"));
-        choices.Add(c3);
-
-        DialogDictionary.SetNode(new DialogChoice("DC1", "Shawn", "confused", "Shawn", "Huyu", "scared", "Huyu", choices));
-
-        //DialogDictionary.LoadDictionary();
-
-        DialogNode start = DialogDictionary.GetNode("L1");
-        start.DisplayDialog();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 	
 	}
+
+    public void startConversation(string NodeID)
+    {
+        DialogWindow.SetActive(true);
+
+        DialogDictionary.GetNode(NodeID).DisplayDialog();
+    }
 
     public void displaySpokenLine(string C1ImagePath, string C1Name, string C2ImagePath, string C2Name, string Dialog, bool C1Speaking, string nextID)
     {
