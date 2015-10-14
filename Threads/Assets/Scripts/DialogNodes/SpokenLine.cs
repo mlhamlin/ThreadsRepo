@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SpokenLine : DialogNode
 {
@@ -12,9 +13,13 @@ public class SpokenLine : DialogNode
     public string DialogLine;
     public bool Char1Speaking;
     public string nextNodeID;
+    public List<string> setFlagsFalse;
+    public List<string> setFlagsTrue;
 
     public SpokenLine(string ID, string C1FolderName, string C1Emote, string C1DisplayName, 
-        string C2FolderName, string C2Emote, string C2DisplayName, string DialogText, bool C1Speaking, string nextID)
+        string C2FolderName, string C2Emote, string C2DisplayName, string DialogText, bool C1Speaking, 
+        List<string> flagsFalse, List<string> flagsTrue, string nextID
+        )
     {
         NodeID = ID;
         Char1FolderName = C1FolderName;
@@ -26,11 +31,13 @@ public class SpokenLine : DialogNode
         DialogLine = DialogText;
         Char1Speaking = C1Speaking;
         nextNodeID = nextID;
+        setFlagsFalse = flagsFalse;
+        setFlagsTrue = flagsTrue;
     }
 
     public override void DisplayDialog()
     {
         DialogController.Instance.displaySpokenLine("CharacterProfiles/" + Char1FolderName + "/" + Char1ProfileEmotion, Char1DisplayName,
-            "CharacterProfiles/" + Char2FolderName + "/" + Char2ProfileEmotion, Char2DisplayName, DialogLine, Char1Speaking, nextNodeID);
+            "CharacterProfiles/" + Char2FolderName + "/" + Char2ProfileEmotion, Char2DisplayName, DialogLine, Char1Speaking, setFlagsFalse, setFlagsTrue, nextNodeID);
     }
 }

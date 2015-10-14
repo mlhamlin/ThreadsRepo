@@ -2,15 +2,15 @@
 
 public class DialogBranch : DialogNode
 {
-    public struct ConversationOptions
+    public struct ConversationOption
     {
         public string flag;
         public string DialogNodeID;
     }
 
-    public List<ConversationOptions> options;
+    public List<ConversationOption> options;
 
-    public DialogBranch(string ID, List<ConversationOptions> convOptions)
+    public DialogBranch(string ID, List<ConversationOption> convOptions)
     {
         NodeID = ID;
         options = convOptions;
@@ -20,7 +20,7 @@ public class DialogBranch : DialogNode
     {
         string choice = "";
 
-        foreach(ConversationOptions c in options)
+        foreach(ConversationOption c in options)
         {
             if(GameStateDictionary.CheckFlag(c.flag))
             {

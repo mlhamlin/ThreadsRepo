@@ -4,12 +4,12 @@
     "$type": "DialogBranch, Assembly-CSharp",
     "options": [
       {
-        "$type": "DialogBranch+ConversationOptions, Assembly-CSharp",
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "true",
         "DialogNodeID": "L1"
       },
       {
-        "$type": "DialogBranch+ConversationOptions, Assembly-CSharp",
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "SpokeOnce",
         "DialogNodeID": "C2L1"
       }
@@ -27,6 +27,8 @@
     "DialogLine": "This is a test...",
     "Char1Speaking": true,
     "nextNodeID": "L2",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L1"
   },
   "L2": {
@@ -40,6 +42,8 @@
     "DialogLine": "a very circular test",
     "Char1Speaking": true,
     "nextNodeID": "L3",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L2"
   },
   "L3": {
@@ -53,6 +57,8 @@
     "DialogLine": "Haven't you already said that?",
     "Char1Speaking": false,
     "nextNodeID": "RL1",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L3"
   },
   "RL1": {
@@ -75,6 +81,8 @@
     "DialogLine": "Have I? I can't seem to remember...",
     "Char1Speaking": true,
     "nextNodeID": "L5a",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L4a"
   },
   "L4b": {
@@ -88,6 +96,8 @@
     "DialogLine": "Really?  Are you sure?",
     "Char1Speaking": true,
     "nextNodeID": "L5b",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L4b"
   },
   "L4c": {
@@ -101,6 +111,8 @@
     "DialogLine": "Have I really?",
     "Char1Speaking": true,
     "nextNodeID": "L5a",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L4c"
   },
   "L5a": {
@@ -114,6 +126,8 @@
     "DialogLine": "YES YOU HAVE!",
     "Char1Speaking": false,
     "nextNodeID": "L6",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L5a"
   },
   "L5b": {
@@ -127,6 +141,8 @@
     "DialogLine": "YES!",
     "Char1Speaking": false,
     "nextNodeID": "L6",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L5b"
   },
   "L6": {
@@ -140,6 +156,8 @@
     "DialogLine": "Please just stop.",
     "Char1Speaking": false,
     "nextNodeID": "DC1",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L6"
   },
   "DC1": {
@@ -193,6 +211,8 @@
     "DialogLine": "Darn it.",
     "Char1Speaking": false,
     "nextNodeID": "L1",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8a"
   },
   "L8b1": {
@@ -206,6 +226,8 @@
     "DialogLine": "Really?.",
     "Char1Speaking": false,
     "nextNodeID": "L8b2",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8b1"
   },
   "L8b2": {
@@ -219,6 +241,8 @@
     "DialogLine": "Nope!",
     "Char1Speaking": true,
     "nextNodeID": "L8b3",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8b2"
   },
   "L8b3": {
@@ -232,6 +256,8 @@
     "DialogLine": "darn it.",
     "Char1Speaking": false,
     "nextNodeID": "L1",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8b3"
   },
   "L8c1": {
@@ -245,6 +271,8 @@
     "DialogLine": "... for real this time?",
     "Char1Speaking": false,
     "nextNodeID": "L8c2",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8c1"
   },
   "L8c2": {
@@ -258,6 +286,8 @@
     "DialogLine": "yeah... bye.",
     "Char1Speaking": true,
     "nextNodeID": "L8c3",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8c2"
   },
   "L8c3": {
@@ -271,6 +301,8 @@
     "DialogLine": "... bye.",
     "Char1Speaking": false,
     "nextNodeID": "End",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "L8c3"
   },
   "C2L1": {
@@ -284,6 +316,8 @@
     "DialogLine": "Can we talk?",
     "Char1Speaking": true,
     "nextNodeID": "C2L2",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "C2L1"
   },
   "C2L2": {
@@ -297,6 +331,8 @@
     "DialogLine": "No.",
     "Char1Speaking": true,
     "nextNodeID": "End",
+    "setFlagsFalse": [],
+    "setFlagsTrue": [],
     "NodeID": "C2L2"
   },
   "End": {

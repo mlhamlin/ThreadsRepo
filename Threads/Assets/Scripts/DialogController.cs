@@ -50,7 +50,8 @@ public class DialogController : UnitySingleton<DialogController> {
 	
 	}
 
-    public void displaySpokenLine(string C1ImagePath, string C1Name, string C2ImagePath, string C2Name, string Dialog, bool C1Speaking, string nextID)
+    public void displaySpokenLine(string C1ImagePath, string C1Name, string C2ImagePath, string C2Name, string Dialog, bool C1Speaking,
+        List<string> FlagsToSetFalse, List<string> FlagsToSetTrue, string nextID)
     {
         Active = true;
 
@@ -67,6 +68,16 @@ public class DialogController : UnitySingleton<DialogController> {
 
         Char1Pointer.gameObject.SetActive(C1Speaking);
         Char2Pointer.gameObject.SetActive(!C1Speaking);
+
+        foreach(string s in FlagsToSetTrue)
+        {
+            GameStateDictionary.SetFlag(s, true);
+        }
+
+        foreach(string s in FlagsToSetFalse)
+        {
+            GameStateDictionary.SetFlag(s, false);
+        }
 
         nextNode = DialogDictionary.GetNode(nextID);
     }
