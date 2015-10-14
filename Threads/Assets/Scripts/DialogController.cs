@@ -25,6 +25,21 @@ public class DialogController : UnitySingleton<DialogController> {
     public DialogNode currentNode;
     public DialogNode nextNode;
 
+    private bool dialogActive;
+
+    public bool Active
+    {
+        get { return dialogActive; }
+        set
+        {
+            if (dialogActive != value)
+            {
+                DialogWindow.SetActive(value);
+                dialogActive = value;
+            }
+        }
+    }
+
 	// Use this for initialization
 	void Start () {
         DialogWindow.SetActive(false);
@@ -35,15 +50,10 @@ public class DialogController : UnitySingleton<DialogController> {
 	
 	}
 
-    public void startConversation(string NodeID)
-    {
-        DialogWindow.SetActive(true);
-
-        DialogDictionary.GetNode(NodeID).DisplayDialog();
-    }
-
     public void displaySpokenLine(string C1ImagePath, string C1Name, string C2ImagePath, string C2Name, string Dialog, bool C1Speaking, string nextID)
     {
+        Active = true;
+
         Char1Profile.sprite = Resources.Load<Sprite>(C1ImagePath);
         Char1Name.text = C1Name;
 
@@ -63,6 +73,8 @@ public class DialogController : UnitySingleton<DialogController> {
 
     public void displayDialogChoice(string C1ImagePath, string C1Name, string C2ImagePath, string C2Name, List<DialogChoice.Choice> choices)
     {
+        Active = true;
+
         Char1Profile.sprite = Resources.Load<Sprite>(C1ImagePath);
         Char1Name.text = C1Name;
 
@@ -95,7 +107,7 @@ public class DialogController : UnitySingleton<DialogController> {
 
     public void excecuteEndDialog()
     {
-        DialogWindow.SetActive(false);
+        Active = false;
     }
 
     public void NextButtonClicked()

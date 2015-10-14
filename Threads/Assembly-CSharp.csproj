@@ -48,7 +48,7 @@
      <Compile Include="Assets\Scripts\DialogChoiceUI.cs" />
      <Compile Include="Assets\Scripts\DialogController.cs" />
      <Compile Include="Assets\Scripts\DialogDictionary.cs" />
-     <Compile Include="Assets\Scripts\DialogNodes\ConversationStart.cs" />
+     <Compile Include="Assets\Scripts\DialogNodes\DialogBranch.cs" />
      <Compile Include="Assets\Scripts\DialogNodes\DialogChoice.cs" />
      <Compile Include="Assets\Scripts\DialogNodes\DialogNode.cs" />
      <Compile Include="Assets\Scripts\DialogNodes\EndDialog.cs" />

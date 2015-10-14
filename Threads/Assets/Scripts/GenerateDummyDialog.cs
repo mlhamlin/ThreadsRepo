@@ -69,18 +69,20 @@ public class GenerateDummyDialog : MonoBehaviour {
 
             DialogDictionary.SetNode(new EndDialog());
 
-            List<ConversationStart.Conversation> conv = new List<ConversationStart.Conversation>();
-            ConversationStart.Conversation con1 = new ConversationStart.Conversation();
+            List<DialogBranch.ConversationOptions> conv = new List<DialogBranch.ConversationOptions>();
+            DialogBranch.ConversationOptions con1 = new DialogBranch.ConversationOptions();
             con1.DialogNodeID = "L1";
             con1.flag = "true";
             conv.Add(con1);
 
-            ConversationStart.Conversation con2 = new ConversationStart.Conversation();
+            DialogBranch.ConversationOptions con2 = new DialogBranch.ConversationOptions();
             con2.DialogNodeID = "C2L1";
             con2.flag = "SpokeOnce";
             conv.Add(con2);
 
-            DialogDictionary.SetNode(new ConversationStart("HuyuStart", conv));
+            DialogDictionary.SetNode(new DialogBranch("HuyuStart", conv));
+
+            DialogDictionary.SaveDictionary();
         }
     }
 }
