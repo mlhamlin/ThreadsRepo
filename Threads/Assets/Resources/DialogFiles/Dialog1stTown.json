@@ -1,0 +1,370 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[DialogNode, Assembly-CSharp]], mscorlib",
+  "Jocelyn": {
+    "$type": "DialogBranch, Assembly-CSharp",
+    "options": [
+      {
+       "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "J1.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "Aliya starts kneading",
+        "DialogNodeID": "J2.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "Need to speak to Yvonna",
+        "DialogNodeID": "J3.1"
+      }
+    ],
+    "NodeID": "Jocelyn"
+  },
+  "J1.1": {
+    "$type": "SpokenLine, Assembly-CSharp",
+    "Char1FolderName": "Aliya",
+    "Char1ProfileEmotion": "neutral",
+    "Char1DisplayName": "Aliya",
+    "Char2FolderName": "Jocelyn",
+    "Char2ProfileEmotion": "happy",
+    "Char2DisplayName": "Jocelyn",
+    "DialogLine": "Aliya! I need you to come knead this dough so I can give it time to rise.",
+    "Char1Speaking": false,
+    "nextNodeID": "J1.2",
+    "setFlagsFalse": [ ],
+    "setFlagsTrue": [ ],
+    "NodeID": "J1.1"
+  },
+  "J1.2": {
+    "$type": "SpokenLine, Assembly-CSharp",
+    "Char1FolderName": "Aliya",
+    "Char1ProfileEmotion": "neutral",
+    "Char1DisplayName": "Aliya",
+    "Char2FolderName": "",
+    "Char2ProfileEmotion": "",
+    "Char2DisplayName": "",
+    "DialogLine": "YAWWNNNN",
+    "Char1Speaking": true,
+    "nextNodeID": "J1.3",
+    "setFlagsFalse": [ ],
+    "setFlagsTrue": [ ],
+    "NodeID": "J1.2"
+  },
+  "J1.3": {
+    "$type": "SpokenLine, Assembly-CSharp",
+    "Char1FolderName": "Aliya",
+    "Char1ProfileEmotion": "neutral",
+    "Char1DisplayName": "Aliya",
+    "Char2FolderName": "",
+    "Char2ProfileEmotion": "",
+    "Char2DisplayName": "",
+    "DialogLine": "I’ll be right there, Mom.  Give me a minute.",
+    "Char1Speaking": true,
+    "nextNodeID": "End",
+    "setFlagsFalse": [ ],
+    "setFlagsTrue": [ "Aliya starts kneading" ],
+    "NodeID": "J1.3"
+  },
+  "J2.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "*kneads dough out*",
+      "Char1Speaking": true,
+      "nextNodeID": "J2.2",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.1"
+  },
+  "J2.2": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Thanks sweetie.",
+      "Char1Speaking": false,
+      "nextNodeID": "J2.3",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.2"
+  },
+  "J2.3": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Oh!  Yvonna was over earlier looking for you, why don’t you head over to see her?",
+      "Char1Speaking": false,
+      "nextNodeID": "J2.4",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.3"
+  },
+  "J2.4": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Thanks, I’ll go find her.",
+      "Char1Speaking": true,
+      "nextNodeID": "J2.5",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.4"
+  },
+  "J2.5": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Love you two, see you later.",
+      "Char1Speaking": true,
+      "nextNodeID": "J2.6",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.5"
+  },
+  "J2.6": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Love you, sweetie.",
+      "Char1Speaking": false,
+      "nextNodeID": "J2.7",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J2.6"
+  },
+  "J2.7": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "Love you, dork.  Go have fun.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ "Need to speak to Yvonna" ],
+      "NodeID": "J2.7"
+  },
+  "J3.1": {
+      "$type": "RandomLine, Assembly-CSharp",
+      "LineOptions": [
+        "J3.1a",
+        "J3.1b",
+        "J3.1c"
+      ],
+      "NodeID": "J3.1"
+  },
+  "J3.1a": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Go have fun, Aliya.  Kahrin and I need to work.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J3.1a"
+  },
+  "J3.1b": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "Tell Yvonna we said hi!",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J3.1b"
+  },
+  "J3.1c": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Jocelyn",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Jocelyn",
+      "DialogLine": "What are you still doing here?",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "J3.1c"
+  },
+
+
+  "Kahrin": {
+    "$type": "DialogBranch, Assembly-CSharp",
+    "options": [
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "K1.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "Help Jocelyn with bread",
+        "DialogNodeID": "K2.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "Need to speak to Yvonna",
+        "DialogNodeID": "K3.1"
+      }
+    ],
+    "NodeID": "Kahrin"
+  },
+  "K1.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "Hey, Mom.  What’s with all the baking?",
+      "Char1Speaking": true,
+      "nextNodeID": "K1.2",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K1.1"
+  },
+  "K1.2": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "We need to restock the bakery after the party last night.",
+      "Char1Speaking": false,
+      "nextNodeID": "K1.3",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ "Help Jocelyn with bread" ],
+      "NodeID": "K1.2"
+  },
+  "K1.3": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "I don’t have time to talk right now, dear.  I need to get these scones put together before the butter melts.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K1.3"
+  },
+  "K2.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "*rolling out scones*",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K2.1"
+  },
+  "K3.1": {
+      "$type": "RandomLine, Assembly-CSharp",
+      "LineOptions": [
+        "K3.1a",
+        "K3.1b",
+        "K3.1c"
+      ],
+      "NodeID": "K3.1"
+  },
+  "K3.1a": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "Get going, Aliya!",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K3.1a"
+  },
+  "K3.1b": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "If you stay any longer, I’m going to put you to work.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K3.1b"
+  },
+  "K3.1c": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Kahrin",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Kahrin",
+      "DialogLine": "*hums a tune*",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "K3.1c"
+  },
+
+  "End": {
+    "$type": "EndDialog, Assembly-CSharp",
+    "NodeID": "End"
+  }
+}
