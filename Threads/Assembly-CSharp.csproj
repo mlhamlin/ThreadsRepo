@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\PlayerCamControl.cs" />
+     <Compile Include="Assets\Scripts\Characters.cs" />
      <Compile Include="Assets\Scripts\Dialog System\DialogChoiceUI.cs" />
      <Compile Include="Assets\Scripts\Dialog System\DialogController.cs" />
      <Compile Include="Assets\Scripts\Dialog System\DialogDictionary.cs" />
@@ -62,6 +63,9 @@
      <Compile Include="Assets\Scripts\Movement\TeleportHandler.cs" />
      <Compile Include="Assets\Scripts\Movement\TeleportZone.cs" />
      <Compile Include="Assets\Scripts\TestConversationTrigger.cs" />
+     <Compile Include="Assets\Scripts\TestThreadToggle.cs" />
+     <Compile Include="Assets\Scripts\Threads\Thread.cs" />
+     <Compile Include="Assets\Scripts\Threads\ThreadDisplayManager.cs" />
      <Compile Include="Assets\Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\UnitySingletonPersistent.cs" />
      <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\Newtonsoft.Json.xml" />
