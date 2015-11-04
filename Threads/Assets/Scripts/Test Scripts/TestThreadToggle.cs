@@ -1,0 +1,1 @@
+﻿using UnityEngine;using System.Collections;public class TestThreadToggle : MonoBehaviour {    public Character chr;	// Use this for initialization	void Start () {		}		// Update is called once per frame	void Update () {		}    public void updateThreadDisplay()    {        RelationshipNetwork.setVisibleThreadCharacter(chr);    }}
