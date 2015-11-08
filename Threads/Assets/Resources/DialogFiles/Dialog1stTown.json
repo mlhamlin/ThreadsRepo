@@ -194,7 +194,7 @@
       "Char2FolderName": "Kahrin",
       "Char2ProfileEmotion": "thoughtful",
       "Char2DisplayName": "Kahrin",
-      "DialogLine": "You kept saying something about seeing colors and lines…  We couldn’t understand most of it.",
+      "DialogLine": "You kept saying something about seeing colors and lines…",
       "Char1Speaking": false,
       "nextNodeID": "J2.9",
       "setFlagsFalse": [ ],
@@ -616,6 +616,33 @@
       "setFlagsFalse": [ ],
       "setFlagsTrue": [ ],
       "NodeID": "K3.1c"
+  },
+
+  "Yvonna": {
+    "$type": "DialogBranch, Assembly-CSharp",
+    "options": [
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "Need to speak to Yvonna",
+        "DialogNodeID": "Y1.1"
+      }
+    ],
+    "NodeID": "Yvonna"
+  },
+  "Y1.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Yvonna",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Yvonna",
+      "DialogLine": "*hums a tune*",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Y1.2"
   },
 
   "End": {
