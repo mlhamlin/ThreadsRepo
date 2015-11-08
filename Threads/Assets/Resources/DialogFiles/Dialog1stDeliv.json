@@ -283,7 +283,7 @@
       "Char1Speaking": true,
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
-      "setFlagsTrue": ["started test"],
+      "setFlagsTrue": ["started test", "Leena still available"],
       "NodeID": "Y1.18"
   },
   "Y2.1": {
@@ -316,6 +316,7 @@
       "setFlagsTrue": [ ],
       "NodeID": "Y2.2"
   },
+
   "Leena": {
     "$type": "DialogBranch, Assembly-CSharp",
     "options": [
@@ -323,6 +324,11 @@
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
         "DialogNodeID": "L1.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "talked to leena",
+        "DialogNodeID": "L2.1"
       },
     ],
     "NodeID": "Leena"
@@ -455,7 +461,7 @@
         "playerChoiceLine": "Ask about Ori.",
         "choiceResult": "L1.8b1",
         "setFlagsFalse": [],
-        "setFlagsTrue": []
+        "setFlagsTrue": ["Leena still available"]
       },
     ],
     "NodeID": "L1.8"
@@ -504,7 +510,7 @@
         "flag": "true",
         "playerChoiceLine": "I heard a rumor that Ori has a crush on Sonke.",
         "choiceResult": "L1.8aa1",
-        "setFlagsFalse": [],
+        "setFlagsFalse": ["Leena still available"],
         "setFlagsTrue": ["Leena alone"]
       },
       {
@@ -513,7 +519,7 @@
         "playerChoiceLine": "I heard Sonke was recently spending more time around your shop, do you know why?",
         "choiceResult": "L1.8ab1",
         "setFlagsFalse": [],
-        "setFlagsTrue": []
+        "setFlagsTrue": ["Leena still available"]
       },
     ],
     "NodeID": "L1.8a3"
@@ -650,7 +656,7 @@
       "Char1Speaking": false,
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
-      "setFlagsTrue": [ ],
+      "setFlagsTrue": ["talked to leena"],
       "NodeID": "L1.8aa9"
   },
   "L1.8ab1": {
@@ -725,7 +731,7 @@
       "Char1Speaking": false,
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
-      "setFlagsTrue": [ ],
+      "setFlagsTrue": ["talked to leena"],
       "NodeID": "L1.8ab5"
   },
   "L1.8b1": {
@@ -890,10 +896,363 @@
       "Char1Speaking": false,
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
-      "setFlagsTrue": [ ],
+      "setFlagsTrue": ["talked to leena"],
       "NodeID": "L1.8b11"
   },
+  "L2.1": {
+      "$type": "RandomLine, Assembly-CSharp",
+      "LineOptions": [
+        "L2.1a",
+        "L2.1b",
+        "L2.1c"
+      ],
+      "NodeID": "L2.1"
+  },
+  "L2.1a": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Leena",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Leena",
+      "DialogLine": "Jack!  Get out here and open this door!",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "L2.1a"
+  },
+  "L2.1b": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Leena",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Leena",
+      "DialogLine": "Damn screw won't come out of the doorknob...",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "L2.1b"
+  },
+  "L2.1c": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Leena",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Leena",
+      "DialogLine": "Crap!  Can't move my damn knee now...",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "L2.1c"
+  },
 
+  "Lozu": {
+    "$type": "DialogBranch, Assembly-CSharp",
+    "options": [
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "started test",
+        "DialogNodeID": "Lo1.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "talked to lozu",
+        "DialogNodeID": "Lo2.1"
+      },
+    ],
+    "NodeID": "Lozu"
+  },
+  "Lo1.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "That damnable girl has gone and done it again!",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.2",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.1"
+  },
+  "Lo1.2": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Why can’t she take better care of herself…",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.3",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.2"
+  },
+  "Lo1.3": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Is everything ok, Lozu?",
+      "Char1Speaking": true,
+      "nextNodeID": "Lo1.4",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.3"
+  },
+  "Lo1.4": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "thoughtful",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "What? Aliya? What are you doing here? Shouldn’t you be helping your parents in the bakery?",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.5",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.4"
+  },
+  "Lo1.5": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "They gave me the day off today.",
+      "Char1Speaking": true,
+      "nextNodeID": "Lo1.6",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.5"
+  },
+  "Lo1.6": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Ah, then what are you doing wasting it talking to me?",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.7",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.6"
+  },
+  "Lo1.7": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "thoughtful",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Shouldn’t you be off having fun with Yvonna?  You two are as thick as thieves.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.8",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.7"
+  },
+  "Lo1.8": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Yeah…  Were you talking about Leena just now?",
+      "Char1Speaking": true,
+      "nextNodeID": "Lo1.9",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.8"
+  },
+  "Lo1.9": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "happy",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "thoughtful",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Can’t slip anything by you, can I?",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.10",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.9"
+  },
+  "Lo1.10": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "When Leena gets into her work, she tends to forget about everything else… including herself.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.11",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.10"
+  },
+  "Lo1.11": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Her damn prosthetic is basically useless now since all the joints are rusted over.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.12",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.11"
+  },
+  "Lo1.12": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "thoughtful",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "That and her mooning over that kid that has eyes on someone else.  Silly girl is just a pile of troubles, but I love her anyway.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.13",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.12"
+  },
+  "Lo1.13": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Wait, what?",
+      "Char1Speaking": true,
+      "nextNodeID": "Lo1.14",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.13"
+  },
+  "Lo1.14": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "thoughtful",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "embarrassed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Huh? Oh, you’re still here.  Don’t mention that to anyone please?",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.15",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.14"
+  },
+  "Lo1.15": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "embarrassed",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Leena will have my head if she finds out I told someone.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.16",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.15"
+  },
+  "Lo1.16": {
+    "$type": "DialogChoice, Assembly-CSharp",
+    "Char1FolderName": "Aliya",
+    "Char1ProfileEmotion": "neutral",
+    "Char1DisplayName": "Aliya",
+    "Char2FolderName": "Lozu",
+    "Char2ProfileEmotion": "embarrassed",
+    "Char2DisplayName": "Lozu",
+    "choices": [
+      {
+        "$type": "DialogChoice+Choice, Assembly-CSharp",
+        "flag": "true",
+        "playerChoiceLine": "Uh… sure.  My lips are sealed.",
+        "choiceResult": "Lo1.17a1",
+        "setFlagsFalse": [],
+        "setFlagsTrue": []
+      },
+      {
+        "$type": "DialogChoice+Choice, Assembly-CSharp",
+        "flag": "Leena still available",
+        "playerChoiceLine": "Wait… Do you mean Sonke?",
+        "choiceResult": "Lo1.17b1",
+        "setFlagsFalse": [],
+        "setFlagsTrue": []
+      },
+    ],
+    "NodeID": "Lo1.16"
+  },
+  "Lo1.17a1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Thanks, now get going.  You don’t want to hang around by me all day.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.17a1"
+  },
+  "Lo1.17b1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Thanks, now get going.  You don’t want to hang around by me all day.",
+      "Char1Speaking": false,
+      "nextNodeID": "Lo1.17b2",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo1.17b1"
+  },
 
   "End": {
     "$type": "EndDialog, Assembly-CSharp",
