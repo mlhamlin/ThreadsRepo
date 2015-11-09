@@ -13,7 +13,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update()
     {
-        var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        transform.position += move * speed * Time.deltaTime;
+        if(!DialogController.Instance.Active)
+        {
+            var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+            transform.position += move * speed * Time.deltaTime;
+        }
     }
 }
