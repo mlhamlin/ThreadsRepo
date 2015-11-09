@@ -11,6 +11,8 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
     public bool load;
     JsonSerializerSettings settings;
 
+    SpokenLine MissingNode;
+
     public void Start()
     {
         nodes = new Dictionary<string, DialogNode>();
@@ -22,6 +24,10 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
         {
             DialogDictionary.LoadDictionary();
         }
+
+        MissingNode = new SpokenLine("Error", "Error", "error", "!!!",
+            "Error", "notFound", "!!!", "Node ____ Not Found", false, 
+            new List<string>(), new List<string>(), "End");
     }
 
     public static DialogNode GetNode(string ID)
@@ -31,8 +37,9 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
         {
             return value;
         }
-        //TODO: Replace with more helpful error
-        return null;
+
+        Instance.MissingNode.DialogLine = "NodeID: " + ID + " Cannot Be Found";
+        return Instance.MissingNode;
     }
 
     public static void SetNode(DialogNode value)
