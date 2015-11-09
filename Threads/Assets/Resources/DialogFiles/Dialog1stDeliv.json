@@ -3644,7 +3644,7 @@
       "Char2DisplayName": "Ori",
       "DialogLine": "No big deal, Ori.  Yvonna and I have plans for today anyway.",
       "Char1Speaking": true,
-      "nextNodeID": "O2.5c7",
+      "nextNodeID": "O2.5c8",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [ ],
       "NodeID": "O2.5c7"
