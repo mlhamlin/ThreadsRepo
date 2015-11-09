@@ -17,5 +17,6 @@ public enum Character {
     Yvonna,
 	Surrel,
     Leena,
-    Jack
+    Jack,
+    NoOne
 }

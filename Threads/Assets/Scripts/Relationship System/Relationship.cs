@@ -7,16 +7,26 @@ public class Relationship : MonoBehaviour {
     public Character Char2;
     public Thread ourThread;
     public bool Char1ShippingIt = false;
+    public string C1ShippingFlag;
     public bool Char2ShippingIt = false;
+    public string C2ShippingFlag;
     public bool Canon { get; private set; }
 
 	// Use this for initialization
 	void Start () {
-	
+	    if (Char2 == Character.NoOne)
+        {
+            Char2ShippingIt = true;
+            C2ShippingFlag = "true";
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        //TODO: Fix Temp Hack
+        Char1ShippingIt = GameStateDictionary.CheckFlag(C1ShippingFlag);
+        Char2ShippingIt = GameStateDictionary.CheckFlag(C2ShippingFlag);
+
         Canon = Char1ShippingIt && Char2ShippingIt;
 	}
 

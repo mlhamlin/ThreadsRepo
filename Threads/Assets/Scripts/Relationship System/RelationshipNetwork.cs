@@ -5,6 +5,11 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
     public List<Relationship> Relationships;
     public int CurrentNetHappiness;
 
+    public void Update()
+    {
+        recalculateHappiness();
+    }
+
     //Sets if the character "shipper" is shipping themselves with "shipee"
     public static void SetCharacterInterested(Character shipper, Character shipee, bool shippingIt)
     {
