@@ -4,7 +4,7 @@ using System.Collections;
 public class TeleportZone : MonoBehaviour
 {
 
-    public Vector3 Destination;
+    public Transform Destination;
     public BoxCollider2D DestinationBounds;
 
 
@@ -13,14 +13,15 @@ public class TeleportZone : MonoBehaviour
         Debug.Log("Player Enter");
         if(other.gameObject.tag == "Player")
         {
-            TeleportHandler.Instance.TeleportPlayer(Destination, DestinationBounds);
+            TeleportHandler.Instance.TeleportPlayer(Destination.position, DestinationBounds);
         }
     }
 
     public void OnDrawGizmosSelected()
     {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(Destination.position, .3f);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(Destination, .2f);
         Bounds bound = DestinationBounds.bounds;
         Vector3 min = bound.min;
         Vector3 max = bound.max;
