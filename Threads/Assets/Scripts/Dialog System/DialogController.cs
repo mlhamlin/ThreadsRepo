@@ -17,6 +17,7 @@ public class DialogController : UnitySingleton<DialogController> {
     public Image Char2Pointer;
 
     public Text SpokenWords;
+    public GameObject AdvanceSpokenButton;
 
     public GameObject ChoiceScroll;
     public GameObject Content;
@@ -63,6 +64,7 @@ public class DialogController : UnitySingleton<DialogController> {
 
         SpokenWords.gameObject.SetActive(true);
         SpokenWords.text = Dialog;
+        AdvanceSpokenButton.SetActive(true);
 
         ChoiceScroll.SetActive(false);
 
@@ -93,6 +95,7 @@ public class DialogController : UnitySingleton<DialogController> {
         Char2Name.text = C2Name;
 
         SpokenWords.gameObject.SetActive(false);
+        AdvanceSpokenButton.SetActive(false);
 
         ChoiceScroll.SetActive(true);
         for(int i = 0; i < Content.transform.childCount; i++)
@@ -123,7 +126,11 @@ public class DialogController : UnitySingleton<DialogController> {
 
     public void NextButtonClicked()
     {
-        currentNode = nextNode;
-        currentNode.DisplayDialog();
+        if (SpokenWords.gameObject.activeSelf)
+        {
+            currentNode = nextNode;
+            currentNode.DisplayDialog();
+        }
+
     }
 }
