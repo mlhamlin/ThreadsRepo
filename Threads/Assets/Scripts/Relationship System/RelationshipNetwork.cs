@@ -7,21 +7,7 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
 
     public void Update()
     {
-        recalculateHappiness();
-    }
-
-    //Sets if the character "shipper" is shipping themselves with "shipee"
-    public static void SetCharacterInterested(Character shipper, Character shipee, bool shippingIt)
-    {
-        foreach(Relationship ship in Instance.Relationships)
-        {
-            if (ship.Contains(shipper, shipee))
-            {
-                ship.SetShippingIt(shipper, shippingIt);
-            }
-        }
-
-        Instance.recalculateHappiness();
+        RecalculateHappiness();
     }
 
     public static void setVisibleThreadCharacter(Character chr)
@@ -32,7 +18,7 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
         }
     }
 
-    private void recalculateHappiness()
+    public void RecalculateHappiness()
     {
         CurrentNetHappiness = 0;
 

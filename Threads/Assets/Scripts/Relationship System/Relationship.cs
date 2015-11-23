@@ -19,16 +19,28 @@ public class Relationship : MonoBehaviour {
             Char2ShippingIt = true;
             C2ShippingFlag = "true";
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        //TODO: Fix Temp Hack
-        Char1ShippingIt = GameStateDictionary.CheckFlag(C1ShippingFlag);
-        Char2ShippingIt = GameStateDictionary.CheckFlag(C2ShippingFlag);
 
+        GameStateDictionary.RegisterCallback(C1ShippingFlag, Char1ShippingCallback);
+        GameStateDictionary.RegisterCallback(C2ShippingFlag, Char2ShippingCallback);
+    }
+
+    public void Char1ShippingCallback(bool value)
+    {
+        Char1ShippingIt = value;
+        Recalculate();
+    }
+
+    public void Char2ShippingCallback(bool value)
+    {
+        Char2ShippingIt = value;
+        Recalculate();
+    }
+
+    private void Recalculate()
+    {
         Canon = Char1ShippingIt && Char2ShippingIt;
-	}
+        RelationshipNetwork.Instance.RecalculateHappiness();
+    }
 
     public bool Contains(Character chr)
     {
@@ -39,17 +51,6 @@ public class Relationship : MonoBehaviour {
     {
         return ((Char1 == chr) || (Char2 == chr)) &&
                 ((Char1 == chr2) || (Char2 == chr2));
-    }
-
-    public void SetShippingIt(Character chr, bool intoIt)
-    {
-        if (Char1 == chr)
-        {
-            Char1ShippingIt = intoIt;
-        } else if (Char2 == chr)
-        {
-            Char2ShippingIt = intoIt;
-        }
     }
 
     public void SetThreadVisibility(bool active)
