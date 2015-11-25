@@ -75,11 +75,17 @@
      <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\Newtonsoft.Json.xml" />
      <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\license.txt" />
      <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\readme.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/Martha/Documents/ThreadsRepo/Threads/Assets/ThirdPartyLib/Newtonsoft Json 2/Newtonsoft.Json.dll</HintPath>
