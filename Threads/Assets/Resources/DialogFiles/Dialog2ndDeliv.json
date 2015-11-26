@@ -1523,9 +1523,15 @@
       "setFlagsFalse": [ ],
       "setFlagsTrue": ["end deliverable"],
       "NodeID": "Y3.5"
-  },"Leena": {
+  },
+  "Leena": {
     "$type": "DialogBranch, Assembly-CSharp",
     "options": [
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "L0.1"
+      },
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
@@ -1538,6 +1544,21 @@
       },
     ],
     "NodeID": "Leena"
+  },
+  "L0.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Leena",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Leena",
+      "DialogLine": "Why isn’t this damn store open!",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "L0.1"
   },
   "L1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
@@ -2165,6 +2186,11 @@
     "options": [
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "Lo01.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
         "DialogNodeID": "Lo1.1"
       },
@@ -2175,6 +2201,21 @@
       },
     ],
     "NodeID": "Lozu"
+  },
+  "Lo0.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Lozu",
+      "Char2ProfileEmotion": "thoughtful",
+      "Char2DisplayName": "Lozu",
+      "DialogLine": "Wonder when Sylvie’s gonna open up the shop for the day.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "Lo0.1"
   },
   "Lo1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
@@ -2563,6 +2604,11 @@
     "options": [
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "S0.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
         "DialogNodeID": "S1.1"
       },
@@ -2573,6 +2619,21 @@
       },
     ],
     "NodeID": "Sonke"
+  },
+  "S0.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Sonke",
+      "Char2ProfileEmotion": "happy",
+      "Char2DisplayName": "Sonke",
+      "DialogLine": "Mara! We’re gonna need some more lemons out at the bar.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "S0.1"
   },
   "S1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
@@ -3410,6 +3471,11 @@
     "options": [
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "M0.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
         "DialogNodeID": "M1.1"
       },
@@ -3420,6 +3486,21 @@
       },
     ],
     "NodeID": "Mara"
+  },
+  "M0.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Mara",
+      "Char2ProfileEmotion": "neutral",
+      "Char2DisplayName": "Mara",
+      "DialogLine": "The bar’s closed, Aliya.  Come back once we’re all cleaned up.",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "M0.1"
   },
   "M1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
@@ -3547,6 +3628,11 @@
     "options": [
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
+        "flag": "true",
+        "DialogNodeID": "O0.1"
+      },
+      {
+        "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "started test",
         "DialogNodeID": "O1.1"
       },
@@ -3562,6 +3648,21 @@
       },
     ],
     "NodeID": "Ori"
+  },
+  "O0.1": {
+      "$type": "SpokenLine, Assembly-CSharp",
+      "Char1FolderName": "Aliya",
+      "Char1ProfileEmotion": "neutral",
+      "Char1DisplayName": "Aliya",
+      "Char2FolderName": "Ori",
+      "Char2ProfileEmotion": "annoyed",
+      "Char2DisplayName": "Ori",
+      "DialogLine": "Why won't this damn clock work?",
+      "Char1Speaking": false,
+      "nextNodeID": "End",
+      "setFlagsFalse": [ ],
+      "setFlagsTrue": [ ],
+      "NodeID": "O0.1"
   },
   "O1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
