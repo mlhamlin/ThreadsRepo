@@ -2187,7 +2187,7 @@
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "true",
-        "DialogNodeID": "Lo01.1"
+        "DialogNodeID": "Lo0.1"
       },
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
