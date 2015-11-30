@@ -1,0 +1,36 @@
+Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 765M       (ID=0x11e2)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.047 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at GameStateDictionary.RegisterCallback (System.String flag, .stateChangeCallback callback) [0x00000] in <filename unknown>:0 
+  at Relationship.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Martha\Documents\ThreadsRepo\Threads\Builds\SecondPlayableWindows\SecondPlayableWindows_Data\Managed\System.Data.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2338 -> priority: 1 
+  Thread -> id: 30c4 -> priority: 1 
