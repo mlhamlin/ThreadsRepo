@@ -5,6 +5,9 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
     public List<Relationship> Relationships;
     public int CurrentNetHappiness;
 
+    const int LEVEL2THRESHOLD = 10;
+    const int LEVEL3THRESHOLD = 20;
+
     public void Update()
     {
         RecalculateHappiness();
@@ -29,5 +32,19 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
                 CurrentNetHappiness += ship.Quality;
             }
         }
-    } 
+    }
+
+    public static int GetHappinessLevel()
+    {
+        if (Instance.CurrentNetHappiness < LEVEL2THRESHOLD)
+        {
+            return 1;
+        } else if (Instance.CurrentNetHappiness < LEVEL3THRESHOLD)
+        {
+            return 2;
+        } else
+        {
+            return 3;
+        }
+    }
 }
