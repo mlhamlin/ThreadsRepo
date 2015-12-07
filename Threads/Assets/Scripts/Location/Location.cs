@@ -9,13 +9,13 @@ public class Location : MonoBehaviour
     {
         Inside, Outside, OutOfTown
     }
-    public enum Locations
+    public enum Areas
     {
-        Bakery, Tavern, MetalWorks, MainStreetLeft, TownCenter, AliyaRoom, MainStreetRight
+        Bakery, Tavern, MetalWorks, MainStreetLeft, TownCenter, AliyaRoom, MainStreetRight, GeneralStore, Farm
     }
 
     public Zones Zone;
-    public Locations LocEnum;
+    public Areas Area;
     public BoxCollider2D AreaExternal;
     //background music
     //background sounds

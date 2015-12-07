@@ -14,19 +14,21 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
     static string LEVEL2PROGRESS = "Progress Level 2";
     static string LEVEL3PROGRESS = "Progress Level 3";
 
-    static string MAIN_STREET_LEFT;
-    static string MAIN_STREET_RIGHT;
-    static string CITY_CENTER;
-    static string BAKERY_KITCHEN;
-    static string ALIYAS_ROOM;
-    static string METAL_WORKS;
-    static string TAVERN;
-    static string GENERAL_STORE;
+    static string MAIN_STREET_LEFT = "Main Street Left";
+    static string MAIN_STREET_RIGHT = "Main Street Right";
+    static string TOWN_CENTER = "Town Center";
+    static string BAKERY_KITCHEN = "Bakery Kitchen";
+    static string ALIYAS_ROOM = "Aliya's Room";
+    static string METAL_WORKS = "Metal Works";
+    static string TAVERN = "Tavern";
+    static string GENERAL_STORE = "General Store";
+    static string FARM = "Farm";
 
 
     public static void TransitionLocation(Location Old, Location New)
     {
         SwitchZone(Old.Zone, New.Zone);
+        ActivateArea(New.Area);
     }
 
     public static void SwitchZone(Location.Zones oldZone, Location.Zones newZone)
@@ -82,8 +84,37 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
         }
     }
 
-    public void SwitchArea()
+    public static void ActivateArea(Location.Areas Areas)
     {
-
+        switch(Areas)
+        {
+            case Location.Areas.AliyaRoom:
+                Instance.BackgroundSounds.FindSnapshot(ALIYAS_ROOM).TransitionTo(0);
+                return;
+            case Location.Areas.Bakery:
+                Instance.BackgroundSounds.FindSnapshot(BAKERY_KITCHEN).TransitionTo(0);
+                return;
+            case Location.Areas.Farm:
+                Instance.BackgroundSounds.FindSnapshot(FARM).TransitionTo(0);
+                return;
+            case Location.Areas.GeneralStore:
+                Instance.BackgroundSounds.FindSnapshot(GENERAL_STORE).TransitionTo(0);
+                return;
+            case Location.Areas.MainStreetLeft:
+                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_LEFT).TransitionTo(0);
+                return;
+            case Location.Areas.MainStreetRight:
+                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_RIGHT).TransitionTo(0);
+                return;
+            case Location.Areas.MetalWorks:
+                Instance.BackgroundSounds.FindSnapshot(METAL_WORKS).TransitionTo(0);
+                return;
+            case Location.Areas.Tavern:
+                Instance.BackgroundSounds.FindSnapshot(TAVERN).TransitionTo(0);
+                return;
+            case Location.Areas.TownCenter:
+                Instance.BackgroundSounds.FindSnapshot(TOWN_CENTER).TransitionTo(0);
+                return;
+        }
     }
 }
