@@ -11,6 +11,8 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
 
     private AudioMixer ActiveMusic;
 
+    static float TRANSITION_TIME = 1f;
+
     static string MUTE = "Mute All";
     static string LEVEL1PROGRESS = "Progress Level 1";
     static string LEVEL2PROGRESS = "Progress Level 2";
@@ -62,13 +64,13 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
         switch(RelationshipNetwork.GetHappinessLevel())
         {
             case 1:
-                ActiveMusic.FindSnapshot(LEVEL1PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL1PROGRESS).TransitionTo(TRANSITION_TIME);
                 break;
             case 2:
-                ActiveMusic.FindSnapshot(LEVEL2PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL2PROGRESS).TransitionTo(TRANSITION_TIME);
                 break;
             case 3:
-                ActiveMusic.FindSnapshot(LEVEL3PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL3PROGRESS).TransitionTo(TRANSITION_TIME);
                 break;
         }
     }
@@ -78,48 +80,47 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
         switch(Zone)
         {
             case Location.Zones.Inside:
-                InsideMusic.FindSnapshot(MUTE).TransitionTo(0);
+                InsideMusic.FindSnapshot(MUTE).TransitionTo(TRANSITION_TIME);
                 break;
             case Location.Zones.OutOfTown:
-                OutOfTownMusic.FindSnapshot(MUTE).TransitionTo(0);
+                OutOfTownMusic.FindSnapshot(MUTE).TransitionTo(TRANSITION_TIME);
                 break;
             case Location.Zones.Outside:
-                OutsideMusic.FindSnapshot(MUTE).TransitionTo(0);
+                OutsideMusic.FindSnapshot(MUTE).TransitionTo(TRANSITION_TIME);
                 break;
         }
     }
 
     public static void ActivateArea(Location.Areas Areas)
     {
-        return;
         switch(Areas)
         {
             case Location.Areas.AliyaRoom:
-                Instance.BackgroundSounds.FindSnapshot(ALIYAS_ROOM).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(ALIYAS_ROOM).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.Bakery:
-                Instance.BackgroundSounds.FindSnapshot(BAKERY_KITCHEN).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(BAKERY_KITCHEN).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.Farm:
-                Instance.BackgroundSounds.FindSnapshot(FARM).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(FARM).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.GeneralStore:
-                Instance.BackgroundSounds.FindSnapshot(GENERAL_STORE).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(GENERAL_STORE).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.MainStreetLeft:
-                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_LEFT).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_LEFT).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.MainStreetRight:
-                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_RIGHT).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(MAIN_STREET_RIGHT).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.MetalWorks:
-                Instance.BackgroundSounds.FindSnapshot(METAL_WORKS).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(METAL_WORKS).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.Tavern:
-                Instance.BackgroundSounds.FindSnapshot(TAVERN).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(TAVERN).TransitionTo(TRANSITION_TIME);
                 return;
             case Location.Areas.TownCenter:
-                Instance.BackgroundSounds.FindSnapshot(TOWN_CENTER).TransitionTo(0);
+                Instance.BackgroundSounds.FindSnapshot(TOWN_CENTER).TransitionTo(TRANSITION_TIME);
                 return;
         }
     }
