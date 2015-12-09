@@ -74,6 +74,7 @@
     <Compile Include="Assets\GoAwayThreadHack.cs" />
     <Compile Include="Assets\Scripts\Camera\PlayerCamControl.cs" />
     <Compile Include="Assets\Scripts\Characters.cs" />
+    <Compile Include="Assets\Scripts\Dialog System\ConversationAmbush.cs" />
     <Compile Include="Assets\Scripts\Dialog System\DialogChoiceUI.cs" />
     <Compile Include="Assets\Scripts\Dialog System\DialogController.cs" />
     <Compile Include="Assets\Scripts\Dialog System\DialogDictionary.cs" />

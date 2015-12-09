@@ -4,6 +4,7 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
 
     public List<Relationship> Relationships;
     public int CurrentNetHappiness;
+    private int OldNetHappiness;
 
     const int LEVEL2THRESHOLD = 10;
     const int LEVEL3THRESHOLD = 20;
@@ -23,6 +24,7 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
 
     public void RecalculateHappiness()
     {
+        OldNetHappiness = CurrentNetHappiness;
         CurrentNetHappiness = 0;
 
         foreach(Relationship ship in Relationships)
@@ -31,6 +33,11 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
             {
                 CurrentNetHappiness += ship.Quality;
             }
+        }
+
+        if (OldNetHappiness != CurrentNetHappiness)
+        {
+            MusicControl.Instance.setProgressLevel();
         }
     }
 

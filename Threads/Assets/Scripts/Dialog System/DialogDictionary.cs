@@ -59,12 +59,7 @@ public class DialogDictionary : UnitySingletonPersistent<DialogDictionary>
 
     public static void LoadDictionary()
     {
-        //print(Application.persistentDataPath);
-
         TextAsset DialogInfo = Resources.Load<TextAsset>("DialogFiles/" + Instance.fileName);
-        //TextAsset DialogInfo = Resources.Load<TextAsset>("DialogFiles/DialogMain");
-
-        //string text = File.ReadAllText(Application.persistentDataPath + "\\" + Instance.fileName + ".txt");
 
         Instance.nodes = JsonConvert.DeserializeObject<Dictionary<string, DialogNode>>(DialogInfo.text, Instance.settings);
     }

@@ -9,6 +9,8 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
     public AudioMixer OutOfTownMusic;
     public AudioMixer BackgroundSounds;
 
+    private AudioMixer ActiveMusic;
+
     static string MUTE = "Mute All";
     static string LEVEL1PROGRESS = "Progress Level 1";
     static string LEVEL2PROGRESS = "Progress Level 2";
@@ -39,31 +41,34 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
 
     private void activateZone(Location.Zones Zone)
     {
-        AudioMixer ActiveMixer = null;
-
         switch(Zone)
         {
             case Location.Zones.Inside:
-                ActiveMixer = InsideMusic;
+                ActiveMusic = InsideMusic;
                 break;
             case Location.Zones.OutOfTown:
-                ActiveMixer = OutOfTownMusic;
+                ActiveMusic = OutOfTownMusic;
                 break;
             case Location.Zones.Outside:
-                ActiveMixer = OutsideMusic;
+                ActiveMusic = OutsideMusic;
                 break;
         }
 
+        setProgressLevel();
+    }
+
+    public void setProgressLevel()
+    {
         switch(RelationshipNetwork.GetHappinessLevel())
         {
             case 1:
-                ActiveMixer.FindSnapshot(LEVEL1PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL1PROGRESS).TransitionTo(0f);
                 break;
             case 2:
-                ActiveMixer.FindSnapshot(LEVEL2PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL2PROGRESS).TransitionTo(0f);
                 break;
             case 3:
-                ActiveMixer.FindSnapshot(LEVEL3PROGRESS).TransitionTo(0f);
+                ActiveMusic.FindSnapshot(LEVEL3PROGRESS).TransitionTo(0f);
                 break;
         }
     }
@@ -86,6 +91,7 @@ public class MusicControl : UnitySingletonPersistent<MusicControl> {
 
     public static void ActivateArea(Location.Areas Areas)
     {
+        return;
         switch(Areas)
         {
             case Location.Areas.AliyaRoom:
