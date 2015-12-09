@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     public float speed = 1.0f;
+    Rigidbody bod; 
 
     // Use this for initialization
     void Start () {
