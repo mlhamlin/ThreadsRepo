@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     public Sprite FacingLeft;
     public Sprite FacingRight;
     public SpriteRenderer Renderer;
+    public Footsteps footsteps;
 
     // Use this for initialization
     void Start () {
@@ -26,6 +27,14 @@ public class PlayerMovement : MonoBehaviour {
             } else if (move.x < 0f)
             {
                 Renderer.sprite = FacingLeft;
+            }
+
+            if (move != new Vector3(0f,0f,0f))
+            {
+                footsteps.Walking(Time.deltaTime);
+            } else
+            {
+                footsteps.StopWalking();
             }
 
             transform.position += move * speed * Time.deltaTime;

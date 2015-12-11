@@ -9,12 +9,10 @@ public class TeleportHandler : UnitySingletonPersistent<TeleportHandler> {
 
     public void TeleportPlayer(Vector3 location, Location destination)
     {
-        CurrentArea.active = false;
-        //TODO: Improve
         MusicControl.TransitionLocation(CurrentArea, destination);
         CurrentArea = destination;
-        CurrentArea.active = true;
         Player.transform.position = location;
+        Player.GetComponent<Footsteps>().currentSurface = destination.Surface;
         CameraController.BackgroundBounds = CurrentArea.AreaExternal;
         CameraController.TeleportFollow();
     }

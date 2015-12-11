@@ -72,6 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GoAwayThreadHack.cs" />
+    <Compile Include="Assets\Scripts\Audio\Footsteps.cs" />
+    <Compile Include="Assets\Scripts\Audio\MusicControl.cs" />
     <Compile Include="Assets\Scripts\Camera\PlayerCamControl.cs" />
     <Compile Include="Assets\Scripts\Characters.cs" />
     <Compile Include="Assets\Scripts\Dialog System\ConversationAmbush.cs" />
@@ -90,7 +92,6 @@
     <Compile Include="Assets\Scripts\Location\TeleportZone.cs" />
     <Compile Include="Assets\Scripts\Movement\DropPlayerBack.cs" />
     <Compile Include="Assets\Scripts\Movement\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Music\MusicControl.cs" />
     <Compile Include="Assets\Scripts\Relationship System\Relationship.cs" />
     <Compile Include="Assets\Scripts\Relationship System\RelationshipNetwork.cs" />
     <Compile Include="Assets\Scripts\Relationship System\Threads\Thread.cs" />
