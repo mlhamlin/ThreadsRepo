@@ -20,10 +20,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
-            if (move.x >= 0f)
+            if (move.x > 0f)
             {
                 Renderer.sprite = FacingRight;
-            } else
+            } else if (move.x < 0f)
             {
                 Renderer.sprite = FacingLeft;
             }
