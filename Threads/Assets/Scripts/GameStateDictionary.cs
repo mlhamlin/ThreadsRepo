@@ -11,8 +11,9 @@ public class GameStateDictionary : UnitySingletonPersistent<GameStateDictionary>
     Dictionary<string, bool> flags;
     Dictionary<string, List<stateChangeCallback>> flagCallbacks;
 
-    public void Start()
+    public override void Awake()
     {
+        OnAwake();
         flags = new Dictionary<string, bool>();
         flags.Add("true", true);
         flags.Add("false", false);
