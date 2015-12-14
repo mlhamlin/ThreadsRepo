@@ -6,8 +6,8 @@ public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork>
     public int CurrentNetHappiness;
     private int OldNetHappiness;
 
-    const int LEVEL2THRESHOLD = 10;
-    const int LEVEL3THRESHOLD = 20;
+    const int LEVEL2THRESHOLD = 15;
+    const int LEVEL3THRESHOLD = 35;
 
     public void Update()
     {
