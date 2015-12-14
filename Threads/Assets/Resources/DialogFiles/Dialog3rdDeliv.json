@@ -3301,7 +3301,7 @@
       "Char2DisplayName": "Sonke",
       "DialogLine": "Leena got some new metal in that’ll make it easier ta control my power.",
       "Char1Speaking": false,
-      "nextNodeID": "S1.10a3",
+      "nextNodeID": "S1.10b3",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [ ],
       "NodeID": "S1.10b2"
