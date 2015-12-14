@@ -5453,17 +5453,17 @@
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "true",
-        "DialogNodeID": "J1.1"
+        "DialogNodeID": "Ja1.1"
       },
       {
         "$type": "DialogBranch+ConversationOption, Assembly-CSharp",
         "flag": "Spoke to Jack 1",
-        "DialogNodeID": "J2.1"
+        "DialogNodeID": "Ja2.1"
       },
     ],
     "NodeID": "Jack"
   },
-  "J1.1": {
+  "Ja1.1": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5473,12 +5473,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "Hey Aliya.  You ok after last night?",
       "Char1Speaking": false,
-      "nextNodeID": "J1.2",
+      "nextNodeID": "Ja1.2",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.1"
+      "NodeID": "Ja1.1"
   },
-  "J1.2": {
+  "Ja1.2": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5488,12 +5488,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "Yeah, I’m feeling better now.",
       "Char1Speaking": true,
-      "nextNodeID": "J1.3",
+      "nextNodeID": "Ja1.3",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.2"
+      "NodeID": "Ja1.2"
   },
-  "J1.3": {
+  "Ja1.3": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5503,12 +5503,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "Well that’s good.  Did you need something in here?",
       "Char1Speaking": false,
-      "nextNodeID": "J1.4",
+      "nextNodeID": "Ja1.4",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.3"
+      "NodeID": "Ja1.3"
   },
-  "J1.4": {
+  "Ja1.4": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5518,12 +5518,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "No, thanks though.  My moms are restocking the bakery after the party they threw for me last night…",
       "Char1Speaking": true,
-      "nextNodeID": "J1.5",
+      "nextNodeID": "Ja1.5",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.4"
+      "NodeID": "Ja1.4"
   },
-  "J1.5": {
+  "Ja1.5": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "thoughtful",
@@ -5533,12 +5533,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "Hey, would you happen to know where Yvonna is?",
       "Char1Speaking": true,
-      "nextNodeID": "J1.6",
+      "nextNodeID": "Ja1.6",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.5"
+      "NodeID": "Ja1.5"
   },
-  "J1.6": {
+  "Ja1.6": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "thoughtful",
@@ -5548,12 +5548,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "My moms told me she had been by this morning several times.",
       "Char1Speaking": true,
-      "nextNodeID": "J1.7",
+      "nextNodeID": "Ja1.7",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.6"
+      "NodeID": "Ja1.6"
   },
-  "J1.7": {
+  "Ja1.7": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "neutral",
@@ -5563,12 +5563,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "I haven’t seen her today.  I’ve been busy here taking inventory for Roth since he left on a business trip.",
       "Char1Speaking": false,
-      "nextNodeID": "J1.8",
+      "nextNodeID": "Ja1.8",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.7"
+      "NodeID": "Ja1.7"
   },
-  "J1.8": {
+  "Ja1.8": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5578,12 +5578,12 @@
       "Char2DisplayName": "Jack",
       "DialogLine": "Ok.  I need to talk to her about last night so I’ll get going.  Good luck with inventory.",
       "Char1Speaking": true,
-      "nextNodeID": "J1.9",
+      "nextNodeID": "Ja1.9",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J1.8"
+      "NodeID": "Ja1.8"
   },
-  "J1.9": {
+  "Ja1.9": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "happy",
@@ -5596,9 +5596,9 @@
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [ "Spoke to Jack 1" ],
-      "NodeID": "J1.9"
+      "NodeID": "Ja1.9"
   },
-  "J2.1": {
+  "Ja2.1": {
       "$type": "SpokenLine, Assembly-CSharp",
       "Char1FolderName": "Aliya",
       "Char1ProfileEmotion": "neutral",
@@ -5611,7 +5611,7 @@
       "nextNodeID": "End",
       "setFlagsFalse": [ ],
       "setFlagsTrue": [],
-      "NodeID": "J2.1"
+      "NodeID": "Ja2.1"
   },
 
   "End": {
