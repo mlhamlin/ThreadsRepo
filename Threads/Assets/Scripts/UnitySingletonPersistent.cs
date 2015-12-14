@@ -35,13 +35,21 @@ public class UnitySingletonPersistent<T> : MonoBehaviour
 	
 	public virtual void Awake ()
 	{
-		DontDestroyOnLoad (this.gameObject);
-		if (instance == null) {
-			instance = this as T;
-		} else {
-			Destroy (gameObject);
-		}
+        OnAwake();
 	}
+
+    protected void OnAwake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+        if(instance == null)
+        {
+            instance = this as T;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 	
 	private static bool applicationIsQuitting = false;
 
