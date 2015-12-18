@@ -20,6 +20,7 @@ public class Relationship : MonoBehaviour {
             C2ShippingFlag = "true";
         }
 
+        RelationshipNetwork.RegisterRelationship(this);
         GameStateDictionary.RegisterCallback(C1ShippingFlag, Char1ShippingCallback);
         GameStateDictionary.RegisterCallback(C2ShippingFlag, Char2ShippingCallback);
     }

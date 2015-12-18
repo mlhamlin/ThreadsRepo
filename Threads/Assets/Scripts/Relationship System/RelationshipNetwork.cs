@@ -2,16 +2,27 @@
 
 public class RelationshipNetwork : UnitySingletonPersistent<RelationshipNetwork> {
 
-    public List<Relationship> Relationships;
     public int CurrentNetHappiness;
     private int OldNetHappiness;
 
+    private List<Relationship> Relationships;
     const int LEVEL2THRESHOLD = 15;
     const int LEVEL3THRESHOLD = 35;
 
-    public void Update()
+    public override void Awake()
     {
-        RecalculateHappiness();
+        OnAwake();
+        Relationships = new List<Relationship>();
+    }
+
+    public static void RegisterRelationship(Relationship ship)
+    {
+        if(!Instance.Relationships.Contains(ship))
+        {
+            Instance.Relationships.Add(ship);
+        }
+
+        Instance.RecalculateHappiness();
     }
 
     public static void setVisibleThreadCharacter(Character chr)
