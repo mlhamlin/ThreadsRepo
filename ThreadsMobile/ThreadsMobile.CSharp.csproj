@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -72,17 +66,14 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\ThirdPartyLib\Newtonsoft Json 2\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="OSCsharp">
-      <HintPath>Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Libraries\OSCsharp.dll</HintPath>
-    </Reference>
-    <Reference Include="TUIOsharp">
-      <HintPath>Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Libraries\TUIOsharp.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterVisual.cs" />
+    <Compile Include="Assets\Scripts\RelationshipFunctions.cs" />
+    <Compile Include="Assets\Scripts\RelationshipWeb.cs" />
+    <Compile Include="Assets\Scripts\TraitManager.cs" />
     <Compile Include="Assets\Scripts\UnitySingleton.cs" />
     <Compile Include="Assets\Scripts\UnitySingletonPersistent.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Camera\Scripts\CameraController.cs" />
@@ -108,7 +99,6 @@
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\_misc\Scripts\Checker.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\_misc\Scripts\KillMe.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\_misc\Scripts\Runner.cs" />
-    <Compile Include="Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Scripts\InputSources\TuioInput.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Scripts\Behaviors\TouchScriptInputModule.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Scripts\Behaviors\Transformer.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Scripts\Behaviors\Visualizer\TouchProxy.cs" />
