@@ -1,17 +1,48 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
-public class WebManager : UnitySingleton<WebManager> {
+public class ShipManager : UnitySingleton<ShipManager> {
+
+    public static bool NewPlatonicShip(CharacterData a, CharacterData b)
+    {
+        return NewShipListUpdate(a, a.PlatonicPartners, b, b.PlatonicPartners);
+    }
+
+    public static bool NewRomanticShip(CharacterData a, CharacterData b)
+    {
+        return NewShipListUpdate(a, a.RomanticPartners, b, b.RomanticPartners);
+    }
+
+    public static bool NewSexualShip(CharacterData a, CharacterData b)
+    {
+        return NewShipListUpdate(a, a.SexualPartners, b, b.SexualPartners);
+    }
+
+    private static bool NewShipListUpdate(CharacterData a, List<CharacterData> alist,
+        CharacterData b, List<CharacterData> blist)
+    {
+        if(alist.Contains(b) || blist.Contains(a))
+            return false;
+
+        alist.Add(b);
+        blist.Add(a);
+        Merge(a.currentShipWeb, b.currentShipWeb);
+
+        return true;
+    }
 
     public static void Merge(RelationshipWeb a, RelationshipWeb b)
     {
+        if(a == b)
+            return;
+
         foreach(CharacterData chr in b.members)
         {
             chr.currentShipWeb = a;
             a.members.Add(chr);
         }
 
-        GameObject.Destroy(b);
+        GameObject.Destroy(b.gameObject);
     }
 
     public static void ProcessBreakup(CharacterData a, CharacterData b)
@@ -54,9 +85,10 @@ public class WebManager : UnitySingleton<WebManager> {
 
     public static RelationshipWeb SetUpWeb()
     {
-        GameObject Relationship = new GameObject();
+        GameObject Relationship = new GameObject("ShipWeb");
         Relationship.transform.SetParent(Instance.transform);
         RelationshipWeb web = Relationship.AddComponent<RelationshipWeb>();
+        web.members = new List<CharacterData>();
         return web;
     }
 }

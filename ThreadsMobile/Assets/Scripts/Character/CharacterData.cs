@@ -20,11 +20,7 @@ public class CharacterData : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+        currentShipWeb = ShipManager.SetUpWeb();
+        currentShipWeb.members.Add(this);
 	}
 }

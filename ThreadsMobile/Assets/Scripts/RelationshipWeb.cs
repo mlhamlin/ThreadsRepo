@@ -4,17 +4,18 @@ using System.Collections.Generic;
 public class RelationshipWeb : MonoBehaviour {
 
     public List<CharacterData> members;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+    
+    public void Start()
+    {
+        if (members == null)
+            members = new List<CharacterData>();
+    }
 
     public void JoinRelationship(CharacterData newMember)
     {
         if(newMember.currentShipWeb != this)
         {
-            WebManager.Merge(this, newMember.currentShipWeb);
+            ShipManager.Merge(this, newMember.currentShipWeb);
         }
     }
 }

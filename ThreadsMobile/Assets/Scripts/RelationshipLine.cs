@@ -31,5 +31,7 @@ public class RelationshipLine : MonoBehaviour {
         char2 = character;
         point.z = 0f;
         rend.SetPosition(1, point);
+        //TODO: All ships are romantic right now
+        ShipManager.NewRomanticShip(char1.data, char2.data);
     }
 }
