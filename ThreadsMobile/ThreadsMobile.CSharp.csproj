@@ -70,8 +70,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterVisual.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
     <Compile Include="Assets\Scripts\RelationshipFunctions.cs" />
+    <Compile Include="Assets\Scripts\RelationshipLine.cs" />
     <Compile Include="Assets\Scripts\RelationshipWeb.cs" />
     <Compile Include="Assets\Scripts\TraitManager.cs" />
     <Compile Include="Assets\Scripts\UnitySingleton.cs" />
