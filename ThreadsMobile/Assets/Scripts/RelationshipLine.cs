@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent (typeof (LineRenderer))]
 public class RelationshipLine : MonoBehaviour {
 
+    //TODO: Find something to consistently child these too for neatness
+
     public CharacterInteraction char1;
     public CharacterInteraction char2;
     public LineRenderer rend;
@@ -31,7 +33,12 @@ public class RelationshipLine : MonoBehaviour {
         char2 = character;
         point.z = 0f;
         rend.SetPosition(1, point);
+        gameObject.name = char1.name + "/" + char2.name;
         //TODO: All ships are romantic right now
-        ShipManager.NewRomanticShip(char1.data, char2.data);
+        if (!ShipManager.NewRomanticShip(char1.data, char2.data))
+        {
+            //if this relationship already exists destroy the new one
+            GameObject.Destroy(this.gameObject);
+        }
     }
 }
