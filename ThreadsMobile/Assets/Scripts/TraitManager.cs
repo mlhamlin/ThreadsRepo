@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 
-public class TraitManager : MonoBehaviour {
+public class TraitManager : UnitySingletonPersistent<TraitManager> {
 
     public struct Trait
     {
@@ -15,27 +17,36 @@ public class TraitManager : MonoBehaviour {
             this.traitDescription = traitDescription;
             this.icon = icon;
         }
+
+		public static Trait ErrorTrait(){
+			return new Trait("error", "error", "error");
+		}
     }
 
-    public Dictionary<int, Trait> traitNames;
-
-	// Use this for initialization
-	void Start () {
-        traitNames = new Dictionary<int, Trait>();
-        traitNames.Add(0, new Trait("Funny", "blah", "Funny"));
-        traitNames.Add(1, new Trait("Smart", "blah", "Smart"));
-        traitNames.Add(2, new Trait("Geeky", "blah", "Geeky"));
-        traitNames.Add(3, new Trait("Athletic", "blah", "Athletic"));
-        traitNames.Add(4, new Trait("Sports Fan", "blah", "SportsFan"));
-        traitNames.Add(5, new Trait("Caring", "blah", "Caring"));
-        traitNames.Add(100, new Trait("Cis Man", "blah", "cisman"));
-        traitNames.Add(101, new Trait("Trans Man", "blah", "mtf"));
-        traitNames.Add(200, new Trait("Cis Woman", "blah", "ciswoman"));
-        traitNames.Add(201, new Trait("Trans Woman", "blah", "ftm"));
-    }
-
-    // Update is called once per frame
-    void Update () {
+    public Dictionary<int, Trait> traits;
 	
+	JsonSerializerSettings settings;
+	
+	public void Start()
+	{
+		traits = new Dictionary<int, Trait>();
+		
+		settings = new JsonSerializerSettings();
+		settings.TypeNameHandling = TypeNameHandling.Objects;
+
+		TextAsset traitsFile = Resources.Load<TextAsset>("Characters/Traits");
+		
+		Instance.traits = JsonConvert.DeserializeObject<Dictionary<int, Trait>>(traitsFile.text, Instance.settings);
+	}
+
+	public static Trait GetTrait(int id){
+		Trait value;
+
+		if(Instance.traits.TryGetValue(id, out value)){
+			return value;
+		}else{
+			Debug.LogError("Trait #" + id + " not found");
+			return Trait.ErrorTrait();
+		}
 	}
 }

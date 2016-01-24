@@ -1,0 +1,39 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.Int, mscorlib],[Trait, Assembly-CSharp]], mscorlib",
+  1 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Funny",
+      "traitDescription": "blah",
+      "icon": "Funny"
+  },
+  2 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Smart",
+      "traitDescription": "blah",
+      "icon": "Smart"
+  },
+  3 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Geeky",
+      "traitDescription": "blah",
+      "icon": "Geeky"
+  },
+  4 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Athletic",
+      "traitDescription": "blah",
+      "icon": "Atletic"
+  },
+  5 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Sports Fan",
+      "traitDescription": "blah",
+      "icon": "Sports Fan"
+  },
+  6 : {
+      "$type": "Trait, Assembly-CSharp",
+      "traitname": "Caring",
+      "traitDescription": "blah",
+      "icon": "Caring"
+  },
+}
