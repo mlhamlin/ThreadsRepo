@@ -2,38 +2,44 @@
   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Trait, Assembly-CSharp]], mscorlib",
   "Funny" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Funny",
+      "traitName": "Funny",
       "traitDescription": "blah",
-      "icon": "Funny"
+      "icon": "Funny",
+	  "weight":1
   },
   "Smart" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Smart",
+      "traitName": "Smart",
       "traitDescription": "blah",
-      "icon": "Smart"
+      "icon": "Smart",
+	  "weight":1
   },
   "Geeky" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Geeky",
+      "traitName": "Geeky",
       "traitDescription": "blah",
-      "icon": "Geeky"
+      "icon": "Geeky",
+	  "weight":1
   },
   "Athletic" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Athletic",
+      "traitName": "Athletic",
       "traitDescription": "blah",
-      "icon": "Athletic"
+      "icon": "Athletic",
+	  "weight":1
   },
   "Sports Fan" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Sports Fan",
+      "traitName": "Sports Fan",
       "traitDescription": "blah",
-      "icon": "Sports Fan"
+      "icon": "Sports Fan",
+	  "weight":1
   },
   "Caring" : {
       "$type": "Trait, Assembly-CSharp",
-      "traitname": "Caring",
+      "traitName": "Caring",
       "traitDescription": "blah",
-      "icon": "Caring"
+      "icon": "Caring",
+	  "weight":1
   },
 }

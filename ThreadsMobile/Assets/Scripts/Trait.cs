@@ -9,6 +9,8 @@ public class Trait {
 	string traitDescription;
 	string icon;
 
+	float weight;
+
 	public string TraitName {
 		get{ return traitName; }
 	}
@@ -21,17 +23,18 @@ public class Trait {
 		get{ return Resources.Load<Sprite> (ICON_PATH + icon); }
 	}
 
-	public Trait(){
+	public float Weight {
+		get { return weight; }
 	}
 
-	public Trait(string traitName, string traitDescription, string icon) : this()
-	{
+	public Trait(string traitName, string traitDescription, string icon, int weight){
 		this.traitName = traitName;
 		this.traitDescription = traitDescription;
 		this.icon = icon;
+		this.weight = weight;
 	}
 
 	public static Trait ErrorTrait(){
-		return new Trait("error", "error", "error");
+		return new Trait("error", "error", "error", 0);
 	}
 }
