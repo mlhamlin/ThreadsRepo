@@ -38,3 +38,27 @@ public class Trait {
 		return new Trait("error", "error", "error", 0);
 	}
 }
+
+public class Gender : Trait {
+	public Gender(string traitName, string traitDescription, string icon, int weight)
+	: base(traitName, traitDescription, icon, weight){
+	}
+}
+
+public class Quirk : Trait {
+	public Quirk(string traitName, string traitDescription, string icon, int weight)
+	: base(traitName, traitDescription, icon, weight){
+	}
+}
+
+public class Like : Trait {
+	public Like(string traitName, string traitDescription, string icon, int weight)
+	: base(traitName, traitDescription, icon, weight){
+	}
+}
+
+public class Dislike : Trait {
+	public Dislike(string traitName, string traitDescription, string icon, int weight)
+	: base(traitName, traitDescription, icon, weight){
+	}
+}
