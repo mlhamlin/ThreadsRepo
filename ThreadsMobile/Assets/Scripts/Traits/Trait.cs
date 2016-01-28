@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Trait {
 
-	const string ICON_PATH = "Icons/";
+	protected const string ICON_PATH = "Icons/";
 
 	string traitName;
 	string traitDescription;
