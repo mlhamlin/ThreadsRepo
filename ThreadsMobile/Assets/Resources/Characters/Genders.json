@@ -1,0 +1,38 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Gender, Assembly-CSharp]], mscorlib",
+  "Agender" : {
+      "$type": "Gender, Assembly-CSharp",
+      "traitName": "Agender",
+      "traitDescription": "blah",
+      "icon": "Agender",
+	  "weight":1
+  },
+  "Cis Woman" : {
+      "$type": "Gender, Assembly-CSharp",
+      "traitName": "Cis Woman",
+      "traitDescription": "blah",
+      "icon": "Cis Woman",
+	  "weight":1
+  },
+  "Cis Man" : {
+      "$type": "Gender, Assembly-CSharp",
+      "traitName": "Cis Man",
+      "traitDescription": "blah",
+      "icon": "Cis Man",
+	  "weight":1
+  },
+  "Trans Woman" : {
+      "$type": "Gender, Assembly-CSharp",
+      "traitName": "Trans Woman",
+      "traitDescription": "blah",
+      "icon": "Trans Woman",
+	  "weight":1
+  },
+  "Trans Man" : {
+      "$type": "Gender, Assembly-CSharp",
+      "traitName": "Trans Man",
+      "traitDescription": "blah",
+      "icon": "Trans Man",
+	  "weight":1
+  },
+}
