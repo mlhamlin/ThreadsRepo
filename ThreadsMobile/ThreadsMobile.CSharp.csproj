@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.3.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -59,14 +57,11 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\ThirdPartyLib\Newtonsoft Json 2\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -75,11 +70,13 @@
     <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
     <Compile Include="Assets\Scripts\Helper Scripts\UnitySingleton.cs" />
     <Compile Include="Assets\Scripts\Helper Scripts\UnitySingletonPersistent.cs" />
+    <Compile Include="Assets\Scripts\ProbabilityArray.cs" />
     <Compile Include="Assets\Scripts\Relationships\RelationshipLine.cs" />
     <Compile Include="Assets\Scripts\Relationships\RelationshipWeb.cs" />
     <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
     <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
-    <Compile Include="Assets\Scripts\TraitManager.cs" />
+    <Compile Include="Assets\Scripts\Traits\Trait.cs" />
+    <Compile Include="Assets\Scripts\Traits\TraitManager.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Camera\Scripts\CameraController.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Checkers\Scripts\Board.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Checkers\Scripts\Exclusive.cs" />

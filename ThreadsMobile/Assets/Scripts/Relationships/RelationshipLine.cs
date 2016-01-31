@@ -62,8 +62,22 @@ public class RelationshipLine : MonoBehaviour
         coll = chi.AddComponent<BoxCollider2D>();
 
         chi.transform.position = Vector3.Lerp(start, end, .5f);
-        Vector3 along = end - start;
+
+        Vector3 along = new Vector3();
+
+        //since Vector3.Angle clamps it's value make it so
+        // we do this math magic to avoid needing the full 360 degrees
+        if (start.y > end.y)
+        {
+            along = start - end;
+        }
+        else
+        {
+            along = end - start;
+        }
+
         chi.transform.Rotate(0f, 0f, Vector3.Angle(along, Vector3.right));
+
 
         coll.size = new Vector2(Vector3.Distance(start, end), LineWidth);
     }
