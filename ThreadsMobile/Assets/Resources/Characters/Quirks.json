@@ -1,0 +1,45 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Quirk, Assembly-CSharp]], mscorlib",
+  "Funny" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Funny",
+      "traitDescription": "blah",
+      "icon": "Funny",
+	  "weight":1
+  },
+  "Smart" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Smart",
+      "traitDescription": "blah",
+      "icon": "Smart",
+	  "weight":1
+  },
+  "Geeky" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Geeky",
+      "traitDescription": "blah",
+      "icon": "Geeky",
+	  "weight":1
+  },
+  "Athletic" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Athletic",
+      "traitDescription": "blah",
+      "icon": "Athletic",
+	  "weight":1
+  },
+  "Sports Fan" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Sports Fan",
+      "traitDescription": "blah",
+      "icon": "Sports Fan",
+	  "weight":1
+  },
+  "Caring" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Caring",
+      "traitDescription": "blah",
+      "icon": "Caring",
+	  "weight":1
+  },
+}

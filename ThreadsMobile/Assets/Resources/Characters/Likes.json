@@ -1,0 +1,45 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Like, Assembly-CSharp]], mscorlib",
+  "Likes Funny" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Funny",
+      "traitDescription": "blah",
+      "icon": "Likes Funny",
+	  "weight":1
+  },
+  "Likes Smart" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Smart",
+      "traitDescription": "blah",
+      "icon": "Likes Smart",
+	  "weight":1
+  },
+  "Likes Geeky" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Geeky",
+      "traitDescription": "blah",
+      "icon": "Likes Geeky",
+	  "weight":1
+  },
+  "Likes Athletic" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Athletic",
+      "traitDescription": "blah",
+      "icon": "Likes Athletic",
+	  "weight":1
+  },
+  "Likes Sports Fan" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Sports Fan",
+      "traitDescription": "blah",
+      "icon": "Likes Sports Fan",
+	  "weight":1
+  },
+  "Likes Caring" : {
+      "$type": "Like, Assembly-CSharp",
+      "traitName": "Likes Caring",
+      "traitDescription": "blah",
+      "icon": "Likes Caring",
+	  "weight":1
+  },
+}

@@ -1,0 +1,45 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Dislike, Assembly-CSharp]], mscorlib",
+  "Dislikes Funny" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Funny",
+      "traitDescription": "blah",
+      "icon": "Dislikes Funny",
+	  "weight":1
+  },
+  "Dislikes Smart" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Smart",
+      "traitDescription": "blah",
+      "icon": "Dislikes Smart",
+	  "weight":1
+  },
+  "Dislikes Geeky" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Geeky",
+      "traitDescription": "blah",
+      "icon": "Dislikes Geeky",
+	  "weight":1
+  },
+  "Dislikes Athletic" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Athletic",
+      "traitDescription": "blah",
+      "icon": "Dislikes Athletic",
+	  "weight":1
+  },
+  "Dislikes Sports Fan" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Sports Fan",
+      "traitDescription": "blah",
+      "icon": "Dislikes Sports Fan",
+	  "weight":1
+  },
+  "Dislikes Caring" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Caring",
+      "traitDescription": "blah",
+      "icon": "Dislikes Caring",
+	  "weight":1
+  },
+}
