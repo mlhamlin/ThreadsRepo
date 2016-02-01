@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
     <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
     <Compile Include="Assets\Scripts\Traits\Trait.cs" />
+    <Compile Include="Assets\Scripts\Traits\TraitInteraction.cs" />
     <Compile Include="Assets\Scripts\Traits\TraitManager.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Camera\Scripts\CameraController.cs" />
     <Compile Include="Assets\ThirdPartyLib\TouchScript\Examples\Checkers\Scripts\Board.cs" />
