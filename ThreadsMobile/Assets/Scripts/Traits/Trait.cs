@@ -43,6 +43,40 @@ public class Trait {
 	public static Trait ErrorTrait(){
 		return new Trait("error", "error", "error", 0);
 	}
+
+	public bool ConflictsWith(CharacterData character){
+		if(character.ContainsTrait(this)){
+			return false;
+		}
+
+		foreach(string con in conflicts){
+			if(character.ContainsTrait(TraitManager.GetTrait(con))){
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	public int Score(CharacterData character){
+		if(scoring == null){
+			return 0;
+		}
+
+		int totalScore = 0;
+
+		foreach(Trait t in character.GetAllTraits()){
+			if(scoring.ContainsKey(t.traitName)){
+				int score = 0;
+				scoring.TryGetValue (t.traitName, out score);
+				totalScore += score;
+			}
+		}
+
+		return totalScore;
+	}
+
+
 }
 
 public class Gender : Trait {
