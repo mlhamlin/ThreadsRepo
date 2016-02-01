@@ -47,8 +47,11 @@ public class ShipManager : UnitySingleton<ShipManager> {
 
     public static void ProcessBreakup(CharacterData a, CharacterData b)
     {
-        //TODO: Figure out if relationships need to be split into two
-        // if so do the thing
+        a.RomanticPartners.Remove(b);
+        b.RomanticPartners.Remove(a);
+
+        RelationshipWeb oldWeb = a.currentShipWeb;
+        Destroy(oldWeb.gameObject);
 
         Populate(SetUpWeb(), a);
 
@@ -56,7 +59,6 @@ public class ShipManager : UnitySingleton<ShipManager> {
         {
             Populate(SetUpWeb(), b);
         }
-
     }
 
     public static void Populate(RelationshipWeb web, CharacterData chr)

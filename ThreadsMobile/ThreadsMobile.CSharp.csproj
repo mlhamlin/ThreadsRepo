@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\ProbabilityArray.cs" />
     <Compile Include="Assets\Scripts\Relationships\RelationshipLine.cs" />
     <Compile Include="Assets\Scripts\Relationships\RelationshipWeb.cs" />
+    <Compile Include="Assets\Scripts\Relationships\ShipBreaker.cs" />
     <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
     <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
     <Compile Include="Assets\Scripts\Traits\Trait.cs" />

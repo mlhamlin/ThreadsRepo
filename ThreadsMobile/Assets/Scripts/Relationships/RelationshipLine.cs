@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TouchScript.Gestures;
 
 [RequireComponent(typeof(LineRenderer))]
 public class RelationshipLine : MonoBehaviour
 {
-
-    //TODO: Find something to consistently child these too for neatness
 
     public CharacterInteraction char1;
     public CharacterInteraction char2;
@@ -53,15 +52,28 @@ public class RelationshipLine : MonoBehaviour
         gameObject.name = char1.name + "/" + char2.name;
 
         CreateCollider();
+
+        set = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Trigger Enter");
+        if(other.tag == "LineBreaker")
+        {
+            ShipBreaker.Register(this);
+        }
+    }
+
+    public void BreakUp()
+    {
+        ShipManager.ProcessBreakup(char1.data, char2.data);
+        Destroy(gameObject);
     }
 
     private void CreateCollider()
     {
-        GameObject chi = new GameObject("Collider");
-        chi.transform.SetParent(this.transform);
-        coll = chi.AddComponent<BoxCollider2D>();
-
-        chi.transform.position = Vector3.Lerp(start, end, .5f);
+        coll.transform.position = Vector3.Lerp(start, end, .5f);
 
         Vector3 along = new Vector3();
 
@@ -76,9 +88,10 @@ public class RelationshipLine : MonoBehaviour
             along = end - start;
         }
 
-        chi.transform.Rotate(0f, 0f, Vector3.Angle(along, Vector3.right));
-
+        coll.transform.Rotate(0f, 0f, Vector3.Angle(along, Vector3.right));
 
         coll.size = new Vector2(Vector3.Distance(start, end), LineWidth);
     }
+
+
 }
