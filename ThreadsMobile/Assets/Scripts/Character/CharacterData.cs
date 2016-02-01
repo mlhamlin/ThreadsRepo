@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class CharacterData : MonoBehaviour {
+public class CharacterData {
+
+	public int seed;
 
     public Gender gender;
 
@@ -9,13 +11,16 @@ public class CharacterData : MonoBehaviour {
     public List<Like> likes;
     public List<Dislike> dislikes;
 
-    // Use this for initialization
-    void Start () {
-	
+	//TODO: Add face data
+
+
+	public CharacterData(){
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public CharacterData(Gender gender, List<Quirk> quirks, List<Like> likes, List<Dislike> dislikes){
+		this.gender = gender;
+		this.quirks = quirks;
+		this.likes = likes;
+		this.dislikes = dislikes;
 	}
 }

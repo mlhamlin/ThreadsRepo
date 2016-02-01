@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Trait {
 
@@ -10,6 +11,9 @@ public class Trait {
 	string icon;
 
 	float weight;
+
+	List<string> conflicts;
+	Dictionary<string, int> scoring;
 
 	public string TraitName {
 		get{ return traitName; }
@@ -27,11 +31,13 @@ public class Trait {
 		get { return weight; }
 	}
 
-	public Trait(string traitName, string traitDescription, string icon, int weight){
+	public Trait(string traitName, string traitDescription, string icon, int weight, List<string> conflicts = null, Dictionary<string, int> scoring = null){
 		this.traitName = traitName;
 		this.traitDescription = traitDescription;
 		this.icon = icon;
 		this.weight = weight;
+		this.conflicts = conflicts;
+		this.scoring = scoring;
 	}
 
 	public static Trait ErrorTrait(){
@@ -40,25 +46,25 @@ public class Trait {
 }
 
 public class Gender : Trait {
-	public Gender(string traitName, string traitDescription, string icon, int weight)
-	: base(traitName, traitDescription, icon, weight){
+	public Gender(string traitName, string traitDescription, string icon, int weight, List<string> conflicts = null, Dictionary<string, int> scoring = null)
+		: base(traitName, traitDescription, icon, weight, conflicts, scoring){
 	}
 }
 
 public class Quirk : Trait {
-	public Quirk(string traitName, string traitDescription, string icon, int weight)
-	: base(traitName, traitDescription, icon, weight){
+	public Quirk(string traitName, string traitDescription, string icon, int weight, List<string> conflicts = null, Dictionary<string, int> scoring = null)
+		: base(traitName, traitDescription, icon, weight, conflicts, scoring){
 	}
 }
 
 public class Like : Trait {
-	public Like(string traitName, string traitDescription, string icon, int weight)
-	: base(traitName, traitDescription, icon, weight){
+	public Like(string traitName, string traitDescription, string icon, int weight, List<string> conflicts = null, Dictionary<string, int> scoring = null)
+		: base(traitName, traitDescription, icon, weight, conflicts, scoring){
 	}
 }
 
 public class Dislike : Trait {
-	public Dislike(string traitName, string traitDescription, string icon, int weight)
-	: base(traitName, traitDescription, icon, weight){
+	public Dislike(string traitName, string traitDescription, string icon, int weight, List<string> conflicts = null, Dictionary<string, int> scoring = null)
+		: base(traitName, traitDescription, icon, weight, conflicts, scoring){
 	}
 }
