@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 public class RelationshipWeb : MonoBehaviour {
 
-    public List<CharacterData> members;
+    public List<CharacterCore> members;
     
     public void Start()
     {
         if (members == null)
-            members = new List<CharacterData>();
+            members = new List<CharacterCore>();
     }
 
-    public void JoinRelationship(CharacterData newMember)
+    public void JoinRelationship(CharacterCore newMember)
     {
         if(newMember.currentShipWeb != this)
         {

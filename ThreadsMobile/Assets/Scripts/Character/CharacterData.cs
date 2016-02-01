@@ -3,24 +3,19 @@ using System.Collections.Generic;
 
 public class CharacterData : MonoBehaviour {
 
-    public int Gender = 200; //Cis-Woman
-    public int MaxRelationships = 1;
+    public Gender gender;
 
-    //first element in each Vector2 is the trait # 
-    //second is the degree: 0, 1, 2, or 3
-    public List<Vector2> traits;
-    public List<Vector2> likes;
-    public List<Vector2> dislikes;
+    public List<Quirk> quirks;
+    public List<Like> likes;
+    public List<Dislike> dislikes;
 
-    public List<CharacterData> PlatonicPartners;
-    public List<CharacterData> RomanticPartners;
-    public List<CharacterData> SexualPartners;
-
-    public RelationshipWeb currentShipWeb;
-    
     // Use this for initialization
     void Start () {
-        currentShipWeb = ShipManager.SetUpWeb();
-        currentShipWeb.members.Add(this);
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
 	}
 }

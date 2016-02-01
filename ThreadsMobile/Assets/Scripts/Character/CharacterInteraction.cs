@@ -9,7 +9,7 @@ public class CharacterInteraction : MonoBehaviour {
 
     public GameObject UI;
     public GameObject Background;
-    public CharacterData data;
+    public CharacterCore charCore;
     private PressGesture press;
     private MetaGesture metaGestures;
     private ReleaseGesture release;
