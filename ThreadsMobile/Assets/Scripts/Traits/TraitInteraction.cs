@@ -6,21 +6,25 @@ using System;
 [RequireComponent(typeof(TapGesture))]
 public class TraitInteraction : MonoBehaviour {
 
+	public GameObject tooltip;
+
 	private TapGesture tapBack;
 
 	private void OnEnable()
 	{
-		GetComponent<TapGesture>().Tapped += tappedHandler;
+		tapBack = GetComponent<TapGesture> ();
+		tapBack.Tapped += tappedHandler;
 	}
 
 	private void OnDisable()
 	{
-		GetComponent<TapGesture>().Tapped -= tappedHandler;
+		tapBack.Tapped -= tappedHandler;
 	}
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
-		
+		Debug.Log ("Got a touch");
+		tooltip.SetActive(true);
 	}
 }
 
