@@ -39,7 +39,7 @@ public class RelationshipLine : MonoBehaviour
     {
         char2 = character;
 
-        if(!ShipManager.NewRomanticShip(char1.data, char2.data))
+        if(!ShipManager.NewRomanticShip(char1.charCore, char2.charCore))
         {
             //if this relationship already exists destroy the new one
             GameObject.Destroy(this.gameObject);
@@ -67,7 +67,7 @@ public class RelationshipLine : MonoBehaviour
 
     public void BreakUp()
     {
-        ShipManager.ProcessBreakup(char1.data, char2.data);
+        ShipManager.ProcessBreakup(char1.charCore, char2.charCore);
         Destroy(gameObject);
     }
 

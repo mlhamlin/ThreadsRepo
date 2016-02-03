@@ -3,23 +3,23 @@ using System.Collections.Generic;
 
 public class ShipManager : UnitySingleton<ShipManager> {
 
-    public static bool NewPlatonicShip(CharacterData a, CharacterData b)
+    public static bool NewPlatonicShip(CharacterCore a, CharacterCore b)
     {
         return NewShipListUpdate(a, a.PlatonicPartners, b, b.PlatonicPartners);
     }
 
-    public static bool NewRomanticShip(CharacterData a, CharacterData b)
+    public static bool NewRomanticShip(CharacterCore a, CharacterCore b)
     {
         return NewShipListUpdate(a, a.RomanticPartners, b, b.RomanticPartners);
     }
 
-    public static bool NewSexualShip(CharacterData a, CharacterData b)
+    public static bool NewSexualShip(CharacterCore a, CharacterCore b)
     {
         return NewShipListUpdate(a, a.SexualPartners, b, b.SexualPartners);
     }
 
-    private static bool NewShipListUpdate(CharacterData a, List<CharacterData> alist,
-        CharacterData b, List<CharacterData> blist)
+    private static bool NewShipListUpdate(CharacterCore a, List<CharacterCore> alist,
+        CharacterCore b, List<CharacterCore> blist)
     {
         if(alist.Contains(b) || blist.Contains(a))
             return false;
@@ -36,7 +36,7 @@ public class ShipManager : UnitySingleton<ShipManager> {
         if(a == b)
             return;
 
-        foreach(CharacterData chr in b.members)
+        foreach(CharacterCore chr in b.members)
         {
             chr.currentShipWeb = a;
             a.members.Add(chr);
@@ -45,7 +45,7 @@ public class ShipManager : UnitySingleton<ShipManager> {
         GameObject.Destroy(b.gameObject);
     }
 
-    public static void ProcessBreakup(CharacterData a, CharacterData b)
+    public static void ProcessBreakup(CharacterCore a, CharacterCore b)
     {
         a.RomanticPartners.Remove(b);
         b.RomanticPartners.Remove(a);
@@ -61,7 +61,7 @@ public class ShipManager : UnitySingleton<ShipManager> {
         }
     }
 
-    public static void Populate(RelationshipWeb web, CharacterData chr)
+    public static void Populate(RelationshipWeb web, CharacterCore chr)
     {
         if(web.members.Contains(chr))
             return;
@@ -69,17 +69,17 @@ public class ShipManager : UnitySingleton<ShipManager> {
         web.members.Add(chr);
         chr.currentShipWeb = web;
 
-        foreach(CharacterData partner in chr.PlatonicPartners)
+        foreach(CharacterCore partner in chr.PlatonicPartners)
         {
             Populate(web, partner);
         }
 
-        foreach(CharacterData partner in chr.SexualPartners)
+        foreach(CharacterCore partner in chr.SexualPartners)
         {
             Populate(web, partner);
         }
 
-        foreach(CharacterData partner in chr.RomanticPartners)
+        foreach(CharacterCore partner in chr.RomanticPartners)
         {
             Populate(web, partner);
         }
@@ -90,7 +90,7 @@ public class ShipManager : UnitySingleton<ShipManager> {
         GameObject Relationship = new GameObject("ShipWeb");
         Relationship.transform.SetParent(Instance.transform);
         RelationshipWeb web = Relationship.AddComponent<RelationshipWeb>();
-        web.members = new List<CharacterData>();
+        web.members = new List<CharacterCore>();
         return web;
     }
 }
