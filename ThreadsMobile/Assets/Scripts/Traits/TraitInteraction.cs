@@ -23,7 +23,11 @@ public class TraitInteraction : MonoBehaviour {
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
-		Debug.Log ("Got a touch");
+		Debug.Log ("Got a Tap");
+		TraitToolTipData text = tooltip.GetComponent<TraitToolTipData> ();
+		// get the trait's name here somehow
+		// "Gender" is just filler for now
+		text.tooltipText.text = "Gender";
 		tooltip.SetActive(true);
 	}
 }
