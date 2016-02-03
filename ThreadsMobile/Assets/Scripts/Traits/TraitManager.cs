@@ -43,7 +43,16 @@ public class TraitManager : UnitySingletonPersistent<TraitManager> {
 		Debug.Log(GetRandomQuirk().TraitName);
 		Debug.Log(GetRandomQuirk().TraitName);
 		Debug.Log(GetRandomQuirk().TraitName);
+
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
+		Debug.Log(CharacterGenerator.Generate(0).gender.TraitName);
 		*/
+
 	}
 
 	#region Loading
@@ -112,19 +121,19 @@ public class TraitManager : UnitySingletonPersistent<TraitManager> {
 		}
 	}
 
-	public static Trait GetRandomGender(){
+	public static Gender GetRandomGender(){
 		return Instance.genderProbabilities.GetRandomValue ();
 	}
 
-	public static Trait GetRandomQuirk(){
+	public static Quirk GetRandomQuirk(){
 		return Instance.quirkProbabilities.GetRandomValue ();
 	}
 
-	public static Trait GetRandomLike(){
+	public static Like GetRandomLike(){
 		return Instance.likeProbabilities.GetRandomValue ();
 	}
 
-	public static Trait GetRandomDislike(){
+	public static Dislike GetRandomDislike(){
 		return Instance.dislikeProbabilities.GetRandomValue ();
 	}
 	#endregion
