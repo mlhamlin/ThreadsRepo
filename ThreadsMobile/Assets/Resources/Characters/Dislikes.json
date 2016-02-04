@@ -5,34 +5,39 @@
       "traitName": "Funny",
       "traitDescription": "blah",
       "icon": "funny",
-	  "weight":1
+	  "weight":1,
+	  "conflicts": ["Likes Funny"],
   },
   "Dislikes Geeky" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Geeky",
       "traitDescription": "blah",
       "icon": "geeky",
-	  "weight":1
+	  "weight":1,
+	  "conflicts": ["Likes Geeky"],
   },
   "Dislikes Foodie" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Foodie",
       "traitDescription": "blah",
       "icon": "foodie",
-	  "weight":1
+	  "weight":1,
+	  "conflicts": ["Likes Foodie"],
   },
   "Dislikes Sporty" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Sporty",
       "traitDescription": "blah",
       "icon": "porty",
-	  "weight":1
+	  "weight":1,
+	  "conflicts": ["Likes Sporty"],
   },
   "Dislikes Outdoorsy" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Outdoorsy",
       "traitDescription": "blah",
       "icon": "outdoorsy",
-	  "weight":1
+	  "weight":1,
+	  "conflicts": ["Likes Outdoorsy"],
   },
 }

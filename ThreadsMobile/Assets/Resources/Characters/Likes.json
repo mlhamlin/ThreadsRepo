@@ -6,7 +6,6 @@
 		"traitDescription": "blah",
 		"icon": "funny",
 		"weight":1,
-		"conflicts": ["Dislikes Funny"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Likes Funny": 10,
@@ -19,7 +18,6 @@
 		"traitDescription": "blah",
 		"icon": "geeky",
 		"weight":1,
-		"conflicts": ["Dislikes Geeky"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Likes Geeky": 10,
@@ -32,7 +30,6 @@
 		"traitDescription": "blah",
 		"icon": "foodie",
 		"weight":1,
-		"conflicts": ["Dislikes Foodie"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Likes Foodie": 10,
@@ -45,7 +42,6 @@
 		"traitDescription": "blah",
 		"icon": "sporty",
 		"weight":1,
-		"conflicts": ["Dislikes Sporty"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Likes Sporty": 10,
@@ -58,7 +54,6 @@
 		"traitDescription": "blah",
 		"icon": "outdoorsy",
 		"weight":1,
-		"conflicts": ["Dislikes Outdoorsy"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Likes Outdoorsy": 10,
