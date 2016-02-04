@@ -4,42 +4,35 @@
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Funny",
       "traitDescription": "blah",
-      "icon": "Funny",
-	  "weight":1
-  },
-  "Smart" : {
-      "$type": "Quirk, Assembly-CSharp",
-      "traitName": "Smart",
-      "traitDescription": "blah",
-      "icon": "Smart",
+      "icon": "funny",
 	  "weight":1
   },
   "Geeky" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Geeky",
       "traitDescription": "blah",
-      "icon": "Geeky",
+      "icon": "geeky",
 	  "weight":1
   },
-  "Athletic" : {
+  "Foodie" : {
       "$type": "Quirk, Assembly-CSharp",
-      "traitName": "Athletic",
+      "traitName": "Foodie",
       "traitDescription": "blah",
-      "icon": "Athletic",
+      "icon": "foodie",
 	  "weight":1
   },
-  "Sports Fan" : {
+  "Sporty" : {
       "$type": "Quirk, Assembly-CSharp",
-      "traitName": "Sports Fan",
+      "traitName": "Sporty",
       "traitDescription": "blah",
-      "icon": "Sports Fan",
+      "icon": "sporty",
 	  "weight":1
   },
-  "Caring" : {
+  "Outdoorsy" : {
       "$type": "Quirk, Assembly-CSharp",
-      "traitName": "Caring",
+      "traitName": "Outdoorsy",
       "traitDescription": "blah",
-      "icon": "Caring",
+      "icon": "outdoorsy",
 	  "weight":1
   },
 }

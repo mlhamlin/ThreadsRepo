@@ -2,44 +2,37 @@
   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Dislike, Assembly-CSharp]], mscorlib",
   "Dislikes Funny" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Funny",
+      "traitName": "Funny",
       "traitDescription": "blah",
-      "icon": "Dislikes Funny",
-	  "weight":1
-  },
-  "Dislikes Smart" : {
-      "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Smart",
-      "traitDescription": "blah",
-      "icon": "Dislikes Smart",
+      "icon": "funny",
 	  "weight":1
   },
   "Dislikes Geeky" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Geeky",
+      "traitName": "Geeky",
       "traitDescription": "blah",
-      "icon": "Dislikes Geeky",
+      "icon": "geeky",
 	  "weight":1
   },
-  "Dislikes Athletic" : {
+  "Dislikes Foodie" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Athletic",
+      "traitName": "Foodie",
       "traitDescription": "blah",
-      "icon": "Dislikes Athletic",
+      "icon": "foodie",
 	  "weight":1
   },
-  "Dislikes Sports Fan" : {
+  "Dislikes Sporty" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Sports Fan",
+      "traitName": "Sporty",
       "traitDescription": "blah",
-      "icon": "Dislikes Sports Fan",
+      "icon": "porty",
 	  "weight":1
   },
-  "Dislikes Caring" : {
+  "Dislikes Outdoorsy" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Caring",
+      "traitName": "Outdoorsy",
       "traitDescription": "blah",
-      "icon": "Dislikes Caring",
+      "icon": "outdoorsy",
 	  "weight":1
   },
 }
