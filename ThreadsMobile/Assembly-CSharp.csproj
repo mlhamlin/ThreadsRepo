@@ -45,12 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterGenerator.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
+     <Compile Include="Assets\Scripts\Helper Scripts\ProbabilityArray.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\UnitySingletonPersistent.cs" />
-     <Compile Include="Assets\Scripts\ProbabilityArray.cs" />
      <Compile Include="Assets\Scripts\Relationships\RelationshipLine.cs" />
      <Compile Include="Assets\Scripts\Relationships\RelationshipWeb.cs" />
      <Compile Include="Assets\Scripts\Relationships\ShipBreaker.cs" />
