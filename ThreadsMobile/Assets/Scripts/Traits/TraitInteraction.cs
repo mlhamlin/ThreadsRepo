@@ -38,16 +38,23 @@ public class TraitInteraction : MonoBehaviour {
             tapBack = background.GetComponent<TapGesture>();
         }
 
+        //tap.StateChanged += Tap_StateChanged;
 		tap.Tapped += tappedHandler;
 	}
 
-	private void OnDisable()
+    private void Tap_StateChanged(object sender, GestureStateChangeEventArgs e)
+    {
+        Debug.Log(gameObject.name + " " + e.State.ToString());
+    }
+
+    private void OnDisable()
 	{
 		tap.Tapped -= tappedHandler;
 	}
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
+        //Debug.Log("tapped");
         tooltip.tooltipText.text = trait.TraitName;
 		tooltip.gameObject.SetActive(true);
 		tapBack.Tapped += tappedBackHandler;

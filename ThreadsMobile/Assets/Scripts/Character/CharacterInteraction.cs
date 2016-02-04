@@ -97,7 +97,7 @@ public class CharacterInteraction : MonoBehaviour {
         release.Released += ReleaseHandler;
         metaGestures.TouchMoved += movingTouchHandler;
 
-        Debug.Log("press");
+        //Debug.Log("press");
     }
 
     private void movingTouchHandler(object sender, MetaGestureEventArgs e)
@@ -113,7 +113,7 @@ public class CharacterInteraction : MonoBehaviour {
     //clean this up in helpers etc
     private void ReleaseHandler(object sender, EventArgs e)
     {
-        Debug.Log("release");
+        //Debug.Log("release");
         if(DrawingLine)
         {
             ReleaseGesture gesture = sender as ReleaseGesture;
@@ -125,21 +125,21 @@ public class CharacterInteraction : MonoBehaviour {
                 CharacterCore core = hitObj.GetComponent<CharacterCore>();
                 if (currentLine.SameStartEnd(core))
                 {
-                    Debug.Log("just UI clicking");
+                    //Debug.Log("just UI clicking");
                     UI.SetActive(true);
                     tapBack.Tapped += tapBackHandler;
                     Destroy(currentLine.gameObject);
                 }
                 else
                 {
-                    Debug.Log("making a line");
+                    //Debug.Log("making a line");
                     currentLine.Finish(hitObj.transform.position, core);
                     currentLine = null;
                 }
             }
             else
             {
-                Debug.Log("Didn't hit a character");
+                //Debug.Log("Didn't hit a character");
                 Destroy(currentLine.gameObject);
             }
 
