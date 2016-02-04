@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using TouchScript.Gestures;
 using TouchScript.Hit;
 using System;
@@ -8,8 +8,11 @@ using System;
 public class CharacterInteraction : MonoBehaviour {
 
     public GameObject UI;
+    public TraitToolTipData ToolTip;
+
     private GameObject background;
     private CharacterCore charCore;
+    private CharacterData data;
     private PressGesture press;
     private MetaGesture metaGestures;
     private ReleaseGesture release;
@@ -20,14 +23,39 @@ public class CharacterInteraction : MonoBehaviour {
     private RelationshipLine currentLine;
     private bool DrawingLine;
 
+    public List<TraitInteraction> Quirks;
+    public List<TraitInteraction> Likes;
+    public List<TraitInteraction> Dislikes;
+    public TraitInteraction Gender;
+
 
     // Use this for initialization
     void Start () {
     }
 
-    public void SetExternalConnections(CharacterCore core)
+    public void Setup(CharacterCore core, CharacterData data)
     {
+        this.data = data;
         charCore = core;
+
+        Gender.Setup(core, ToolTip, data.gender);
+
+        for(int i = 0; i < Quirks.Count; i++)
+        {
+            Quirks[i].Setup(core, ToolTip, data.quirks[i]);
+        }
+
+        for(int i = 0; i < Likes.Count; i++)
+        {
+            Likes[i].Setup(core, ToolTip, data.likes[i]);
+        }
+
+        for(int i = 0; i < Dislikes.Count; i++)
+        {
+            Dislikes[i].Setup(core, ToolTip, data.dislikes[i]);
+        }
+
+        OnEnable();
     }
 
     private void OnEnable()

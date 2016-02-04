@@ -23,8 +23,8 @@ public class CharacterCore : MonoBehaviour {
 
     public void Setup()
     {
-        data = new CharacterData();
+        data = CharacterGenerator.Generate();
         interaction = GetComponent<CharacterInteraction>();
-        interaction.SetExternalConnections(this);
+        interaction.Setup(this, data);
     }
 }

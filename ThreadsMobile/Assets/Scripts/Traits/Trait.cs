@@ -46,16 +46,21 @@ public class Trait {
 
 	public bool ConflictsWith(CharacterData character){
 		if(character.ContainsTrait(this)){
-			return false;
+			return true;
 		}
 
-		foreach(string con in conflicts){
-			if(character.ContainsTrait(TraitManager.GetTrait(con))){
-				return false;
-			}
-		}
+        if (conflicts != null)
+        {
+            foreach(string con in conflicts)
+            {
+                if(character.ContainsTrait(TraitManager.GetTrait(con)))
+                {
+                    return true;
+                }
+            }
+        }
 
-		return true;
+		return false;
 	}
 
 	public int Score(CharacterData character){

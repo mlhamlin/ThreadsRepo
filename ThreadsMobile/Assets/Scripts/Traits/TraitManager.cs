@@ -20,7 +20,8 @@ public class TraitManager : UnitySingletonPersistent<TraitManager> {
 	
 	JsonSerializerSettings settings;
 	
-	public void Start(){
+	public override void Awake(){
+        OnAwake();
 		LoadAll();
 
 		/* Generator Tests

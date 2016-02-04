@@ -27,18 +27,34 @@ public class CharacterData {
 	public List<Trait> GetAllTraits(){
 		List<Trait> traits = new List<Trait> ();
 
-		traits.Add (gender);
-		foreach(Quirk q in quirks){
-			traits.Add (q);
-		}
+        if (gender != null)
+        {
+            traits.Add(gender);
+        }
 
-		foreach(Like l in likes){
-			traits.Add (l);
-		}
+        if (quirks != null)
+        {
+            foreach(Quirk q in quirks)
+            {
+                traits.Add(q);
+            }
+        }
 
-		foreach(Dislike d in dislikes){
-			traits.Add (d);
-		}
+        if(likes != null)
+        {
+            foreach(Like l in likes)
+            {
+                traits.Add(l);
+            }
+        }
+		
+        if (dislikes != null)
+        {
+            foreach(Dislike d in dislikes)
+            {
+                traits.Add(d);
+            }
+        }
 
 		return traits;
 	}

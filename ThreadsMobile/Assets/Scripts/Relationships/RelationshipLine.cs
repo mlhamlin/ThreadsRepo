@@ -26,6 +26,10 @@ public class RelationshipLine : MonoBehaviour
 
     public void UpdateEnd(Vector3 point)
     {
+        if(rend == null)
+        {
+            return;
+        }
         point.z = 0f;
         rend.SetPosition(1, point);
     }
