@@ -1,0 +1,73 @@
+{
+  "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[CharacterDataFromJSON, Assembly-CSharp]], mscorlib",
+  "Skwisgaar" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Skwisgaar",
+      "lastName": "Skwigelf",
+	  "desc": "Taller than a tree",
+      "gender": "Cis Man",
+	  "quirks": ["Sporty"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "Toki" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Toki",
+      "lastName": "Wartooth",
+	  "desc": "Not a bumblebee",
+      "gender": "Cis Man",
+	  "quirks": ["Funny"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "Murderface" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "William",
+      "lastName": "Murderface",
+	  "desc": "Murderface, Murderface",
+      "gender": "Cis Man",
+	  "quirks": ["Sporty"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "Pickles" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Pickles",
+      "lastName": "The Drummer",
+	  "desc": "Doodly doodly",
+      "gender": "Cis Man",
+	  "quirks": ["Sporty"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "Nathan" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Nathan",
+      "lastName": "Explosion",
+	  "desc": "?",
+      "gender": "Cis Man",
+	  "quirks": ["Sporty"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "DoctorRockzo" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Lenard",
+      "lastName": "Rockzo",
+	  "desc": "I do cocaine",
+      "gender": "Cis Man",
+	  "quirks": ["Funny"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+  "Offdensen" : {
+      "$type": "CharacterDataFromJSON, Assembly-CSharp",
+      "firstName": "Charles Foster",
+      "lastName": "Offdensen",
+	  "desc": "Thats my bread and butter you're fucking with",
+      "gender": "Cis Man",
+	  "quirks": ["Geeky"],
+	  "likes": ["Likes Geeky"],
+	  "dislikes": ["Dislikes Funny"]
+  },
+}

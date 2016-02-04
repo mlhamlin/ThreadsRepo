@@ -29,24 +29,8 @@ public class CharacterCore : MonoBehaviour {
         interaction.Setup(this, data);
     }
 
-    private void PrintCharacterDataInfo()
-    {
-        Debug.Log(data.gender.TraitName);
-
-        foreach(Trait t in data.quirks)
-        {
-            Debug.Log(t.TraitName);
-        }
-
-        foreach(Trait t in data.dislikes)
-        {
-            Debug.Log(t.TraitName);
-        }
-
-        foreach(Trait t in data.likes)
-        {
-            Debug.Log(t.TraitName);
-        }
-
-    }
+	private void PrintCharacterDataInfo()
+	{
+		data.PrintInfo ();
+	}
 }
