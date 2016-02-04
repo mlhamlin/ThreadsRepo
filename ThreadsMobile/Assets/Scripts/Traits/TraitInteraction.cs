@@ -7,15 +7,29 @@ using System;
 public class TraitInteraction : MonoBehaviour {
 
 	public GameObject tooltip;
-	public GameObject Background;
+	private GameObject background;
 
 	private TapGesture tapBack;
 	private TapGesture tap;
 
-	private void OnEnable()
+    public void Start()
+    {
+
+    }
+
+    private void OnEnable()
 	{
-		tap = GetComponent<TapGesture> ();
-		tapBack = Background.GetComponent<TapGesture>();
+        if(tap == null)
+        {
+            tap = GetComponent<TapGesture>();
+        }
+
+        if (background == null)
+        {
+            background = Background.Instance.gameObject;
+            tapBack = background.GetComponent<TapGesture>();
+        }
+
 		tap.Tapped += tappedHandler;
 	}
 

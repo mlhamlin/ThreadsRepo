@@ -8,8 +8,8 @@ using System;
 public class CharacterInteraction : MonoBehaviour {
 
     public GameObject UI;
-    public GameObject Background;
-    public CharacterCore charCore;
+    private GameObject background;
+    private CharacterCore charCore;
     private PressGesture press;
     private MetaGesture metaGestures;
     private ReleaseGesture release;
@@ -25,12 +25,20 @@ public class CharacterInteraction : MonoBehaviour {
     void Start () {
     }
 
+    public void SetExternalConnections(CharacterCore core)
+    {
+        charCore = core;
+    }
+
     private void OnEnable()
     {
+        if (background == null)
+            background = Background.Instance.gameObject;
+
         press = GetComponent<PressGesture>();
         metaGestures = GetComponent<MetaGesture>();
         release = GetComponent <ReleaseGesture>();
-        tapBack = Background.GetComponent<TapGesture>();
+        tapBack = background.GetComponent<TapGesture>();
 
         press.Pressed += PressHandler;
     }
@@ -52,7 +60,7 @@ public class CharacterInteraction : MonoBehaviour {
 
         GameObject obj = Instantiate<GameObject>(linePrefab);
         currentLine = obj.GetComponent<RelationshipLine>();
-        currentLine.StartLine(hitObj.transform.position, this);
+        currentLine.StartLine(hitObj.transform.position, charCore);
         currentLine.UpdateEnd(hit.Transform.position);
 
         release.Released += ReleaseHandler;
@@ -77,8 +85,8 @@ public class CharacterInteraction : MonoBehaviour {
             GameObject hitObj = hit.RaycastHit2D.transform.gameObject;
             if(hitObj.tag == "Character")
             {
-                CharacterInteraction character = hitObj.GetComponent<CharacterInteraction>();
-                if (currentLine.SameStartEnd(character))
+                CharacterCore core = hitObj.GetComponent<CharacterCore>();
+                if (currentLine.SameStartEnd(core))
                 {
                     UI.SetActive(true);
                     tapBack.Tapped += tapBackHandler;
@@ -86,7 +94,7 @@ public class CharacterInteraction : MonoBehaviour {
                 }
                 else
                 {
-                    currentLine.Finish(hitObj.transform.position, character);
+                    currentLine.Finish(hitObj.transform.position, core);
                 }
             }
             else

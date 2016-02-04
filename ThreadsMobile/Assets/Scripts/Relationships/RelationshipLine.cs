@@ -6,8 +6,8 @@ using TouchScript.Gestures;
 public class RelationshipLine : MonoBehaviour
 {
 
-    public CharacterInteraction char1;
-    public CharacterInteraction char2;
+    public CharacterCore char1;
+    public CharacterCore char2;
     private Vector3 start;
     private Vector3 end;
     public float LineWidth = .2f;
@@ -15,7 +15,7 @@ public class RelationshipLine : MonoBehaviour
     public bool set;
     public BoxCollider2D coll;
 
-    public void StartLine(Vector3 point, CharacterInteraction character)
+    public void StartLine(Vector3 point, CharacterCore character)
     {
         rend.SetWidth(LineWidth, LineWidth);
         char1 = character;
@@ -30,16 +30,16 @@ public class RelationshipLine : MonoBehaviour
         rend.SetPosition(1, point);
     }
 
-    public bool SameStartEnd(CharacterInteraction character)
+    public bool SameStartEnd(CharacterCore character)
     {
         return char1 == character;
     }
 
-    public void Finish(Vector3 point, CharacterInteraction character)
+    public void Finish(Vector3 point, CharacterCore character)
     {
         char2 = character;
 
-        if(!ShipManager.NewRomanticShip(char1.charCore, char2.charCore))
+        if(!ShipManager.NewRomanticShip(char1, char2))
         {
             //if this relationship already exists destroy the new one
             GameObject.Destroy(this.gameObject);
@@ -58,7 +58,6 @@ public class RelationshipLine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Trigger Enter");
         if(other.tag == "LineBreaker")
         {
             ShipBreaker.Register(this);
@@ -67,7 +66,7 @@ public class RelationshipLine : MonoBehaviour
 
     public void BreakUp()
     {
-        ShipManager.ProcessBreakup(char1.charCore, char2.charCore);
+        ShipManager.ProcessBreakup(char1, char2);
         Destroy(gameObject);
     }
 

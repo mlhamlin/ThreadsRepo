@@ -10,13 +10,21 @@ public class CharacterCore : MonoBehaviour {
 
     public RelationshipWeb currentShipWeb;
 
-    public CharacterData data;
-    public CharacterInteraction interaction;
-    public CharacterAvatar avatar;
+    private CharacterData data;
+    private CharacterInteraction interaction;
+    private CharacterAvatar avatar;
     
     // Use this for initialization
     void Start () {
         currentShipWeb = ShipManager.SetUpWeb();
         currentShipWeb.members.Add(this);
+        Setup();
 	}
+
+    public void Setup()
+    {
+        data = new CharacterData();
+        interaction = GetComponent<CharacterInteraction>();
+        interaction.SetExternalConnections(this);
+    }
 }

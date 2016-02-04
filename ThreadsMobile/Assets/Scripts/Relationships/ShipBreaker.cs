@@ -42,12 +42,10 @@ public class ShipBreaker : UnitySingleton<ShipBreaker> {
     {
         if (e.State == Gesture.GestureState.Recognized)
         {
-            Debug.Log("flick indeed");
             DestroyLines();
         }
         else if (e.State == Gesture.GestureState.Failed)
         {
-            Debug.Log("flick failed");
             EmptyList();
         }
     }
