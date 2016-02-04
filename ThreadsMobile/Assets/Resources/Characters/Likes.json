@@ -2,50 +2,62 @@
 	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Like, Assembly-CSharp]], mscorlib",
 	"Likes Funny" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Funny",
+		"traitName": "Funny",
 		"traitDescription": "blah",
-		"icon": "Likes Funny",
+		"icon": "funny",
 		"weight":1,
-		"conflicts": ["Dislikes Funny"],
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Funny": 10,
+			"Likes Funny": 10,
 			"Dislikes Funny": -5
 		}
 	},
-	"Likes Smart" : {
-		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Smart",
-		"traitDescription": "blah",
-		"icon": "Likes Smart",
-		"weight":1
-	},
 	"Likes Geeky" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Geeky",
+		"traitName": "Geeky",
 		"traitDescription": "blah",
-		"icon": "Likes Geeky",
-		"weight":1
+		"icon": "geeky",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Likes Geeky": 10,
+			"Dislikes Geeky": -5
+		}
 	},
-	"Likes Athletic" : {
+	"Likes Foodie" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Athletic",
+		"traitName": "Foodie",
 		"traitDescription": "blah",
-		"icon": "Likes Athletic",
-		"weight":1
+		"icon": "foodie",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Likes Foodie": 10,
+			"Dislikes Foodie": -5
+		}
 	},
-	"Likes Sports Fan" : {
+	"Likes Sporty" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Sports Fan",
+		"traitName": "Sporty",
 		"traitDescription": "blah",
-		"icon": "Likes Sports Fan",
-		"weight":1
+		"icon": "sporty",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Likes Sporty": 10,
+			"Dislikes Sporty": -5
+		}
 	},
-	"Likes Caring" : {
+	"Likes Outdoorsy" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Caring",
+		"traitName": "Outdoorsy",
 		"traitDescription": "blah",
-		"icon": "Likes Caring",
-		"weight":1
+		"icon": "outdoorsy",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Likes Outdoorsy": 10,
+			"Dislikes Outdoorsy": -5
+		}
 	},
 }
