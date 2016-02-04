@@ -17,18 +17,24 @@ public class CharacterGenerator {
 		cData.gender = TraitManager.GetRandomGender();
 
 		cData.quirks = new List<Quirk>();
-		for(int i = 0; i <= QUIRK_LIMIT; i++){
-			cData.quirks.Add(GenerateQuirk(cData));
+		for(int i = 0; i < QUIRK_LIMIT; i++){
+            Quirk qrk = GenerateQuirk(cData);
+            if (qrk != null)
+                cData.quirks.Add(qrk);
 		}
 
 		cData.likes = new List<Like>();
-		for(int i = 0; i <= LIKE_LIMIT; i++){
-			cData.likes.Add(GenerateLike(cData));
+		for(int i = 0; i < LIKE_LIMIT; i++){
+            Like lk = GenerateLike(cData);
+            if(lk != null)
+                cData.likes.Add(lk);
 		}
 
 		cData.dislikes = new List<Dislike>();
-		for(int i = 0; i <= DISLIKE_LIMIT; i++){
-			cData.dislikes.Add(GenerateDislike(cData));
+		for(int i = 0; i < DISLIKE_LIMIT; i++){
+            Dislike dslk = GenerateDislike(cData);
+            if(dslk != null)
+                cData.dislikes.Add(dslk);
 		}
 
 		return cData;
@@ -49,7 +55,7 @@ public class CharacterGenerator {
 		} else if (timeout > 0) {
 			return GenerateQuirk (character, timeout - 1);
 		} else {
-			Debug.LogError ("Quirk Generation timed out");
+			Debug.LogWarning ("Quirk Generation timed out");
 			return null;
 		}
 	}
@@ -62,7 +68,7 @@ public class CharacterGenerator {
 		} else if (timeout > 0) {
 			return GenerateLike (character, timeout - 1);
 		} else {
-			Debug.LogError ("Like Generation timed out");
+			Debug.LogWarning("Like Generation timed out");
 			return null;
 		}
 	}
@@ -75,7 +81,7 @@ public class CharacterGenerator {
 		} else if (timeout > 0) {
 			return GenerateDislike (character, timeout - 1);
 		} else {
-			Debug.LogError ("Dislike Generation timed out");
+			Debug.LogWarning ("Dislike Generation timed out");
 			return null;
 		}
 	}

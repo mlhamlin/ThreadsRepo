@@ -6,7 +6,7 @@ using System;
 [RequireComponent(typeof(TapGesture))]
 public class TraitInteraction : MonoBehaviour {
 
-	public TraitToolTipData tooltip;
+	private TraitToolTipData tooltip;
     private CharacterCore chara;
 	private GameObject background;
 

@@ -24,7 +24,29 @@ public class CharacterCore : MonoBehaviour {
     public void Setup()
     {
         data = CharacterGenerator.Generate();
+       
         interaction = GetComponent<CharacterInteraction>();
         interaction.Setup(this, data);
+    }
+
+    private void PrintCharacterDataInfo()
+    {
+        Debug.Log(data.gender.TraitName);
+
+        foreach(Trait t in data.quirks)
+        {
+            Debug.Log(t.TraitName);
+        }
+
+        foreach(Trait t in data.dislikes)
+        {
+            Debug.Log(t.TraitName);
+        }
+
+        foreach(Trait t in data.likes)
+        {
+            Debug.Log(t.TraitName);
+        }
+
     }
 }

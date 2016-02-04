@@ -2,62 +2,57 @@
 	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Like, Assembly-CSharp]], mscorlib",
 	"Likes Funny" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Funny",
+		"traitName": "Likes Funny",
 		"traitDescription": "blah",
 		"icon": "funny",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Likes Funny": 10,
-			"Dislikes Funny": -5
+			"Funny": 10,
 		}
 	},
 	"Likes Geeky" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Geeky",
+		"traitName": "Likes Geeky",
 		"traitDescription": "blah",
 		"icon": "geeky",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Likes Geeky": 10,
-			"Dislikes Geeky": -5
+			"Geeky": 10,
 		}
 	},
 	"Likes Foodie" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Foodie",
+		"traitName": "Likes Foodie",
 		"traitDescription": "blah",
 		"icon": "foodie",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Likes Foodie": 10,
-			"Dislikes Foodie": -5
+			"Foodie": 10,
 		}
 	},
 	"Likes Sporty" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Sporty",
+		"traitName": "Likes Sporty",
 		"traitDescription": "blah",
 		"icon": "sporty",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Likes Sporty": 10,
-			"Dislikes Sporty": -5
+			"Sporty": 10,
 		}
 	},
 	"Likes Outdoorsy" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Outdoorsy",
+		"traitName": "Likes Outdoorsy",
 		"traitDescription": "blah",
 		"icon": "outdoorsy",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Likes Outdoorsy": 10,
-			"Dislikes Outdoorsy": -5
+			"Outdoorsy": 10,
 		}
 	},
 }
