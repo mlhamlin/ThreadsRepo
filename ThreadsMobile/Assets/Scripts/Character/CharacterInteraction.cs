@@ -79,6 +79,9 @@ public class CharacterInteraction : MonoBehaviour {
     //clean this up with helpers as well
     private void PressHandler(object sender, EventArgs e)
     {
+        if(DrawingLine)
+            return;
+
         DrawingLine = true;
 
         PressGesture gesture = sender as PressGesture;
@@ -93,18 +96,24 @@ public class CharacterInteraction : MonoBehaviour {
 
         release.Released += ReleaseHandler;
         metaGestures.TouchMoved += movingTouchHandler;
+
+        Debug.Log("press");
     }
 
     private void movingTouchHandler(object sender, MetaGestureEventArgs e)
     {
-        TouchScript.TouchPoint point = e.Touch;
-        Vector2 ScreenLoc = point.Position;
-        currentLine.UpdateEnd(Camera.main.ScreenToWorldPoint(new Vector3(ScreenLoc.x, ScreenLoc.y, -1f)));
+        if (DrawingLine)
+        {
+            TouchScript.TouchPoint point = e.Touch;
+            Vector2 ScreenLoc = point.Position;
+            currentLine.UpdateEnd(Camera.main.ScreenToWorldPoint(new Vector3(ScreenLoc.x, ScreenLoc.y, -1f)));
+        }
     }
 
     //clean this up in helpers etc
     private void ReleaseHandler(object sender, EventArgs e)
     {
+        Debug.Log("release");
         if(DrawingLine)
         {
             ReleaseGesture gesture = sender as ReleaseGesture;
@@ -116,17 +125,21 @@ public class CharacterInteraction : MonoBehaviour {
                 CharacterCore core = hitObj.GetComponent<CharacterCore>();
                 if (currentLine.SameStartEnd(core))
                 {
+                    Debug.Log("just UI clicking");
                     UI.SetActive(true);
                     tapBack.Tapped += tapBackHandler;
                     Destroy(currentLine.gameObject);
                 }
                 else
                 {
+                    Debug.Log("making a line");
                     currentLine.Finish(hitObj.transform.position, core);
+                    currentLine = null;
                 }
             }
             else
             {
+                Debug.Log("Didn't hit a character");
                 Destroy(currentLine.gameObject);
             }
 
@@ -134,7 +147,11 @@ public class CharacterInteraction : MonoBehaviour {
             metaGestures.TouchMoved -= movingTouchHandler;
 
             DrawingLine = false;
+        } else if (currentLine != null) {
+            Destroy(currentLine.gameObject);
         }
+
+
     }
 
     private void tapBackHandler(object sender, EventArgs e)

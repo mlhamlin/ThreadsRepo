@@ -6,6 +6,8 @@ using System;
 [RequireComponent(typeof(TapGesture))]
 public class TraitInteraction : MonoBehaviour {
 
+    private SpriteRenderer Icon;
+
 	private TraitToolTipData tooltip;
     private CharacterCore chara;
 	private GameObject background;
@@ -16,8 +18,11 @@ public class TraitInteraction : MonoBehaviour {
 
     public void Setup(CharacterCore chara, TraitToolTipData ttip, Trait trait)
     {
+        Icon = GetComponent<SpriteRenderer>();
         this.chara = chara;
         tooltip = ttip;
+        this.trait = trait;
+        Icon.sprite = trait.Icon;
     }
 
     private void OnEnable()
@@ -43,9 +48,7 @@ public class TraitInteraction : MonoBehaviour {
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
-		// get the trait's name here somehow
-		// "Gender" is just filler for now
-		tooltip.tooltipText.text = "Gender";
+        tooltip.tooltipText.text = trait.TraitName;
 		tooltip.gameObject.SetActive(true);
 		tapBack.Tapped += tappedBackHandler;
 	}
