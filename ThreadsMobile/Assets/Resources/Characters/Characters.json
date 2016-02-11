@@ -44,7 +44,7 @@
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
       "firstName": "Nathan",
       "lastName": "Explosion",
-	  "desc": "?",
+	  "desc": "That's doable",
       "gender": "Cis Man",
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
