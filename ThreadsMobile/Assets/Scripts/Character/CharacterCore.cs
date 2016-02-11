@@ -33,4 +33,22 @@ public class CharacterCore : MonoBehaviour {
 	{
 		data.PrintInfo ();
 	}
+
+	public int ScoreRelationships() {
+		int score = 0;
+
+		foreach (CharacterCore character in this.PlatonicPartners) {
+			score += this.data.ScoreRelationship (character.data);
+		}
+
+		foreach (CharacterCore character in this.RomanticPartners) {
+			score += this.data.ScoreRelationship (character.data);
+		}
+
+		foreach (CharacterCore character in this.SexualPartners) {
+			score += this.data.ScoreRelationship (character.data);
+		}
+
+		return score;
+	}
 }

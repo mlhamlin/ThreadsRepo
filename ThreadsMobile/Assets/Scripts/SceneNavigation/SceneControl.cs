@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SceneControl: MonoBehaviour {
 
@@ -30,4 +31,19 @@ public class SceneControl: MonoBehaviour {
         Application.Quit();
     #endif
     }
+
+	public void Submit()
+	{
+		int totalScore = 0;
+		GameObject[] characters = GameObject.FindGameObjectsWithTag ("Character");
+
+		for (int i = 0; i < characters.Length; i++) {
+			CharacterCore character = characters [i].GetComponent<CharacterCore>();
+			totalScore += character.ScoreRelationships ();
+		}
+
+		GameObject scoreText = GameObject.FindGameObjectWithTag ("Score Text");
+		Text text = scoreText.GetComponent<Text> ();
+		text.text = totalScore.ToString();
+	}
 }
