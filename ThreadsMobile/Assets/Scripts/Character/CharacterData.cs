@@ -107,24 +107,26 @@ public class CharacterData {
 		return totalScore;
 	}
 
-	public void PrintInfo()
-	{
-		Debug.Log (firstName + " " + lastName);
-		Debug.Log (description);
-		Debug.Log (gender.TraitName);
+	public void PrintInfo(){
+		string characterInfo = "";
+
+		characterInfo += firstName + " " + lastName + '\n';
+		characterInfo += description + '\n';
+		characterInfo += gender.TraitName + '\n';
 
 		foreach(Trait t in quirks){
-			Debug.Log(t.TraitName);
+			characterInfo += t.TraitName + '\n';
 		}
 
 		foreach(Trait t in dislikes){
-			Debug.Log(t.TraitName);
+			characterInfo += t.TraitName + '\n';
 		}
 
 		foreach(Trait t in likes){
-			Debug.Log(t.TraitName);
+			characterInfo += t.TraitName + '\n';
 		}
 
+		Debug.Log (characterInfo);
 	}
 }
 
