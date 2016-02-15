@@ -17,7 +17,7 @@ public class CharacterManager : UnitySingletonPersistent<CharacterManager> {
 		OnAwake ();
 		LoadAll ();
 
-		GetCharacter("Toki").PrintInfo();
+		//PuzzleManager.LoadPuzzle ("Metalocalypse").PrintInfo();
 	}
 
 	private void LoadAll(){
