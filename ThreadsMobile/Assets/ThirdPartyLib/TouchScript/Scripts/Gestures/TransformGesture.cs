@@ -2,6 +2,7 @@
  * @author Valentin Simonov / http://va.lent.in/
  */
 
+using System.Collections.Generic;
 using TouchScript.Gestures.Base;
 using TouchScript.Layers;
 using TouchScript.Utils;
@@ -16,7 +17,7 @@ namespace TouchScript.Gestures
     /// Recognizes a transform gesture, i.e. translation, rotation, scaling or a combination of these.
     /// </summary>
     [AddComponentMenu("TouchScript/Gestures/Transform Gesture")]
-    [HelpURL("http://touchscript.github.io/docs/Index.html?topic=html/T_TouchScript_Gestures_TransformGesture.htm")]
+    [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_Gestures_TransformGesture.htm")]
     public class TransformGesture : TransformGestureBase, ITransformGesture
     {
         #region Constants
@@ -156,12 +157,12 @@ namespace TouchScript.Gestures
         #region Gesture callbacks
 
         /// <inheritdoc />
-        protected override void touchBegan(TouchPoint touch)
+        protected override void touchesBegan(IList<TouchPoint> touches)
         {
-            base.touchBegan(touch);
+            base.touchesBegan(touches);
 
             if (State != GestureState.Possible) return;
-            if (NumTouches == 1)
+            if (NumTouches == touches.Count)
             {
                 projectionLayer = activeTouches[0].Layer;
                 updateProjectionPlane();
