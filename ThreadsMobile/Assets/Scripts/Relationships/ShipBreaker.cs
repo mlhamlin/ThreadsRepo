@@ -7,6 +7,7 @@ public class ShipBreaker : UnitySingleton<ShipBreaker> {
     public FlickGesture flick;
     public MetaGesture itsSoMeta;
     public GameObject breaker;
+    public float breakerLayerZ = 2;
 
     private List<RelationshipLine> lines;
     private bool flicking;
@@ -29,7 +30,9 @@ public class ShipBreaker : UnitySingleton<ShipBreaker> {
 
     private void ItsSoMeta_TouchMoved(object sender, MetaGestureEventArgs e)
     {
-        breaker.transform.position = Camera.main.ScreenToWorldPoint(e.Touch.Position);
+        Vector3 Loc = Camera.main.ScreenToWorldPoint(e.Touch.Position);
+        Loc.z = breakerLayerZ;
+        breaker.transform.position = Loc;
     }
 
     private void ItsSoMeta_TouchBegan(object sender, MetaGestureEventArgs e)

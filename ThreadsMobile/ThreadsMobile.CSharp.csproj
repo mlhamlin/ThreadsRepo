@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterGenerator.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Helper Scripts\ProbabilityArray.cs" />
     <Compile Include="Assets\Scripts\Helper Scripts\UnitySingleton.cs" />
     <Compile Include="Assets\Scripts\Helper Scripts\UnitySingletonPersistent.cs" />
