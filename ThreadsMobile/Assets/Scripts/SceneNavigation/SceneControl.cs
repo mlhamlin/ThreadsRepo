@@ -5,24 +5,27 @@ using UnityEngine.UI;
 
 public class SceneControl: MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    public Reporter rep;
+
+    public void Start()
+    {
+        rep = FindObjectOfType<Reporter>();
+    }
 
     public void Restart()
     {
+        if(rep.show)
+            return;
         //TODO: Maybe once we have a puzzle save file we can replace this with something smarter?
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ExitApp()
     {
+        if(rep.show)
+            return;
+
     #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
     #elif UNITY_WEBPLAYER
@@ -34,7 +37,10 @@ public class SceneControl: MonoBehaviour {
 
 	public void Submit()
 	{
-		int totalScore = 0;
+        if(rep.show)
+            return;
+
+        int totalScore = 0;
 		GameObject[] characters = GameObject.FindGameObjectsWithTag ("Character");
 
 		for (int i = 0; i < characters.Length; i++) {
