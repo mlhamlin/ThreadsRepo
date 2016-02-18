@@ -55,4 +55,30 @@
 			"Outdoorsy": 10,
 		}
 	},
+	"Likes Men" : {
+		"$type": "Like, Assembly-CSharp",
+		"traitName": "Likes Men",
+		"traitDescription": "blah",
+		"icon": "male",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Cis Man": 10,
+			"Trans Man": 10,
+		},
+	    "conflicts": ["Likes Women"],
+	},
+	"Likes Women" : {
+		"$type": "Like, Assembly-CSharp",
+		"traitName": "Likes Women",
+		"traitDescription": "blah",
+		"icon": "female",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Cis Woman": 10,
+			"Trans Woman": 10,
+		},
+	    "conflicts": ["Likes Men"],
+	},
 }

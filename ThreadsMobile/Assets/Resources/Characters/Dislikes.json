@@ -40,4 +40,17 @@
 	  "weight":1,
 	  "conflicts": ["Likes Outdoorsy"],
   },
+  "Dislikes Trans" : {
+      "$type": "Dislike, Assembly-CSharp",
+      "traitName": "Dislikes Trans",
+      "traitDescription": "blah",
+      "icon": "trans",
+	  "weight":1,
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Trans Woman": -10,
+		"Trans Man": -10,
+      },
+	  "conflicts": ["Likes Men", "Likes Women"],
+  },
 }
