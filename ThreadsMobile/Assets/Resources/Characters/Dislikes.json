@@ -28,7 +28,7 @@
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Sporty",
       "traitDescription": "blah",
-      "icon": "porty",
+      "icon": "sporty",
 	  "weight":1,
 	  "conflicts": ["Likes Sporty"],
   },
