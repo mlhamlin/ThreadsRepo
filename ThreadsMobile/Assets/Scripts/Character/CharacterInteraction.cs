@@ -96,8 +96,6 @@ public class CharacterInteraction : MonoBehaviour {
 
         release.Released += ReleaseHandler;
         metaGestures.TouchMoved += movingTouchHandler;
-
-        //Debug.Log("press");
     }
 
     private void movingTouchHandler(object sender, MetaGestureEventArgs e)
@@ -110,36 +108,21 @@ public class CharacterInteraction : MonoBehaviour {
         }
     }
 
-    //clean this up in helpers etc
     private void ReleaseHandler(object sender, EventArgs e)
     {
-        //Debug.Log("release");
         if(DrawingLine)
         {
             ReleaseGesture gesture = sender as ReleaseGesture;
             TouchHit hit;
             gesture.GetTargetHitResult(out hit);
             GameObject hitObj = hit.RaycastHit2D.transform.gameObject;
+
             if(hitObj.tag == "Character")
             {
-                CharacterCore core = hitObj.GetComponent<CharacterCore>();
-                if (currentLine.SameStartEnd(core))
-                {
-                    //Debug.Log("just UI clicking");
-                    UI.SetActive(true);
-                    tapBack.Tapped += tapBackHandler;
-                    Destroy(currentLine.gameObject);
-                }
-                else
-                {
-                    //Debug.Log("making a line");
-                    currentLine.Finish(hitObj.transform.position, core);
-                    currentLine = null;
-                }
+                releasedOnAChar(hitObj.GetComponent<CharacterCore>());
             }
             else
             {
-                //Debug.Log("Didn't hit a character");
                 Destroy(currentLine.gameObject);
             }
 
@@ -147,11 +130,40 @@ public class CharacterInteraction : MonoBehaviour {
             metaGestures.TouchMoved -= movingTouchHandler;
 
             DrawingLine = false;
-        } else if (currentLine != null) {
+        }
+        else if (currentLine != null)
+        {
             Destroy(currentLine.gameObject);
         }
+    }
 
+    private void releasedOnAChar(CharacterCore core)
+    {
+        if(currentLine.SameStartEnd(core))
+        {
+            tappedChar();
+        }
+        else
+        {
+            currentLine.Finish(core);
+            currentLine = null;
+        }
+    }
 
+    private void tappedChar()
+    {
+        if(UI.activeSelf)
+        {
+            UI.SetActive(false);
+            tapBack.Tapped -= tapBackHandler;
+        }
+        else
+        {
+            UI.SetActive(true);
+            tapBack.Tapped += tapBackHandler;
+        }
+
+        Destroy(currentLine.gameObject);
     }
 
     private void tapBackHandler(object sender, EventArgs e)

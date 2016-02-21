@@ -61,20 +61,20 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="SampleClassLibrary">
+      <HintPath>Assets\ThirdPartyLib\JsonDotNet\Examples\Tests\TestModels\SampleClassLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="OSCsharp">
       <HintPath>Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Libraries\OSCsharp.dll</HintPath>
     </Reference>
     <Reference Include="TUIOsharp">
       <HintPath>Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Libraries\TUIOsharp.dll</HintPath>
     </Reference>
-    <Reference Include="SampleClassLibrary">
-      <HintPath>Assets\ThirdPartyLib\JsonDotNet\Examples\Tests\TestModels\SampleClassLibrary.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BlockOnDebug.cs" />
-    <Compile Include="Assets\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Background.cs" />
+    <Compile Include="Assets\Scripts\BlockOnDebug.cs" />
+    <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterData.cs" />

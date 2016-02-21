@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class SceneControl: MonoBehaviour {
 
-
     public Reporter rep;
 
     public void Start()
@@ -15,7 +14,7 @@ public class SceneControl: MonoBehaviour {
 
     public void Restart()
     {
-        if(rep.show)
+        if(rep != null && rep.show)
             return;
         //TODO: Maybe once we have a puzzle save file we can replace this with something smarter?
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -23,7 +22,7 @@ public class SceneControl: MonoBehaviour {
 
     public void ExitApp()
     {
-        if(rep.show)
+        if(rep != null && rep.show)
             return;
 
     #if UNITY_EDITOR
@@ -37,7 +36,7 @@ public class SceneControl: MonoBehaviour {
 
 	public void Submit()
 	{
-        if(rep.show)
+        if(rep != null && rep.show)
             return;
 
         int totalScore = 0;

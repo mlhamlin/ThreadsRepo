@@ -4,9 +4,7 @@ using System.Collections.Generic;
 [RequireComponent (typeof(CharacterInteraction), typeof(CharacterData))]
 public class CharacterCore : MonoBehaviour {
 
-    public List<CharacterCore> PlatonicPartners;
-    public List<CharacterCore> RomanticPartners;
-    public List<CharacterCore> SexualPartners;
+    public List<CharacterCore> Partners;
 
     public RelationshipWeb currentShipWeb;
 
@@ -37,15 +35,7 @@ public class CharacterCore : MonoBehaviour {
 	public int ScoreRelationships() {
 		int score = 0;
 
-		foreach (CharacterCore character in this.PlatonicPartners) {
-			score += this.data.ScoreRelationship (character.data);
-		}
-
-		foreach (CharacterCore character in this.RomanticPartners) {
-			score += this.data.ScoreRelationship (character.data);
-		}
-
-		foreach (CharacterCore character in this.SexualPartners) {
+		foreach (CharacterCore character in this.Partners) {
 			score += this.data.ScoreRelationship (character.data);
 		}
 

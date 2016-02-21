@@ -39,11 +39,13 @@ public class RelationshipLine : MonoBehaviour
         return char1 == character;
     }
 
-    public void Finish(Vector3 point, CharacterCore character)
+    public void Finish(CharacterCore character)
     {
+        Vector3 point = character.transform.position;
+
         char2 = character;
 
-        if(!ShipManager.NewRomanticShip(char1, char2))
+        if(!ShipManager.NewShip(char1, char2))
         {
             //if this relationship already exists destroy the new one
             GameObject.Destroy(this.gameObject);
