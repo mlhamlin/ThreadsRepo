@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Background.cs" />
     <Compile Include="Assets\Scripts\BlockOnDebug.cs" />
+    <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />
