@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class SceneControl: MonoBehaviour {
 
     public Reporter rep;
+    public GameObject ScoreWindow;
+    public Text ScoreText;
 
     public void Start()
     {
@@ -47,8 +49,7 @@ public class SceneControl: MonoBehaviour {
 			totalScore += character.ScoreRelationships ();
 		}
 
-		GameObject scoreText = GameObject.FindGameObjectWithTag ("Score Text");
-		Text text = scoreText.GetComponent<Text> ();
-		text.text = totalScore.ToString();
+        ScoreWindow.SetActive(true);
+        ScoreText.text = totalScore.ToString();
 	}
 }
