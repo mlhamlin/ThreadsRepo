@@ -89,8 +89,9 @@ public class CharacterInteraction : MonoBehaviour {
         gesture.GetTargetHitResult(out hit);
         GameObject hitObj = hit.RaycastHit2D.transform.gameObject;
 
-        GameObject obj = Instantiate<GameObject>(linePrefab);
+		GameObject obj = Instantiate<GameObject>(linePrefab);
         currentLine = obj.GetComponent<RelationshipLine>();
+		ShipLinesManager.addShip (currentLine);
         currentLine.StartLine(hitObj.transform.position, charCore);
         currentLine.UpdateEnd(hit.Transform.position);
 

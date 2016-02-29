@@ -19,7 +19,8 @@ public class SceneControl: MonoBehaviour {
         if(rep != null && rep.show)
             return;
         //TODO: Maybe once we have a puzzle save file we can replace this with something smarter?
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+//        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		ShipLinesManager.resetShips();
     }
 
     public void ExitApp()
