@@ -15,7 +15,7 @@ public class CameraControl : MonoBehaviour {
 
     private void ScrnTran_Transformed(object sender, System.EventArgs e)
     {
-        ScrnTran.ApplyTransform(Camera);
+        Camera.Translate(-1f * ScrnTran.DeltaPosition);
     }
 
     // Update is called once per frame
