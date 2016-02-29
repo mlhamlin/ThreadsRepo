@@ -48,8 +48,10 @@
      <Compile Include="Assets\Scripts\Avatar\AvatarData.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarPiece.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarSprite.cs" />
+     <Compile Include="Assets\Scripts\Avatar\Swatch.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\BlockOnDebug.cs" />
+     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />

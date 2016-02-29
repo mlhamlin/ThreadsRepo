@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Background.cs" />
     <Compile Include="Assets\Scripts\BlockOnDebug.cs" />
+    <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAvatar.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\Relationships\RelationshipLine.cs" />
     <Compile Include="Assets\Scripts\Relationships\RelationshipWeb.cs" />
     <Compile Include="Assets\Scripts\Relationships\ShipBreaker.cs" />
+    <Compile Include="Assets\Scripts\Relationships\ShipLinesManager.cs" />
     <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
     <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
     <Compile Include="Assets\Scripts\Traits\Trait.cs" />
