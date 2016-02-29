@@ -28,12 +28,9 @@ public class CharacterInteraction : MonoBehaviour {
     public List<TraitInteraction> Dislikes;
     public TraitInteraction Gender;
 
-	private GameObject ships;
-
 
     // Use this for initialization
     void Start () {
-		ships = GameObject.FindGameObjectWithTag ("Ships");
     }
 
     public void Setup(CharacterCore core, CharacterData data)
@@ -92,9 +89,9 @@ public class CharacterInteraction : MonoBehaviour {
         gesture.GetTargetHitResult(out hit);
         GameObject hitObj = hit.RaycastHit2D.transform.gameObject;
 
-        GameObject obj = Instantiate<GameObject>(linePrefab);
-		obj.transform.SetParent(ships.transform);
+		GameObject obj = Instantiate<GameObject>(linePrefab);
         currentLine = obj.GetComponent<RelationshipLine>();
+		ShipLinesManager.addShip (currentLine);
         currentLine.StartLine(hitObj.transform.position, charCore);
         currentLine.UpdateEnd(hit.Transform.position);
 

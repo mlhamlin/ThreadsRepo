@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ThirdPartyLib\Reporter\Editor\ReporterEditor.cs" />
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Behaviors\Visualizer\TouchVisualizerEditor.cs" />
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Gestures\Base\PinnedTransformGestureBaseEditor.cs" />
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Gestures\Base\TransformGestureBaseEditor.cs" />
@@ -69,15 +70,15 @@
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Utils\PropertyDrawers\NullToggleDrawer.cs" />
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Utils\PropertyDrawers\TagsDrawer.cs" />
      <Compile Include="Assets\ThirdPartyLib\TouchScript\Editor\Utils\PropertyDrawers\ToggleLeftDrawer.cs" />
+     <Compile Include="Assets\ThirdPartyLib\TouchScript\Modules\TUIO\Editor\InputSources\TuioInputEditor.cs" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Shaders\DebugDepthTest.shader" />
      <None Include="Assets\ThirdPartyLib\TouchScript\license.txt" />
-     <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\Newtonsoft.Json.xml" />
-     <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\license.txt" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Shaders\DebugMultiplyDepthTest.shader" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Shaders\DebugNoDepthTest.shader" />
-     <None Include="Assets\ThirdPartyLib\Newtonsoft Json 2\readme.txt" />
+     <None Include="Assets\ThirdPartyLib\JsonDotNet\ReadMe.txt" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Shaders\DebugMultiplyNoDepthTest.shader" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Examples\_misc\Shaders\UnlitColor.shader" />
+     <None Include="Assets\StreamingAssets\build_info.txt" />
      <None Include="Assets\ThirdPartyLib\TouchScript\Examples\_misc\Shaders\BorderDiffuse.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -103,8 +104,14 @@
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/elizabethrenn/ThreadsRepo/ThreadsMobile/Assets/ThirdPartyLib/Newtonsoft Json 2/Newtonsoft.Json.dll</HintPath>
+ <Reference Include="SampleClassLibrary">
+ <HintPath>/Users/elizabethrenn/ThreadsRepo/ThreadsMobile/Assets/ThirdPartyLib/JsonDotNet/Examples/Tests/TestModels/SampleClassLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="OSCsharp">
+ <HintPath>/Users/elizabethrenn/ThreadsRepo/ThreadsMobile/Assets/ThirdPartyLib/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
+ </Reference>
+ <Reference Include="TUIOsharp">
+ <HintPath>/Users/elizabethrenn/ThreadsRepo/ThreadsMobile/Assets/ThirdPartyLib/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
