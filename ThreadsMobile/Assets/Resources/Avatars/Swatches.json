@@ -1,8 +1,0 @@
-{
-	"$type": "ProbabilityArray[Color32, Assembly-CSharp], Assembly-CSharp",
-	"objects" : [
-		{
-			"$type": "WeightedObject[Color32, Assembly-CSharp], Assembly-CSharp",
-			"conflicts": ["Likes Funny"],
-  }],
-}

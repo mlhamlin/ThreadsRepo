@@ -37,6 +37,8 @@ public class CharacterGenerator {
                 cData.dislikes.Add(dslk);
 		}
 
+		AvatarGenerator.Generate(ref cData);
+
 		return cData;
 	}
 

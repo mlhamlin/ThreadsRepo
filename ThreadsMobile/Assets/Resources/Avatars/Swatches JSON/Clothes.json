@@ -1,0 +1,11 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Swatch, Assembly-CSharp]], mscorlib",
+	"Clothes A" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 255,
+		"b": 255,
+		"g": 255,
+		"a": 255,
+		"weight": 1,
+	},
+}

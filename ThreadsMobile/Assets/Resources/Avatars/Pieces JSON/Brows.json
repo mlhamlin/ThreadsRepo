@@ -1,0 +1,15 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"path": "empty",
+		"swatchType": "Hair",
+		"weight": 1,
+	},
+	"Brows 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"path": "brows1",
+		"swatchType": "Hair",
+		"weight": 1,
+	},
+}

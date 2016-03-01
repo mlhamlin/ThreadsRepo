@@ -15,7 +15,7 @@ public class CharacterData {
     public List<Like> likes;
     public List<Dislike> dislikes;
 
-	//TODO: Add face data
+	public AvatarData avatar;
 
 	#region Constructors
 	public CharacterData(){

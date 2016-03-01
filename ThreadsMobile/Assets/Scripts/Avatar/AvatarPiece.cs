@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AvatarPiece : MonoBehaviour {
+public class AvatarPiece {
 
-	string type;
-	string path;
-	string swatchType;
-	int weight;
+	public string path;
+	public string swatchType;
+	public int weight;
 }
