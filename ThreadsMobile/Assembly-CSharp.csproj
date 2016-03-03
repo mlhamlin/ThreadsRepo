@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Avatar\AvatarData.cs" />
+     <Compile Include="Assets\Scripts\Avatar\AvatarGenerator.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarPiece.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarSprite.cs" />
      <Compile Include="Assets\Scripts\Avatar\Swatch.cs" />

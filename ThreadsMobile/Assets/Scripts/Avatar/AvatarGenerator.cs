@@ -17,6 +17,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	const string BROW_PATH =	 	"Avatars/Pieces JSON/Brows";
 	const string EYE_PATH = 		"Avatars/Pieces JSON/Eyes";
 	const string IRIS_PATH = 		"Avatars/Pieces JSON/Irises";
+	const string PUPIL_PATH = 		"Avatars/Pieces JSON/Pupils";
 	const string HAIR_FRONT_PATH = 	"Avatars/Pieces JSON/HairFronts";
 
 	//Swatch Paths
@@ -36,6 +37,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	public Dictionary<string, AvatarPiece> brows;
 	public Dictionary<string, AvatarPiece> eyes;
 	public Dictionary<string, AvatarPiece> irises;
+	public Dictionary<string, AvatarPiece> pupils;
 	public Dictionary<string, AvatarPiece> hairFronts;
 
 	//Swatch Dictionaries
@@ -51,7 +53,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		OnAwake ();
 		LoadAll ();
 
-		GetComponent<AvatarSprite>().Setup(CharacterGenerator.Generate().avatar);
+		//TestGenerateAvatar ();
 	}
 
 	#region Loading
@@ -67,6 +69,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		brows =		 LoadPieces(BROW_PATH);
 		eyes =		 LoadPieces(EYE_PATH);
 		irises =	 LoadPieces(IRIS_PATH);
+		pupils = 	 LoadPieces(PUPIL_PATH);
 		hairFronts = LoadPieces(HAIR_FRONT_PATH);
 
 		skinSwatches = LoadSwatches(SKIN_SWATCH_PATH);
@@ -95,7 +98,6 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		cData.avatar = new AvatarData();
 
 		//NOTE: May need reordering once conflicts are implemented
-		cData.avatar.AddPiece("HairBack", 	GetRandomPiece(cData, hairBacks));
 		cData.avatar.AddPiece("Shoulders", 	GetRandomPiece(cData, shoulders));
 		cData.avatar.AddPiece("Head", 		GetRandomPiece(cData, heads));
 		cData.avatar.AddPiece("Mouth", 		GetRandomPiece(cData, mouths));
@@ -103,20 +105,28 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		cData.avatar.AddPiece("Brows", 		GetRandomPiece(cData, brows));
 		cData.avatar.AddPiece("Eyes", 		GetRandomPiece(cData, eyes));
 		cData.avatar.AddPiece("Irises", 	GetRandomPiece(cData, irises));
+		cData.avatar.AddPiece("Pupils", 	GetRandomPiece(cData, pupils));
 		cData.avatar.AddPiece("HairFront", GetRandomPiece(cData, hairFronts));
+		cData.avatar.AddPiece("HairBack", 	GetRandomPiece(cData, hairBacks));
 
 		cData.avatar.AddSwatch("Skin", GetRandomSwatch(cData, skinSwatches));
 		cData.avatar.AddSwatch("Hair", GetRandomSwatch(cData, hairSwatches));
 		cData.avatar.AddSwatch("Iris", GetRandomSwatch(cData, irisSwatches));
 		cData.avatar.AddSwatch("Clothes", GetRandomSwatch(cData, clothesSwatches));
+
+		//Random chance to mirror characters horizontally
+		if(Random.value > .7f){
+			cData.avatar.xScale = -1; 
+		}
 	}
 
 	private AvatarPiece GetRandomPiece(CharacterData cData, Dictionary<string, AvatarPiece> dict){
 		ProbabilityArray<AvatarPiece> pa = new ProbabilityArray<AvatarPiece>();
 
 		foreach(KeyValuePair<string, AvatarPiece> kvp in dict){
-			//IF cData allows
-			pa.AddValue(kvp.Value, kvp.Value.weight);
+			if(kvp.Value.requiredPieces.Count == 0 || cData.avatar.ContainsAnyPiece(kvp.Value.requiredPieces)){
+				pa.AddValue(kvp.Value, kvp.Value.weight);
+			}
 		}
 
 		return pa.GetRandomValue();
@@ -133,4 +143,8 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		return pa.GetRandomValue();
 	}
 	#endregion
+
+	public void TestGenerateAvatar(){
+		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(CharacterGenerator.Generate().avatar);
+	}
 }

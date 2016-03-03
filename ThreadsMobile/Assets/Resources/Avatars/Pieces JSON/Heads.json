@@ -2,6 +2,7 @@
 	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
 	"Default" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default1",
 		"path": "head1",
 		"swatchType": "skin",
 		"weight": 1,

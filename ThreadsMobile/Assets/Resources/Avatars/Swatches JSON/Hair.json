@@ -14,7 +14,7 @@
 		"b": 8,
 		"g": 6,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Off Black" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -22,7 +22,7 @@
 		"b": 43,
 		"g": 44,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Darkest Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -30,7 +30,7 @@
 		"b": 48,
 		"g": 36,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Med Dark Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -38,7 +38,7 @@
 		"b": 67,
 		"g": 63,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Chestnut Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -46,7 +46,7 @@
 		"b": 68,
 		"g": 69,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Chestnut Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -54,7 +54,7 @@
 		"b": 78,
 		"g": 66,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Dark Golden Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -62,7 +62,7 @@
 		"b": 72,
 		"g": 56,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Golden Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -70,7 +70,7 @@
 		"b": 133,
 		"g": 106,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Dark Honey Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -78,7 +78,7 @@
 		"b": 151,
 		"g": 120,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Bleached Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -86,7 +86,7 @@
 		"b": 208,
 		"g": 186,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Ash Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -94,7 +94,7 @@
 		"b": 188,
 		"g": 153,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Ash Brown" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -102,7 +102,7 @@
 		"b": 121,
 		"g": 97,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Lightest Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -110,7 +110,7 @@
 		"b": 206,
 		"g": 168,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Pale Golden Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -118,7 +118,7 @@
 		"b": 200,
 		"g": 168,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Strawberry Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -126,7 +126,7 @@
 		"b": 137,
 		"g": 70,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Auburn" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -134,7 +134,7 @@
 		"b": 85,
 		"g": 61,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Dark Auburn" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -142,7 +142,7 @@
 		"b": 61,
 		"g": 53,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Darkest Gray" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -150,7 +150,7 @@
 		"b": 99,
 		"g": 90,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Medium Gray" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -158,7 +158,7 @@
 		"b": 166,
 		"g": 158,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Light Gray" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -166,7 +166,7 @@
 		"b": 196,
 		"g": 194,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"White Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -174,7 +174,7 @@
 		"b": 245,
 		"g": 225,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Platinum Blonde" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -182,7 +182,7 @@
 		"b": 191,
 		"g": 177,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Russet Red" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -190,7 +190,7 @@
 		"b": 74,
 		"g": 67,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
 	"Terra Cotta" : {
 		"$type": "Swatch, Assembly-CSharp",
@@ -198,6 +198,55 @@
 		"b": 82,
 		"g": 57,
 		"a": 255,
-		"weight": 1,
+		"weight": 10,
 	},
+	"Dye Dark Blue" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 11,
+		"b": 0,
+		"g": 75,
+		"a": 255,
+		"weight": 3,
+	},
+	"Dye Light Blue" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 132,
+		"b": 187,
+		"g": 255,
+		"a": 255,
+		"weight": 3,
+	},
+	"Dye Light Green" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 37,
+		"b": 239,
+		"g": 80,
+		"a": 255,
+		"weight": 3,
+	},
+	"Dye Dark Green" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 27,
+		"b": 103,
+		"g": 75,
+		"a": 255,
+		"weight": 3,
+	},
+	"Dye Light Pink" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 255,
+		"b": 146,
+		"g": 211,
+		"a": 255,
+		"weight": 3,
+	},
+	"Dye Purple" : {
+		"$type": "Swatch, Assembly-CSharp",
+		"r": 95,
+		"b": 40,
+		"g": 134,
+		"a": 255,
+		"weight": 3,
+	},
+
 }

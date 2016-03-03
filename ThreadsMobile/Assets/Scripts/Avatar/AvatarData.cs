@@ -7,6 +7,8 @@ public class AvatarData {
 	Dictionary<string, AvatarPiece> pieces;
 	Dictionary<string, Swatch> swatches;
 
+	public int xScale = 1;
+
 	public AvatarPiece GetPiece(string id){
 		AvatarPiece value;
 
@@ -35,6 +37,24 @@ public class AvatarData {
 
 	public void AddSwatch(string swatchType, Swatch swatch){
 		swatches.Add(swatchType.ToLower(), swatch);
+	}
+
+	public bool ContainsAnyPiece(List<string> ids){
+		foreach(string id in ids){
+			if(id != null && ContainsPiece(id)){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public bool ContainsPiece(string id){
+		foreach(KeyValuePair<string, AvatarPiece> kvp in pieces){
+			if(kvp.Value.id != null && kvp.Value.id == id){
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public AvatarData(){

@@ -23,8 +23,10 @@ public class AvatarSprite : MonoBehaviour {
 		SetupPiece(data, brows,		data.GetPiece("Brows"));
 		SetupPiece(data, eyes,		data.GetPiece("Eyes"));
 		SetupPiece(data, irises,	data.GetPiece("Irises"));
-		//SetupPiece(data, pupils,	data.GetPiece("Pupils"));
+		SetupPiece(data, pupils,	data.GetPiece("Pupils"));
 		SetupPiece(data, hairFront,	data.GetPiece("HairFront"));
+
+		transform.localScale = new Vector3 (data.xScale, 1, 1);
 	}
 
 	private void SetupPiece(AvatarData data, SpriteRenderer sr, AvatarPiece piece){
