@@ -156,6 +156,7 @@ public class CharacterInteraction : MonoBehaviour {
         if(UI.activeSelf)
         {
             UI.SetActive(false);
+            ToolTip.gameObject.SetActive(false);
             tapBack.Tapped -= tapBackHandler;
         }
         else
