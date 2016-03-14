@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Avatars\Swatches.json">
     <Files>
-      <File FileName="Assets/Scripts/Relationships/RelationshipLine.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Genders.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Quirks.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Likes.json" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Character/CharacterCore.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Relationships/ShipManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Character/CharacterInteraction.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SceneNavigation/SceneControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Avatars\Swatches.json" Line="9" Column="1" />
+      <File FileName="Assets\Resources\Characters\Dislikes.json" Line="2" Column="116" />
+      <File FileName="Assets\Resources\Characters\Genders.json" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Characters\Quirks.json" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Characters\Likes.json" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character\CharacterCore.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Relationships\ShipManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character\CharacterInteraction.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneNavigation\SceneControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

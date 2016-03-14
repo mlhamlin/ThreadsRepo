@@ -1,0 +1,9 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"path": "shoulders",
+		"swatchType": "skin",
+		"weight": 1,
+	},
+}

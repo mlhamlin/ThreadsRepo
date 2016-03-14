@@ -1,0 +1,42 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "pupil1",
+		"swatchType": "Default",
+		"weight": 0,
+	},
+	"Pupils 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Pupils 1",
+		"path": "pupil1",
+		"swatchType": "Default",
+		"weight": 1,
+		"requiredPieces": ["Iris 1"],
+	},
+	"Pupils 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Pupils 2",
+		"path": "pupil2",
+		"swatchType": "Default",
+		"weight": 1,
+		"requiredPieces": ["Iris 2"],
+	},
+	"Pupils 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Pupils 3",
+		"path": "pupil3",
+		"swatchType": "Default",
+		"weight": 1,
+		"requiredPieces": ["Iris 3"],
+	},
+	"Pupils 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Pupils 4",
+		"path": "pupil4",
+		"swatchType": "Default",
+		"weight": 1,
+		"requiredPieces": ["Iris 4"],
+	},
+}

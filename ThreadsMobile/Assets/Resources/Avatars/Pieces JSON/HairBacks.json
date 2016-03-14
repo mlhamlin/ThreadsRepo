@@ -1,0 +1,25 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "empty",
+		"swatchType": "hair",
+		"weight": 10,
+	},
+	"Hair Back 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Back 1",
+		"path": "hairb1",
+		"swatchType": "hair",
+		"weight": 40,
+		"requiredPieces": ["Hair Front 1", "Hair Front 4", "Hair Front 10"],
+	},
+	"Hair Back 1 Bypass" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Back 1 Bypass",
+		"path": "hairb1",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+}

@@ -1,0 +1,38 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "default",
+		"path": "empty",
+		"swatchType": "Hair",
+		"weight": 1,
+	},
+	"Brows 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Brows 1",
+		"path": "brows1",
+		"swatchType": "Hair",
+		"weight": 4,
+	},
+	"Brows 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Brows 2",
+		"path": "brows2",
+		"swatchType": "Hair",
+		"weight": 4,
+	},
+	"Brows 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Brows 3",
+		"path": "brows3",
+		"swatchType": "Hair",
+		"weight": 4,
+	},
+	"Brows 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Brows 4",
+		"path": "brows4",
+		"swatchType": "Hair",
+		"weight": 4,
+	},
+}

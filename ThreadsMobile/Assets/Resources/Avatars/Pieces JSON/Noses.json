@@ -1,0 +1,52 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "nose1",
+		"swatchType": "Default",
+		"weight": 0,
+	},
+	"Nose 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 1",
+		"path": "nose1",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+	"Nose 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 2",
+		"path": "nose2",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+	"Nose 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 3",
+		"path": "nose3",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+	"Nose 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 4",
+		"path": "nose4",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+	"Nose 5" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 5",
+		"path": "nose5",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+	"Nose 6" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Nose 6",
+		"path": "nose6",
+		"swatchType": "Default",
+		"weight": 1,
+	},
+}
