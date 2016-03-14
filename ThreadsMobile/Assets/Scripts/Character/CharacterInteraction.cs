@@ -44,17 +44,29 @@ public class CharacterInteraction : MonoBehaviour {
 
         for(int i = 0; i < Quirks.Count; i++)
         {
-            Quirks[i].Setup(core, ToolTip, data.quirks[i]);
+			if (data.quirks [i] != null) {
+				Quirks [i].Setup (core, ToolTip, data.quirks [i]);
+			} else {
+				//Hide Quirk
+			}
         }
 
         for(int i = 0; i < Likes.Count; i++)
         {
-            Likes[i].Setup(core, ToolTip, data.likes[i]);
+			if (data.likes [i] != null) {
+				Likes [i].Setup (core, ToolTip, data.likes [i]);
+			} else {
+				//Hide Like
+			}
         }
 
         for(int i = 0; i < Dislikes.Count; i++)
         {
-            Dislikes[i].Setup(core, ToolTip, data.dislikes[i]);
+			if (data.dislikes [i] != null) {
+				Dislikes[i].Setup(core, ToolTip, data.dislikes[i]);
+			} else {
+				//Hide Disike
+			}
         }
 
 		avatar.Setup (data.avatar);
