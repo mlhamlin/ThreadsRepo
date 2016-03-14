@@ -23,6 +23,8 @@ public class CharacterInteraction : MonoBehaviour {
     private RelationshipLine currentLine;
     private bool DrawingLine;
 
+	public AvatarSprite avatar;
+
     public List<TraitInteraction> Quirks;
     public List<TraitInteraction> Likes;
     public List<TraitInteraction> Dislikes;
@@ -54,6 +56,8 @@ public class CharacterInteraction : MonoBehaviour {
         {
             Dislikes[i].Setup(core, ToolTip, data.dislikes[i]);
         }
+
+		avatar.Setup (data.avatar);
 
         OnEnable();
     }
