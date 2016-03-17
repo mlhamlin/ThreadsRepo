@@ -5,8 +5,11 @@ public class AvatarSprite : MonoBehaviour {
 
 	public SpriteRenderer hairBack;
 	public SpriteRenderer shoulders;
+	public SpriteRenderer clothes;
 	public SpriteRenderer head;
+	public SpriteRenderer beard;
 	public SpriteRenderer mouth;
+	public SpriteRenderer moustache;
 	public SpriteRenderer nose;
 	public SpriteRenderer brows;
 	public SpriteRenderer eyes;
@@ -17,8 +20,11 @@ public class AvatarSprite : MonoBehaviour {
 	public void Setup(AvatarData data){
 		SetupPiece(data, hairBack,	data.GetPiece("HairBack"));
 		SetupPiece(data, shoulders,	data.GetPiece("Shoulders"));
+		SetupPiece(data, clothes,	data.GetPiece("Clothes"));
 		SetupPiece(data, head,		data.GetPiece("Head"));
+		SetupPiece(data, beard,		data.GetPiece("Beard"));
 		SetupPiece(data, mouth,		data.GetPiece("Mouth"));
+		SetupPiece(data, moustache,	data.GetPiece("Moustache"));
 		SetupPiece(data, nose,		data.GetPiece("Nose"));
 		SetupPiece(data, brows,		data.GetPiece("Brows"));
 		SetupPiece(data, eyes,		data.GetPiece("Eyes"));

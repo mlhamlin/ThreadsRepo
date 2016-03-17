@@ -1,0 +1,40 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "empty",
+		"swatchType": "hair",
+		"weight": 5,
+	},
+	"Moustache 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Moustache 1",
+		"path": "stache1",
+		"swatchType": "hair",
+		"weight": 1,
+		"requiredPieces": ["No Beard", "Beard 4", "Beard 5", "Beard 6"],
+	},
+	"Moustache 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Moustache 2",
+		"path": "stache2",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Moustache 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Moustache 3",
+		"path": "stache3",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Moustache 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Moustache 4",
+		"path": "stache4",
+		"swatchType": "hair",
+		"weight": 1,
+		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 7"],
+	},
+}

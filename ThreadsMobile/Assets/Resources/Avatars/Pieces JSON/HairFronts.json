@@ -27,6 +27,7 @@
 		"path": "hairf3",
 		"swatchType": "hair",
 		"weight": 1,
+		"bannedPieces":["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 4" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -41,6 +42,7 @@
 		"path": "hairf5",
 		"swatchType": "hair",
 		"weight": 1,
+		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 6" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -48,6 +50,7 @@
 		"path": "hairf6",
 		"swatchType": "hair",
 		"weight": 1,
+		"bannedPieces": ["Beard 1, Beard 7"],
 	},
 	"Hair Front 7" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -62,6 +65,7 @@
 		"path": "hairf8",
 		"swatchType": "hair",
 		"weight": 1,
+		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 9" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -69,6 +73,7 @@
 		"path": "hairf9",
 		"swatchType": "hair",
 		"weight": 1,
+		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 10" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -81,6 +86,41 @@
 		"$type": "AvatarPiece, Assembly-CSharp",
 		"id": "Hair Front 11",
 		"path": "hairf11",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 12" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 12",
+		"path": "hairf12",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 13" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 13",
+		"path": "hairf13",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 14" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 14",
+		"path": "hairf14",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 15" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 15",
+		"path": "hairf15",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 16" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 16",
+		"path": "hairf16",
 		"swatchType": "hair",
 		"weight": 1,
 	},

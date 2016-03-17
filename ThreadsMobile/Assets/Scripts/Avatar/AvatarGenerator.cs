@@ -11,8 +11,11 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	//Piece Paths
 	const string HAIR_BACK_PATH = 	"Avatars/Pieces JSON/HairBacks";
 	const string SHOULDER_PATH = 	"Avatars/Pieces JSON/Shoulders";
+	const string CLOTHES_PATH = 	"Avatars/Pieces JSON/Clothes";
 	const string HEAD_PATH = 		"Avatars/Pieces JSON/Heads";
+	const string BEARD_PATH = 		"Avatars/Pieces JSON/Beards";
 	const string MOUTH_PATH = 		"Avatars/Pieces JSON/Mouths";
+	const string MOUSTACHE_PATH = 	"Avatars/Pieces JSON/Moustaches";
 	const string NOSE_PATH = 		"Avatars/Pieces JSON/Noses";
 	const string BROW_PATH =	 	"Avatars/Pieces JSON/Brows";
 	const string EYE_PATH = 		"Avatars/Pieces JSON/Eyes";
@@ -31,8 +34,11 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	//Piece Dictionaries
 	public Dictionary<string, AvatarPiece> hairBacks;
 	public Dictionary<string, AvatarPiece> shoulders;
+	public Dictionary<string, AvatarPiece> clothes;
 	public Dictionary<string, AvatarPiece> heads;
+	public Dictionary<string, AvatarPiece> beards;
 	public Dictionary<string, AvatarPiece> mouths;
+	public Dictionary<string, AvatarPiece> moustaches;
 	public Dictionary<string, AvatarPiece> noses;
 	public Dictionary<string, AvatarPiece> brows;
 	public Dictionary<string, AvatarPiece> eyes;
@@ -63,8 +69,11 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 		hairBacks =  LoadPieces(HAIR_BACK_PATH);
 		shoulders =  LoadPieces(SHOULDER_PATH);
+		clothes = 	 LoadPieces(CLOTHES_PATH);
 		heads =		 LoadPieces(HEAD_PATH);
+		beards =	 LoadPieces(BEARD_PATH);
 		mouths = 	 LoadPieces(MOUTH_PATH);
+		moustaches = LoadPieces(MOUSTACHE_PATH);
 		noses =		 LoadPieces(NOSE_PATH);
 		brows =		 LoadPieces(BROW_PATH);
 		eyes =		 LoadPieces(EYE_PATH);
@@ -99,14 +108,17 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 		//NOTE: May need reordering once conflicts are implemented
 		cData.avatar.AddPiece("Shoulders", 	GetRandomPiece(cData, shoulders));
+		cData.avatar.AddPiece("Clothes", 	GetRandomPiece(cData, clothes));
 		cData.avatar.AddPiece("Head", 		GetRandomPiece(cData, heads));
+		cData.avatar.AddPiece("Beard", 		GetRandomPiece(cData, beards));
 		cData.avatar.AddPiece("Mouth", 		GetRandomPiece(cData, mouths));
+		cData.avatar.AddPiece("Moustache", 	GetRandomPiece(cData, moustaches));
 		cData.avatar.AddPiece("Nose", 		GetRandomPiece(cData, noses));
 		cData.avatar.AddPiece("Brows", 		GetRandomPiece(cData, brows));
 		cData.avatar.AddPiece("Eyes", 		GetRandomPiece(cData, eyes));
 		cData.avatar.AddPiece("Irises", 	GetRandomPiece(cData, irises));
 		cData.avatar.AddPiece("Pupils", 	GetRandomPiece(cData, pupils));
-		cData.avatar.AddPiece("HairFront", GetRandomPiece(cData, hairFronts));
+		cData.avatar.AddPiece("HairFront",  GetRandomPiece(cData, hairFronts));
 		cData.avatar.AddPiece("HairBack", 	GetRandomPiece(cData, hairBacks));
 
 		cData.avatar.AddSwatch("Skin", GetRandomSwatch(cData, skinSwatches));
@@ -124,12 +136,22 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		ProbabilityArray<AvatarPiece> pa = new ProbabilityArray<AvatarPiece>();
 
 		foreach(KeyValuePair<string, AvatarPiece> kvp in dict){
-			if(kvp.Value.requiredPieces.Count == 0 || cData.avatar.ContainsAnyPiece(kvp.Value.requiredPieces)){
+			if(PieceMatchesAvatar(kvp.Value, cData.avatar)){
 				pa.AddValue(kvp.Value, kvp.Value.weight);
 			}
 		}
 
 		return pa.GetRandomValue();
+	}
+
+	private bool PieceMatchesAvatar(AvatarPiece piece, AvatarData avatar){
+		if (piece.bannedPieces.Count == 0 || !avatar.ContainsAnyPiece (piece.bannedPieces)) {
+			if (piece.requiredPieces.Count == 0 || avatar.ContainsAnyPiece (piece.requiredPieces)) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	private Swatch GetRandomSwatch(CharacterData cData, Dictionary<string, Swatch> dict){
