@@ -145,7 +145,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	}
 
 	private bool PieceMatchesAvatar(AvatarPiece piece, AvatarData avatar){
-		if (piece.bannedPieces.Count == 0 || !avatar.ContainsAnyPiece (piece.bannedPieces)) {
+		if (piece.conflictingPieces.Count == 0 || !avatar.ContainsAnyPiece (piece.conflictingPieces)) {
 			if (piece.requiredPieces.Count == 0 || avatar.ContainsAnyPiece (piece.requiredPieces)) {
 				return true;
 			}
@@ -166,7 +166,32 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	}
 	#endregion
 
+	#region Test Scene
 	public void TestGenerateAvatar(){
 		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(CharacterGenerator.Generate().avatar);
 	}
+
+	public float CountCombinations(){
+		float faces = 1f;
+
+		faces *= (hairBacks.Count - 1f);
+		faces *= clothes.Count;
+		faces *= (beards.Count - 1f);
+		faces *= (mouths.Count - 1f);
+		faces *= moustaches.Count;
+		faces *= (noses.Count - 1f);
+		faces *= brows.Count;
+		faces *= (eyes.Count - 1f);
+		faces *= hairFronts.Count;
+
+		faces *= (skinSwatches.Count - 1f);
+		faces *= (hairSwatches.Count - 1f);
+		faces *= (irisSwatches.Count - 1f);
+		faces *= clothesSwatches.Count;
+
+		faces *= 2; //Horizontal flip
+
+		return faces;
+	}
+	#endregion
 }
