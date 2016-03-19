@@ -1,16 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Avatars\Swatches.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Traits/TraitInteraction.cs">
     <Files>
-      <File FileName="Assets\Resources\Avatars\Swatches.json" Line="9" Column="1" />
-      <File FileName="Assets\Resources\Characters\Dislikes.json" Line="2" Column="116" />
-      <File FileName="Assets\Resources\Characters\Genders.json" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Characters\Quirks.json" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Characters\Likes.json" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Character\CharacterCore.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Relationships\ShipManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Character\CharacterInteraction.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SceneNavigation\SceneControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Traits/TraitInteraction.cs" Line="85" Column="61" />
+      <File FileName="Assets/Scripts/Traits/DetailedTraitTooltip.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Background.cs" Line="6" Column="53" />
+      <File FileName="Assets/Scripts/SceneNavigation/SceneControl.cs" Line="9" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
