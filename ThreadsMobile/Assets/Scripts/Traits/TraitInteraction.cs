@@ -15,6 +15,7 @@ public class TraitInteraction : MonoBehaviour {
     private Trait trait;
 	private TapGesture tapBack;
 	private TapGesture tap;
+	private LongPressGesture press;
 
     public void Setup(CharacterCore chara, TraitToolTipData ttip, Trait trait)
     {
@@ -27,10 +28,14 @@ public class TraitInteraction : MonoBehaviour {
 
     private void OnEnable()
 	{
-        if(tap == null)
+		if(tap == null)
         {
-            tap = GetComponent<TapGesture>();
+			tap = GetComponent<TapGesture>();
         }
+
+		if (press == null) {
+			press = GetComponent<LongPressGesture> ();
+		}
 
         if (background == null)
         {
@@ -39,6 +44,7 @@ public class TraitInteraction : MonoBehaviour {
         }
 
 		tap.Tapped += tappedHandler;
+		press.LongPressed += pressedHandler;
 	}
 
     private void Tap_StateChanged(object sender, GestureStateChangeEventArgs e)
@@ -49,13 +55,24 @@ public class TraitInteraction : MonoBehaviour {
     private void OnDisable()
 	{
 		tap.Tapped -= tappedHandler;
+		press.LongPressed -= pressedHandler;
 	}
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
-        tooltip.tooltipText.text = trait.TraitName;
-		tooltip.gameObject.SetActive(true);
+		Debug.Log ("got a single tap?");
+		if (tooltip.gameObject.activeInHierarchy && tooltip.tooltipText.text == trait.TraitName) {
+			tooltip.gameObject.SetActive (false);
+		} else {
+			tooltip.tooltipText.text = trait.TraitName;
+			tooltip.gameObject.SetActive (true);
+		}
 		tapBack.Tapped += tappedBackHandler;
+	}
+
+	private void pressedHandler(object sender, EventArgs e)
+	{
+		DetailedTraitTooltip.Instance.setupToolTip(trait);
 	}
 
 	private void tappedBackHandler(object sender, EventArgs e)
