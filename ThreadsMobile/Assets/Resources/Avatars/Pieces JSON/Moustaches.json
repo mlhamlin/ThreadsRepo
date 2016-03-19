@@ -5,7 +5,7 @@
 		"id": "Default",
 		"path": "empty",
 		"swatchType": "hair",
-		"weight": 5,
+		"weight": 10,
 	},
 	"Moustache 1" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -35,6 +35,6 @@
 		"path": "stache4",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 7"],
+		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 7"],
 	},
 }

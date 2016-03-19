@@ -10,5 +10,5 @@ public class AvatarPiece {
 	public int weight;
 
 	public List<string> requiredPieces = new List<string>();
-	public List<string> bannedPieces = new List<string>();
+	public List<string> conflictingPieces = new List<string>();
 }

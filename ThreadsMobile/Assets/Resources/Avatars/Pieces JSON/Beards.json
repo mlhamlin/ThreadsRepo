@@ -12,7 +12,7 @@
 		"id": "No Beard",
 		"path": "empty",
 		"swatchType": "hair",
-		"weight": 5,
+		"weight": 10,
 	},
 	"Beard 1" : {
 		"$type": "AvatarPiece, Assembly-CSharp",

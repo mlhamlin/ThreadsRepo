@@ -27,7 +27,7 @@
 		"path": "hairf3",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces":["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
+		"conflictingPieces":["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 4" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -42,7 +42,7 @@
 		"path": "hairf5",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
+		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 6" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -50,7 +50,7 @@
 		"path": "hairf6",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces": ["Beard 1, Beard 7"],
+		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 7" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -65,7 +65,7 @@
 		"path": "hairf8",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
+		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 9" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -73,7 +73,7 @@
 		"path": "hairf9",
 		"swatchType": "hair",
 		"weight": 1,
-		"bannedPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
+		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 10" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
