@@ -34,6 +34,7 @@ public class TraitInteraction : MonoBehaviour {
         }
 
 		if (press == null) {
+			Debug.Log ("found long press");
 			press = GetComponent<LongPressGesture> ();
 		}
 
@@ -60,7 +61,6 @@ public class TraitInteraction : MonoBehaviour {
 
 	private void tappedHandler(object sender, EventArgs e)
 	{
-		Debug.Log ("got a single tap?");
 		if (tooltip.gameObject.activeInHierarchy && tooltip.tooltipText.text == trait.TraitName) {
 			tooltip.gameObject.SetActive (false);
 		} else {
@@ -72,6 +72,7 @@ public class TraitInteraction : MonoBehaviour {
 
 	private void pressedHandler(object sender, EventArgs e)
 	{
+		Debug.Log ("long press");
 		DetailedTraitTooltip.Instance.setupToolTip(trait);
 	}
 

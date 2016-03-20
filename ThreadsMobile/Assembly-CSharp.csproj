@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AvatarTestFaceCounter.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarData.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarGenerator.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarPiece.cs" />
