@@ -3,35 +3,35 @@
   "Funny" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Funny",
-      "traitDescription": "blah",
+      "traitDescription": "Likes to make others laugh at their jokes.",
       "icon": "funny",
 	  "weight":1
   },
   "Geeky" : {
       "$type": "Quirk, Assembly-CSharp",
-      "traitName": "Geeky",
-      "traitDescription": "blah",
-      "icon": "geeky",
+      "traitName": "Gamer",
+      "traitDescription": "Loves to constantly play videogames.",
+      "icon": "gamer",
 	  "weight":1
   },
   "Foodie" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Foodie",
-      "traitDescription": "blah",
+      "traitDescription": "Is a food connoisseur to the extreme.",
       "icon": "foodie",
 	  "weight":1
   },
   "Sporty" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Sporty",
-      "traitDescription": "blah",
+      "traitDescription": "Interested in participating in sports such as baseball and hockey.",
       "icon": "sporty",
 	  "weight":1
   },
   "Outdoorsy" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Outdoorsy",
-      "traitDescription": "blah",
+      "traitDescription": "Interested in outdoor activities such as camping and hiking.",
       "icon": "outdoorsy",
 	  "weight":1
   },

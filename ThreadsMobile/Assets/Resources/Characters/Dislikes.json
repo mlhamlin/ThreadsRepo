@@ -10,11 +10,11 @@
   },
   "Dislikes Geeky" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Geeky",
+      "traitName": "Dislikes Gamer",
       "traitDescription": "blah",
-      "icon": "geeky",
+      "icon": "gamer",
 	  "weight":1,
-	  "conflicts": ["Likes Geeky"],
+	  "conflicts": ["Likes Gamer"],
   },
   "Dislikes Foodie" : {
       "$type": "Dislike, Assembly-CSharp",

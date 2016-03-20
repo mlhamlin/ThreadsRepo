@@ -13,9 +13,9 @@
 	},
 	"Likes Geeky" : {
 		"$type": "Like, Assembly-CSharp",
-		"traitName": "Likes Geeky",
+		"traitName": "Likes Gamer",
 		"traitDescription": "blah",
-		"icon": "geeky",
+		"icon": "gamer",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",

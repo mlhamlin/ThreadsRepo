@@ -3,35 +3,35 @@
   "Agender" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Agender",
-      "traitDescription": "blah",
-      "icon": "agender2",
+      "traitDescription": "Identifies as no gender or neutral gender.",
+      "icon": "agender",
 	  "weight":1
   },
   "Cis Woman" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Cis Woman",
-      "traitDescription": "blah",
+      "traitDescription": "Assigned female at birth and identifies as female.",
       "icon": "female",
 	  "weight":1
   },
   "Cis Man" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Cis Man",
-      "traitDescription": "blah",
+      "traitDescription": "Assigned male at birth and identifies as male.",
       "icon": "male",
 	  "weight":1
   },
   "Trans Woman" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Trans Woman",
-      "traitDescription": "blah",
+      "traitDescription": "Assigned male at birth and identifies as female.",
       "icon": "mtf",
 	  "weight":1
   },
   "Trans Man" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Trans Man",
-      "traitDescription": "blah",
+      "traitDescription": "Assigned female at birth and identifies as male.",
       "icon": "ftm",
 	  "weight":1
   },
