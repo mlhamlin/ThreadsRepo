@@ -35,9 +35,18 @@ public class CharacterCore : MonoBehaviour {
 	public int ScoreRelationships() {
 		int score = 0;
 
+		int polyMonoModifier = 0;
+
+		foreach(Trait t in data.GetAllTraits()){
+			polyMonoModifier += t.ScoreMonoPoly (currentShipWeb.MemberCount());
+		}
+
 		foreach (CharacterCore character in this.Partners) {
 			score += this.data.ScoreRelationship (character.data);
+			score += polyMonoModifier;
 		}
+
+		score = score / currentShipWeb.MemberCount();
 
 		return score;
 	}

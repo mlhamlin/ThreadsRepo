@@ -18,4 +18,8 @@ public class RelationshipWeb : MonoBehaviour {
             ShipManager.Merge(this, newMember.currentShipWeb);
         }
     }
+
+	public int MemberCount(){
+		return members.Count;
+	}
 }

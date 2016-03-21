@@ -15,6 +15,9 @@ public class Trait {
 	List<string> conflicts;
 	Dictionary<string, int> scoring;
 
+	int mono = 0;
+	int poly = 0;
+
 	public string TraitName {
 		get{ return traitName; }
 	}
@@ -81,7 +84,13 @@ public class Trait {
 		return totalScore;
 	}
 
-
+	public int ScoreMonoPoly(int numPartners){
+		if (numPartners > 2) {
+			return poly;
+		} else {
+			return mono;
+		}
+	}
 }
 
 public class Gender : Trait {

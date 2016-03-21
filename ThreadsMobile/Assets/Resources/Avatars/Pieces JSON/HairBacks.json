@@ -35,7 +35,7 @@
 		"path": "hairb3",
 		"swatchType": "hair",
 		"weight": 2,
-		"conflictingPieces": ["Hair Front 9"],
+		"conflictingPieces": ["Hair Front 3", "Hair Front 9"],
 	},
 	"Hair Back 4" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
