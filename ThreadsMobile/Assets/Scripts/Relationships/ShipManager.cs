@@ -13,6 +13,8 @@ public class ShipManager : UnitySingleton<ShipManager> {
         b.Partners.Add(a);
         Merge(a.currentShipWeb, b.currentShipWeb);
 
+        UpdateScores(a.currentShipWeb);
+
         return true;
     }
 
@@ -40,9 +42,12 @@ public class ShipManager : UnitySingleton<ShipManager> {
 
         Populate(SetUpWeb(), a);
 
-        if (b.currentShipWeb != a.currentShipWeb)
+        UpdateScores(a.currentShipWeb);
+
+        if(b.currentShipWeb != a.currentShipWeb)
         {
             Populate(SetUpWeb(), b);
+            UpdateScores(b.currentShipWeb);
         }
     }
 
@@ -67,5 +72,13 @@ public class ShipManager : UnitySingleton<ShipManager> {
         RelationshipWeb web = Relationship.AddComponent<RelationshipWeb>();
         web.members = new List<CharacterCore>();
         return web;
+    }
+
+    public static void UpdateScores(RelationshipWeb web)
+    {
+        foreach(CharacterCore chr in web.members)
+        {
+            chr.ScoreRelationships();
+        }
     }
 }

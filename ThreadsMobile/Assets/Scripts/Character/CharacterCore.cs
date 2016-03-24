@@ -11,6 +11,8 @@ public class CharacterCore : MonoBehaviour {
     private CharacterData data;
     private CharacterInteraction interaction;
     private CharacterAvatar avatar;
+
+    public int HappyScore;
     
     // Use this for initialization
     void Start () {
@@ -46,7 +48,12 @@ public class CharacterCore : MonoBehaviour {
 			score += polyMonoModifier;
 		}
 
-		score = score / currentShipWeb.MemberCount();
+        if (this.Partners.Count > 0)
+        {
+            score = score / this.Partners.Count;
+        }
+
+        HappyScore = score;
 
 		return score;
 	}

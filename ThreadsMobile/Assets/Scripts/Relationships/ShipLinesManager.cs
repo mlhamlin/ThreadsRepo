@@ -14,7 +14,10 @@ public class ShipLinesManager : UnitySingleton<ShipLinesManager> {
 		int count = Instance.lines.Count;
 		for (int i = 0; i < count; i++) {
 			RelationshipLine ship = Instance.lines [0];
-			ship.BreakUp ();
+            if(ship != null)
+            {
+                ship.BreakUp();
+            }
 		}
 		Instance.lines.Clear ();
 	}
