@@ -6,6 +6,7 @@
 		"path": "empty",
 		"swatchType": "hair",
 		"weight": 10,
+		"female":10,
 	},
 	"Moustache 1" : {
 		"$type": "AvatarPiece, Assembly-CSharp",

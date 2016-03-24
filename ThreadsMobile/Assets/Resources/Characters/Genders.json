@@ -4,35 +4,35 @@
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Agender",
       "traitDescription": "Identifies as no gender or neutral gender.",
-      "icon": "agender",
+      "icon": "Genders/agender",
 	  "weight":1
   },
   "Cis Woman" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Cis Woman",
       "traitDescription": "Assigned female at birth and identifies as female.",
-      "icon": "female",
+      "icon": "Genders/female",
 	  "weight":1
   },
   "Cis Man" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Cis Man",
       "traitDescription": "Assigned male at birth and identifies as male.",
-      "icon": "male",
+      "icon": "Genders/male",
 	  "weight":1
   },
   "Trans Woman" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Trans Woman",
       "traitDescription": "Assigned male at birth and identifies as female.",
-      "icon": "mtf",
+      "icon": "Genders/mtf",
 	  "weight":1
   },
   "Trans Man" : {
       "$type": "Gender, Assembly-CSharp",
       "traitName": "Trans Man",
       "traitDescription": "Assigned female at birth and identifies as male.",
-      "icon": "ftm",
+      "icon": "Genders/ftm",
 	  "weight":1
   },
 }

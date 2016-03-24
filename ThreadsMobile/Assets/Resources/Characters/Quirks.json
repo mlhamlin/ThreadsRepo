@@ -4,35 +4,77 @@
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Funny",
       "traitDescription": "Likes to make others laugh at their jokes.",
-      "icon": "funny",
+      "icon": "Traits/funny",
 	  "weight":1
   },
   "Geeky" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Gamer",
       "traitDescription": "Loves to constantly play videogames.",
-      "icon": "gamer",
+      "icon": "Traits/gamer",
 	  "weight":1
   },
   "Foodie" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Foodie",
       "traitDescription": "Is a food connoisseur to the extreme.",
-      "icon": "foodie",
+      "icon": "Traits/foodie",
 	  "weight":1
   },
   "Sporty" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Sporty",
       "traitDescription": "Interested in participating in sports such as baseball and hockey.",
-      "icon": "sporty",
+      "icon": "Traits/sporty",
 	  "weight":1
   },
   "Outdoorsy" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Outdoorsy",
       "traitDescription": "Interested in outdoor activities such as camping and hiking.",
-      "icon": "outdoorsy",
+      "icon": "Traits/outdoorsy",
+	  "weight":1
+  },
+  "Animal Lover" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Animal Lover",
+      "traitDescription": "Loves being around all types of animals.",
+      "icon": "Traits/animal3",
+	  "weight":1
+  },
+  "Bookworm" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Bookworm",
+      "traitDescription": "Constantly has their head buried in a good book.",
+      "icon": "Traits/bookworm2",
+	  "weight":1
+  },
+  "Creative" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Creative",
+      "traitDescription": "...",
+      "icon": "Traits/creative1",
+	  "weight":1
+  },
+  "Intelligent" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Intelligent",
+      "traitDescription": "...",
+      "icon": "Traits/geeky1",
+	  "weight":1
+  },
+  "Musical" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Musical",
+      "traitDescription": "...",
+      "icon": "Traits/musical1",
+	  "weight":1
+  },
+  "Traveller" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Traveller",
+      "traitDescription": "...",
+      "icon": "Traits/traveller2",
 	  "weight":1
   },
 }

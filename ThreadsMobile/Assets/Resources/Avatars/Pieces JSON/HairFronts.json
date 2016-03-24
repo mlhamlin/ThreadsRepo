@@ -6,6 +6,7 @@
 		"path": "empty",
 		"swatchType": "hair",
 		"weight": 1,
+		"female": .3,
 	},
 	"Hair Front 1" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -13,6 +14,7 @@
 		"path": "hairf1",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 2" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -27,6 +29,7 @@
 		"path": "hairf3",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 		"conflictingPieces":["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 4" : {
@@ -35,6 +38,7 @@
 		"path": "hairf4",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 5" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -50,6 +54,7 @@
 		"path": "hairf6",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 7" : {
@@ -73,6 +78,7 @@
 		"path": "hairf9",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 		"conflictingPieces": ["Beard 1", "Beard 2", "Beard 3", "Beard 4", "Beard 7"],
 	},
 	"Hair Front 10" : {
@@ -109,6 +115,7 @@
 		"path": "hairf14",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 15" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -116,6 +123,7 @@
 		"path": "hairf15",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 16" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -130,6 +138,7 @@
 		"path": "hairf17",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 18" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
@@ -144,6 +153,7 @@
 		"path": "hairf19",
 		"swatchType": "hair",
 		"weight": 1,
+		"male":.3,
 	},
 	"Hair Front 20" : {
 		"$type": "AvatarPiece, Assembly-CSharp",

@@ -87,6 +87,10 @@ public class CharacterData {
 		return traits;
 	}
 
+	public bool ContainsTrait(string id){
+		return ContainsTrait (TraitManager.GetTrait (id));
+	}
+
 	public bool ContainsTrait(Trait trait){
 		foreach(Trait localTrait in GetAllTraits()){
 			if(localTrait.TraitName == trait.TraitName){
@@ -102,6 +106,26 @@ public class CharacterData {
 
 		foreach(Trait t in GetAllTraits()){
 			totalScore += t.Score (other);
+		}
+
+		return totalScore;
+	}
+
+	public int GetMaximumScore(){
+		int totalScore = 0;
+
+		foreach(Trait t in GetAllTraits()){
+			totalScore += t.GetMaximumScore ();
+		}
+
+		return totalScore;
+	}
+
+	public int GetMinimumScore(){
+		int totalScore = 0;
+
+		foreach(Trait t in GetAllTraits()){
+			totalScore += t.GetMinimumScore ();
 		}
 
 		return totalScore;

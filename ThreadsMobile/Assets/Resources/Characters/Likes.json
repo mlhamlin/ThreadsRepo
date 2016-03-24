@@ -3,8 +3,8 @@
 	"Likes Funny" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Funny",
-		"traitDescription": "blah",
-		"icon": "funny",
+		"traitDescription": "Likes a partner that is comical and makes other people laugh.",
+		"icon": "Traits/funny",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -14,8 +14,8 @@
 	"Likes Gamer" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Gamer",
-		"traitDescription": "blah",
-		"icon": "gamer",
+		"traitDescription": "Likes a partner that enjoys playing videogames.",
+		"icon": "Traits/gamer",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -25,8 +25,8 @@
 	"Likes Foodie" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Foodie",
-		"traitDescription": "blah",
-		"icon": "foodie",
+		"traitDescription": "Likes a partner that loves making and/or eating food.",
+		"icon": "Traits/foodie",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -36,8 +36,8 @@
 	"Likes Sporty" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Sporty",
-		"traitDescription": "blah",
-		"icon": "sporty",
+		"traitDescription": "Likes a partner who plays sports.",
+		"icon": "Traits/sporty",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -47,8 +47,8 @@
 	"Likes Outdoorsy" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Outdoorsy",
-		"traitDescription": "blah",
-		"icon": "outdoorsy",
+		"traitDescription": "Likes a partner that loves being outdoors and going on camping trips.",
+		"icon": "Traits/outdoorsy",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -58,8 +58,8 @@
 	"Likes Men" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Men",
-		"traitDescription": "blah",
-		"icon": "male",
+		"traitDescription": "Likes a partner that identifies as male.",
+		"icon": "Genders/male",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -71,8 +71,8 @@
 	"Likes Women" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Women",
-		"traitDescription": "blah",
-		"icon": "female",
+		"traitDescription": "Likes a partner that identifies as female.",
+		"icon": "Genders/female",
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
@@ -84,8 +84,8 @@
 	"Likes Monogamy" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Monogamy",
-		"traitDescription": "blah",
-		"icon": "polyamory",
+		"traitDescription": "...",
+		"icon": "Traits/polyamory",
 		"weight":3,
 		"mono":10,
 		"poly":-10,
@@ -94,11 +94,77 @@
 	"Likes Polyamory" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Polyamory",
-		"traitDescription": "blah",
-		"icon": "polyamory",
+		"traitDescription": "...",
+		"icon": "Traits/polyamory",
 		"weight":3,
 		"poly":10,
 		"mono":-10,
 	    "conflicts": ["Likes Monogamy", "Dislikes Monogamy", "Dislikes Polyamory"],
+	},
+  	"Likes Animal Lover" : {
+      	"$type": "Like, Assembly-CSharp",
+      	"traitName": "Likes Animal Lover",
+      	"traitDescription": "Loves being around all types of animals.",
+      	"icon": "Traits/animal3",
+	  	"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Animal Lover": 10,
+		}
+	},
+	"Likes Bookworm" : {
+	    "$type": "Like, Assembly-CSharp",
+	    "traitName": "Likes Bookworm",
+	    "traitDescription": "Constantly has their head buried in a good book.",
+	    "icon": "Traits/bookworm2",
+	 	"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Bookworm": 10,
+		}
+	},
+	"Likes Creative" : {
+	    "$type": "Like, Assembly-CSharp",
+	    "traitName": "Likes Creative",
+	    "traitDescription": "...",
+	    "icon": "Traits/creative1",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Creative": 10,
+		}
+	},
+	"Likes Intelligent" : {
+	    "$type": "Like, Assembly-CSharp",
+	    "traitName": "Likes Intelligent",
+	    "traitDescription": "...",
+	    "icon": "Traits/geeky1",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Intelligent": 10,
+		}
+	},
+	"Likes Musical" : {
+	    "$type": "Like, Assembly-CSharp",
+	    "traitName": "Likes Musical",
+	    "traitDescription": "...",
+	    "icon": "Traits/musical1",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Musical": 10,
+		}
+	},
+	"Likes Traveller" : {
+	    "$type": "Like, Assembly-CSharp",
+	    "traitName": "Likes Traveller",
+	    "traitDescription": "...",
+	    "icon": "Traits/traveller2",
+		"weight":1,
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Traveller": 10,
+		}
 	},
 }
