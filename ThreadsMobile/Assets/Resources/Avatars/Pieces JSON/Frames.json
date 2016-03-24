@@ -1,0 +1,38 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "empty",
+		"swatchType": "clothes",
+		"weight": 5,
+	},
+	"Frames 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Frames 1",
+		"path": "frames1",
+		"swatchType": "clothes",
+		"weight": 1,
+	},
+	"Frames 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Frames 2",
+		"path": "frames2",
+		"swatchType": "clothes",
+		"weight": 1,
+	},
+	"Frames 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Frames 3",
+		"path": "frames3",
+		"swatchType": "clothes",
+		"weight": 1,
+	},
+	"Frames 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Frames 4",
+		"path": "frames4",
+		"swatchType": "clothes",
+		"weight": 1,
+	},
+}
