@@ -152,11 +152,21 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 		foreach(KeyValuePair<string, AvatarPiece> kvp in dict){
 			if(PieceMatchesAvatar(kvp.Value, cData.avatar)){
-				pa.AddValue(kvp.Value, kvp.Value.weight);
+				pa.AddValue(kvp.Value, kvp.Value.weight * GetGenderWeighting(cData, kvp.Value));
 			}
 		}
 
 		return pa.GetRandomValue();
+	}
+
+	private float GetGenderWeighting(CharacterData cData, AvatarPiece piece){
+		if(cData.ContainsTrait("Cis Man") || cData.ContainsTrait("Trans Man")){
+			return piece.male;
+		}else if(cData.ContainsTrait("Cis Woman") || cData.ContainsTrait("Trans Woman")){
+			return piece.female;
+		}
+
+		return 1f;
 	}
 
 	private bool PieceMatchesAvatar(AvatarPiece piece, AvatarData avatar){
@@ -183,7 +193,10 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 	#region Test Scene
 	public void TestGenerateAvatar(){
-		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(CharacterGenerator.Generate().avatar);
+		CharacterData character = CharacterGenerator.Generate ();
+
+		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(character.avatar);
+		AvatarTestGenderDisplay.Instance.UpdateText (character);
 	}
 
 	public float CountCombinations(){
