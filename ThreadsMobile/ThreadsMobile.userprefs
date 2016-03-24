@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Traits/TraitInteraction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Characters/Dislikes.json">
     <Files>
-      <File FileName="Assets/Scripts/Traits/TraitInteraction.cs" Line="85" Column="61" />
-      <File FileName="Assets/Scripts/Traits/DetailedTraitTooltip.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/Background.cs" Line="6" Column="53" />
-      <File FileName="Assets/Scripts/SceneNavigation/SceneControl.cs" Line="9" Column="34" />
+      <File FileName="Assets/Resources/Characters/Genders.json" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="6" Column="47" />
+      <File FileName="Assets/Resources/Characters/Quirks.json" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Characters/Likes.json" Line="39" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

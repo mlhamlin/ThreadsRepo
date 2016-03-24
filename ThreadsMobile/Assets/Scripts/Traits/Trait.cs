@@ -91,6 +91,26 @@ public class Trait {
 			return mono;
 		}
 	}
+
+	public int GetMaximumScore(){
+		int score = 0;
+
+		foreach(KeyValuePair<string, int> kvp in scoring){
+			score += Mathf.Max (0, kvp.Value);
+		}
+
+		return score;
+	}
+
+	public int GetMinimumScore(){
+		int score = 0;
+
+		foreach(KeyValuePair<string, int> kvp in scoring){
+			score += Mathf.Min (0, kvp.Value);
+		}
+
+		return score;
+	}
 }
 
 public class Gender : Trait {

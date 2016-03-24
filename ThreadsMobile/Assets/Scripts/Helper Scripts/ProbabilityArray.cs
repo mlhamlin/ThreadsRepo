@@ -5,15 +5,10 @@ using System.Collections.Generic;
 //Allows random selection from a weighted group of type T
 public class ProbabilityArray<T> {
 
-	//public List<T> values = new List<T>();
-	//public List<float> weights = new List<float>();
-
 	public List<WeightedObject<T>> objects = new List<WeightedObject<T>> ();
 
 	public void AddValue(T o, float weight = 1){
 		objects.Add (new WeightedObject<T> (o, weight));
-		//values.Add(o);
-		//weights.Add(weight);
 	}
 
 	public float GetSumWeights(){

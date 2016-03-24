@@ -51,6 +51,7 @@
 		"path": "hairb5",
 		"swatchType": "hair",
 		"weight": 2,
+		"male":.3,
 		"conflictingPieces": ["Hair Front 8", "Hair Front 10", "Hair Front 16"],
 	},
 	"Hair Back 6" : {
@@ -58,6 +59,7 @@
 		"id": "Hair Back 6",
 		"path": "hairb6",
 		"swatchType": "hair",
+		"conflictingPieces": ["Hair Front 3"],
 		"weight": 2,
 	},
 	"Hair Back 7" : {
