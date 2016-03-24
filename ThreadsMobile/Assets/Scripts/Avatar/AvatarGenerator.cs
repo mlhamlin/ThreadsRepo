@@ -137,9 +137,16 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 		cData.avatar.AddSwatch("Skin", GetRandomSwatch(cData, skinSwatches));
 		cData.avatar.AddSwatch("Hair", GetRandomSwatch(cData, hairSwatches));
+
 		cData.avatar.AddSwatch("Iris", GetRandomSwatch(cData, irisSwatches));
 		cData.avatar.AddSwatch("Lens", GetRandomSwatch(cData, lensSwatches));
 		cData.avatar.AddSwatch("Clothes", GetRandomSwatch(cData, clothesSwatches));
+
+		if(Random.value > .1f){
+			cData.avatar.AddSwatch("Hair2", cData.avatar.GetSwatch("Hair"));
+		}else{
+			cData.avatar.AddSwatch("Hair2",GetRandomSwatch(cData, hairSwatches));
+		}
 
 		//Random chance to mirror characters horizontally
 		if(Random.value > .7f){
@@ -214,7 +221,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		faces *= hairFronts.Count;
 
 		faces *= (skinSwatches.Count - 1f);
-		faces *= (hairSwatches.Count - 1f);
+		faces *= (hairSwatches.Count - 1f) * (hairSwatches.Count - 1f);
 		faces *= (irisSwatches.Count - 1f);
 		faces *= clothesSwatches.Count;
 		faces *= (lensSwatches.Count - 1f);
