@@ -124,4 +124,32 @@
 		"swatchType": "hair",
 		"weight": 1,
 	},
+	"Hair Front 17" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 17",
+		"path": "hairf17",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 18" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 18",
+		"path": "hairf18",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 19" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 19",
+		"path": "hairf19",
+		"swatchType": "hair",
+		"weight": 1,
+	},
+	"Hair Front 20" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Hair Front 20",
+		"path": "hairf20",
+		"swatchType": "hair",
+		"weight": 1,
+	},
 }

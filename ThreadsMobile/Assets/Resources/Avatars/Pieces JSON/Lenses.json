@@ -1,0 +1,42 @@
+{
+	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
+	"Default" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Default",
+		"path": "empty",
+		"swatchType": "lens",
+		"weight": 1,
+	},
+	"Lens 1" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Lens 1",
+		"path": "lenses1",
+		"swatchType": "lens",
+		"weight": 100,
+		"requiredPieces": ["Frames 1"],
+	},
+	"Lens 2" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Lens 2",
+		"path": "lenses2",
+		"swatchType": "lens",
+		"weight": 100,
+		"requiredPieces": ["Frames 2"],
+	},
+	"Lens 3" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Lens 3",
+		"path": "lenses3",
+		"swatchType": "lens",
+		"weight": 100,
+		"requiredPieces": ["Frames 3"],
+	},
+	"Lens 4" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"id": "Lens 4",
+		"path": "lenses4",
+		"swatchType": "lens",
+		"weight": 100,
+		"requiredPieces": ["Frames 4"],
+	},
+}

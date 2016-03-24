@@ -15,6 +15,8 @@ public class AvatarSprite : MonoBehaviour {
 	public SpriteRenderer eyes;
 	public SpriteRenderer irises;
 	public SpriteRenderer pupils;
+	public SpriteRenderer lenses;
+	public SpriteRenderer frames;
 	public SpriteRenderer hairFront;
 
 	public void Setup(AvatarData data){
@@ -30,6 +32,8 @@ public class AvatarSprite : MonoBehaviour {
 		SetupPiece(data, eyes,		data.GetPiece("Eyes"));
 		SetupPiece(data, irises,	data.GetPiece("Irises"));
 		SetupPiece(data, pupils,	data.GetPiece("Pupils"));
+		SetupPiece(data, lenses,	data.GetPiece("Lenses"));
+		SetupPiece(data, frames,	data.GetPiece("Frames"));
 		SetupPiece(data, hairFront,	data.GetPiece("HairFront"));
 
 		transform.localScale = new Vector3 (data.xScale, 1, 1);

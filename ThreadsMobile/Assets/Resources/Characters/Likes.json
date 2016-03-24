@@ -11,7 +11,7 @@
 			"Funny": 10,
 		}
 	},
-	"Likes Geeky" : {
+	"Likes Gamer" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Gamer",
 		"traitDescription": "blah",
@@ -80,5 +80,25 @@
 			"Trans Woman": 10,
 		},
 	    "conflicts": ["Likes Men"],
+	},
+	"Likes Monogamy" : {
+		"$type": "Like, Assembly-CSharp",
+		"traitName": "Likes Monogamy",
+		"traitDescription": "blah",
+		"icon": "polyamory",
+		"weight":3,
+		"mono":10,
+		"poly":-10,
+	    "conflicts": ["Likes Polyamory", "Dislikes Monogamy", "Dislikes Polyamory"],
+	},
+	"Likes Polyamory" : {
+		"$type": "Like, Assembly-CSharp",
+		"traitName": "Likes Polyamory",
+		"traitDescription": "blah",
+		"icon": "polyamory",
+		"weight":3,
+		"poly":10,
+		"mono":-10,
+	    "conflicts": ["Likes Monogamy", "Dislikes Monogamy", "Dislikes Polyamory"],
 	},
 }
