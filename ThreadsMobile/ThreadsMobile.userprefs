@@ -2,10 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Characters/Dislikes.json">
     <Files>
-      <File FileName="Assets/Resources/Characters/Genders.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="6" Column="47" />
+      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="94" Column="24" />
       <File FileName="Assets/Resources/Characters/Quirks.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Likes.json" Line="39" Column="57" />
+      <File FileName="Assets/Resources/Characters/Likes.json" Line="92" Column="80" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
