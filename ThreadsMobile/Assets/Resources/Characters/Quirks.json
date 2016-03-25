@@ -39,42 +39,49 @@
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Animal Lover",
       "traitDescription": "Loves being around all types of animals.",
-      "icon": "Traits/animal3",
+      "icon": "Traits/animal",
 	  "weight":1
   },
   "Bookworm" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Bookworm",
       "traitDescription": "Constantly has their head buried in a good book.",
-      "icon": "Traits/bookworm2",
+      "icon": "Traits/bookworm",
 	  "weight":1
   },
   "Creative" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Creative",
       "traitDescription": "...",
-      "icon": "Traits/creative1",
+      "icon": "Traits/creative",
 	  "weight":1
   },
   "Intelligent" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Intelligent",
       "traitDescription": "...",
-      "icon": "Traits/geeky1",
+      "icon": "Traits/intelligent",
 	  "weight":1
   },
   "Musical" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Musical",
       "traitDescription": "...",
-      "icon": "Traits/musical1",
+      "icon": "Traits/musical",
 	  "weight":1
   },
   "Traveller" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Traveller",
       "traitDescription": "...",
-      "icon": "Traits/traveller2",
+      "icon": "Traits/traveller",
+	  "weight":1
+  },
+	  "Geeky" : {
+      "$type": "Quirk, Assembly-CSharp",
+      "traitName": "Geeky",
+      "traitDescription": "...",
+      "icon": "Traits/geeky",
 	  "weight":1
   },
 }
