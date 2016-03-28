@@ -9,7 +9,7 @@
 	  "conflicts": ["Likes Funny"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Funny": 10,
+		"Funny": -10,
 	  }
   },
   "Dislikes Geeky" : {
@@ -152,7 +152,6 @@
 		"icon": "Traits/monogamy",
 		"weight":3,
 		"mono":-10,
-		"poly":10,
 	    "conflicts": ["Dislikes Polyamory", "Likes Monogamy", "Likes Polyamory"],
 	},
 	"Dislikes Polyamory" : {
@@ -162,7 +161,6 @@
 		"icon": "Traits/polyamory",
 		"weight":3,
 		"poly":-10,
-		"mono":10,
 	    "conflicts": ["Dislikes Monogamy", "Likes Monogamy", "Likes Polyamory"],
 	},
 	"Dislikes Geeky" : {

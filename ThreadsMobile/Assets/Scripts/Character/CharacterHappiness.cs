@@ -31,12 +31,17 @@ public class CharacterHappiness : MonoBehaviour {
     void Awake ()
     {
         scaleCount = ScaleImages.Length;
+        Debug.Log("ScaleCount " + scaleCount);
         StepSize = (MAX - MIN) / scaleCount;
+        Debug.Log("StepSize " + StepSize);
 
     }
 
     private void UpdateImage()
     {
-        img.sprite = ScaleImages[Mathf.FloorToInt((scoreVal - MIN) / StepSize)];
+        int index = Mathf.FloorToInt((scoreVal - MIN) / StepSize);
+        index = Mathf.Clamp(index, 0, ScaleImages.Length - 1);
+        Debug.Log("index " + index);
+        img.sprite = ScaleImages[index];
     }
 }

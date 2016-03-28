@@ -88,7 +88,6 @@
 		"icon": "Traits/monogamy",
 		"weight":3,
 		"mono":10,
-		"poly":-10,
 	    "conflicts": ["Likes Polyamory", "Dislikes Monogamy", "Dislikes Polyamory"],
 	},
 	"Likes Polyamory" : {
@@ -98,7 +97,6 @@
 		"icon": "Traits/polyamory",
 		"weight":3,
 		"poly":10,
-		"mono":-10,
 	    "conflicts": ["Likes Monogamy", "Dislikes Monogamy", "Dislikes Polyamory"],
 	},
   	"Likes Animal Lover" : {
