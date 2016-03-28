@@ -2,25 +2,29 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.UI;
+using TouchScript.Gestures;
 
 public class SceneControl: MonoBehaviour {
 
     public Reporter rep;
     public GameObject ScoreWindow;
     public Text ScoreText;
+    private Background back;
+    private TapGesture tapBack;
 
     public void Start()
     {
         rep = FindObjectOfType<Reporter>();
+        back = Background.Instance;
+        tapBack = back.GetComponent<TapGesture>();
     }
 
     public void Restart()
     {
         if(rep != null && rep.show)
             return;
-        //TODO: Maybe once we have a puzzle save file we can replace this with something smarter?
-//        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-		ShipLinesManager.resetShips();
+
+        ShipLinesManager.resetShips();
     }
 
     public void ExitApp()

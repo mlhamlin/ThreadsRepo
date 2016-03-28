@@ -70,9 +70,9 @@ public class RelationshipLine : MonoBehaviour
         }
     }
 
-    public void BreakUp()
+    public void BreakUp(bool reset = false)
     {
-		ShipLinesManager.breakShip (this);
+	    if(!reset) ShipLinesManager.breakShip (this);
         ShipManager.ProcessBreakup(char1, char2);
         Destroy(gameObject);
     }

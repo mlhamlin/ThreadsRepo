@@ -30,7 +30,6 @@ public class CharacterInteraction : MonoBehaviour {
     public List<TraitInteraction> Dislikes;
     public TraitInteraction Gender;
 
-
     // Use this for initialization
     void Start () {
     }
@@ -85,6 +84,7 @@ public class CharacterInteraction : MonoBehaviour {
         tapBack = background.GetComponent<TapGesture>();
 
         press.Pressed += PressHandler;
+        ShipLinesManager.Instance.closeAllUI += CloseUI;
     }
 
     private void OnDisable()
@@ -171,9 +171,7 @@ public class CharacterInteraction : MonoBehaviour {
     {
         if(UI.activeSelf)
         {
-            UI.SetActive(false);
-            ToolTip.gameObject.SetActive(false);
-            tapBack.Tapped -= tapBackHandler;
+            CloseUI();
         }
         else
         {
@@ -186,7 +184,13 @@ public class CharacterInteraction : MonoBehaviour {
 
     private void tapBackHandler(object sender, EventArgs e)
     {
+        CloseUI();
+    }
+
+    private void CloseUI()
+    {
         UI.SetActive(false);
+        ToolTip.gameObject.SetActive(false);
         tapBack.Tapped -= tapBackHandler;
     }
 

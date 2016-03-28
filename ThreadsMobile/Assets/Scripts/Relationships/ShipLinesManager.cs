@@ -5,21 +5,33 @@ public class ShipLinesManager : UnitySingleton<ShipLinesManager> {
 
 	private List<RelationshipLine> lines;
 
+    public delegate void CloseUI();
+
+    public CloseUI closeAllUI;
+
 	public void Awake()
 	{
 		lines = new List<RelationshipLine>();
 	}
 
 	public static void resetShips() {
-		int count = Instance.lines.Count;
+        
+        //Debug.Log("Reset Ships");
+        int count = Instance.lines.Count;
 		for (int i = 0; i < count; i++) {
-			RelationshipLine ship = Instance.lines [0];
+			RelationshipLine ship = Instance.lines [i];
             if(ship != null)
             {
-                ship.BreakUp();
+                ship.BreakUp(true);
             }
 		}
-		Instance.lines.Clear ();
+
+        if (Instance.closeAllUI != null)
+        {
+            Instance.closeAllUI();
+        }
+
+        Instance.lines.Clear ();
 	}
 
 	public static void addShip(RelationshipLine line) {

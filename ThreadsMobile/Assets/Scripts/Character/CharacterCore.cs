@@ -11,8 +11,7 @@ public class CharacterCore : MonoBehaviour {
     private CharacterData data;
     private CharacterInteraction interaction;
     private CharacterAvatar avatar;
-
-    public int HappyScore;
+    public CharacterHappiness happiness;
     
     // Use this for initialization
     void Start () {
@@ -26,7 +25,9 @@ public class CharacterCore : MonoBehaviour {
         data = CharacterGenerator.Generate();
        
         interaction = GetComponent<CharacterInteraction>();
+        happiness = GetComponent<CharacterHappiness>();
         interaction.Setup(this, data);
+        ScoreRelationships();
     }
 
 	private void PrintCharacterDataInfo()
@@ -53,7 +54,7 @@ public class CharacterCore : MonoBehaviour {
             score = score / this.Partners.Count;
         }
 
-        HappyScore = score;
+        happiness.score = score;
 
 		return score;
 	}
