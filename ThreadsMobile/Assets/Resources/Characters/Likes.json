@@ -84,7 +84,7 @@
 	"Likes Monogamy" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Monogamy",
-		"traitDescription": "...",
+		"traitDescription": "Likes a partner who is interested in a monogamous relationship.",
 		"icon": "Traits/monogamy",
 		"weight":3,
 		"mono":10,
@@ -94,7 +94,7 @@
 	"Likes Polyamory" : {
 		"$type": "Like, Assembly-CSharp",
 		"traitName": "Likes Polyamory",
-		"traitDescription": "...",
+		"traitDescription": "Likes a partner who is interested in a polyamorous relationship.",
 		"icon": "Traits/polyamory",
 		"weight":3,
 		"poly":10,
@@ -104,7 +104,7 @@
   	"Likes Animal Lover" : {
       	"$type": "Like, Assembly-CSharp",
       	"traitName": "Likes Animal Lover",
-      	"traitDescription": "Loves being around all types of animals.",
+      	"traitDescription": "Likes a partner who enjoys animals.",
       	"icon": "Traits/animal",
 	  	"weight":1,
 		"scoring":{
@@ -115,7 +115,7 @@
 	"Likes Bookworm" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Bookworm",
-	    "traitDescription": "Constantly has their head buried in a good book.",
+	    "traitDescription": "Likes a partner who loves reading a good book.",
 	    "icon": "Traits/bookworm",
 	 	"weight":1,
 		"scoring":{
@@ -126,7 +126,7 @@
 	"Likes Creative" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Creative",
-	    "traitDescription": "...",
+	    "traitDescription": "Likes a partner who likes to make things such as art, writing and videos.",
 	    "icon": "Traits/creative",
 		"weight":1,
 		"scoring":{
@@ -137,7 +137,7 @@
 	"Likes Intelligent" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Intelligent",
-	    "traitDescription": "...",
+	    "traitDescription": "Likes a partner who learns and understand things with ease.",
 	    "icon": "Traits/intelligent",
 		"weight":1,
 		"scoring":{
@@ -148,7 +148,7 @@
 	"Likes Musical" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Musical",
-	    "traitDescription": "...",
+	    "traitDescription": "Likes a partner who plays instruments and/or enjoys music.",
 	    "icon": "Traits/musical",
 		"weight":1,
 		"scoring":{
@@ -159,7 +159,7 @@
 	"Likes Traveller" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Traveller",
-	    "traitDescription": "...",
+	    "traitDescription": "Likes a partner who has the desire to travel.",
 	    "icon": "Traits/traveller",
 		"weight":1,
 		"scoring":{
@@ -170,7 +170,7 @@
 	"Likes Geeky" : {
 	    "$type": "Like, Assembly-CSharp",
 	    "traitName": "Likes Geeky",
-	    "traitDescription": "...",
+	    "traitDescription": "Likes a partner who shows enthusiasm for a particular subject.",
 	    "icon": "Traits/geeky",
 		"weight":1,
 		"scoring":{

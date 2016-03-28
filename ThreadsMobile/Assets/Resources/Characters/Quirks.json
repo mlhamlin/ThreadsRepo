@@ -52,35 +52,35 @@
   "Creative" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Creative",
-      "traitDescription": "...",
+      "traitDescription": "Loves to make things, such as art, writing or videos.",
       "icon": "Traits/creative",
 	  "weight":1
   },
   "Intelligent" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Intelligent",
-      "traitDescription": "...",
+      "traitDescription": "Learns and understands things relatively easily.",
       "icon": "Traits/intelligent",
 	  "weight":1
   },
   "Musical" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Musical",
-      "traitDescription": "...",
+      "traitDescription": "Likes playing instruments and is always listening to music.",
       "icon": "Traits/musical",
 	  "weight":1
   },
   "Traveller" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Traveller",
-      "traitDescription": "...",
+      "traitDescription": "Loves to travel around the world, never laying roots in one place.",
       "icon": "Traits/traveller",
 	  "weight":1
   },
 	  "Geeky" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Geeky",
-      "traitDescription": "...",
+      "traitDescription": "Is really enthusiastic about a particular subject, like math or programming.",
       "icon": "Traits/geeky",
 	  "weight":1
   },

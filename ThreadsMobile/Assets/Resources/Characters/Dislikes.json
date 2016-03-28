@@ -3,42 +3,62 @@
   "Dislikes Funny" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Funny",
-      "traitDescription": "Dislikes a partner ",
+      "traitDescription": "Dislikes a partner that is comical and makes other people laugh.",
       "icon": "Traits/funny",
 	  "weight":1,
 	  "conflicts": ["Likes Funny"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Funny": 10,
+	  }
   },
   "Dislikes Geeky" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Gamer",
-      "traitDescription": "Dislikes a partner ",
+      "traitDescription": "Dislikes a partner that enjoys playing videogames.",
       "icon": "Traits/gamer",
 	  "weight":1,
 	  "conflicts": ["Likes Gamer"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Gamer": -10,
+	  }
   },
   "Dislikes Foodie" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Foodie",
-      "traitDescription": "Dislikes a partner ",
+      "traitDescription": "Dislikes a partner that loves making and/or eating food.",
       "icon": "Traits/foodie",
 	  "weight":1,
 	  "conflicts": ["Likes Foodie"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Foodie": -10,
+	  }
   },
   "Dislikes Sporty" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Sporty",
-      "traitDescription": "Dislikes a partner ",
+      "traitDescription": "Dislikes a partner who plays sports.",
       "icon": "Traits/sporty",
 	  "weight":1,
 	  "conflicts": ["Likes Sporty"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Sporty": -10,
+	  }
   },
   "Dislikes Outdoorsy" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Outdoorsy",
-      "traitDescription": "Dislikes a partner ",
+      "traitDescription": "Dislikes a partner that loves being outdoors and going on camping trips.",
       "icon": "Traits/outdoorsy",
 	  "weight":1,
 	  "conflicts": ["Likes Outdoorsy"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Outdoorsy": -10,
+	  }
   },
   "Dislikes Trans" : {
       "$type": "Dislike, Assembly-CSharp",
@@ -56,55 +76,79 @@
   "Dislikes Animal Lover" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Animal Lover",
-      "traitDescription": "Loves being around all types of animals.",
+      "traitDescription": "Dislikes a partner who enjoys animals.",
       "icon": "Traits/animal",
 	  "weight":1,
 	  "conflicts": ["Likes Animal Lover"],
-  },
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Animal Lover": -10,
+	  }
+  	},
 	"Dislikes Bookworm" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Bookworm",
-	    "traitDescription": "Constantly has their head buried in a good book.",
+	    "traitDescription": "Dislikes a partner who loves reading a good book.",
 	    "icon": "Traits/bookworm",
 	 	"weight":1,
 	  "conflicts": ["Likes Bookworm"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Bookworm": -10,
+	  }
 	},
 	"Dislikes Creative" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Creative",
-	    "traitDescription": "...",
+	    "traitDescription": "Dislikes a partner who likes to make things such as art, writing and videos.",
 	    "icon": "Traits/creative",
 		"weight":1,
 	  "conflicts": ["Likes Creative"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Creative": -10,
+	  }
 	},
 	"Dislikes Intelligent" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Intelligent",
-	    "traitDescription": "...",
+	    "traitDescription": "Dislikes a partner who learns and understand things with ease.",
 	    "icon": "Traits/intelligent",
 		"weight":1,
 	  "conflicts": ["Likes Intelligent"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Intelligent": -10,
+	  }
 	},
 	"Dislikes Musical" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Musical",
-	    "traitDescription": "...",
+	    "traitDescription": "Dislikes a partner who plays instruments and/or enjoys music.",
 	    "icon": "Traits/musical",
 		"weight":1,
 	  "conflicts": ["Likes Musical"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Musical": -10,
+	  }
 	},
 	"Dislikes Traveller" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Traveller",
-	    "traitDescription": "...",
+	    "traitDescription": "Dislikes a partner who has the desire to travel.",
 	    "icon": "Traits/traveller",
 		"weight":1,
 	  "conflicts": ["Likes Traveller"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Traveller": -10,
+	  }
 	},
 	"Dislikes Monogamy" : {
 		"$type": "Dislike, Assembly-CSharp",
 		"traitName": "Dislikes Monogamy",
-		"traitDescription": "...",
+		"traitDescription": "Dislikes a partner who is interested in a monogamous relationship.",
 		"icon": "Traits/monogamy",
 		"weight":3,
 		"mono":-10,
@@ -114,7 +158,7 @@
 	"Dislikes Polyamory" : {
 		"$type": "Dislike, Assembly-CSharp",
 		"traitName": "Dislikes Polyamory",
-		"traitDescription": "...",
+		"traitDescription": "Dislikes a partner who is interested in a polyamorous relationship.",
 		"icon": "Traits/polyamory",
 		"weight":3,
 		"poly":-10,
@@ -124,9 +168,13 @@
 	"Dislikes Geeky" : {
 	    "$type": "Dislike, Assembly-CSharp",
 	    "traitName": "Dislikes Geeky",
-	    "traitDescription": "...",
+	    "traitDescription": "Dislikes a partner who shows enthusiasm for a particular subject.",
 	    "icon": "Traits/geeky",
 		"weight":1,
-	  "conflicts": ["Likes Geeky"],
+	  	"conflicts": ["Likes Geeky"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Geeky": -10,
+	  }
 	},
 }
