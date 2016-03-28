@@ -11,7 +11,7 @@ public class AvatarTestFaceCounter : MonoBehaviour {
 	void Start () {
 		text = GetComponent<Text>();
 		//text.text = AvatarGenerator.Instance.CountCombinations() + " unique faces";
-		float faces = AvatarGenerator.Instance.CountCombinations()/1000000000000f;
-		text.text = "~" + string.Format("{0:n0}", faces) + " trillion unique faces";
+		float faces = AvatarGenerator.Instance.CountCombinations()/1000000000000000f;
+		text.text = "~" + string.Format("{0:0.00}", faces) + " quadrillion unique faces";
 	}
 }

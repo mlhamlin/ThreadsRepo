@@ -201,7 +201,10 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	#region Test Scene
 	public void TestGenerateAvatar(){
 		CharacterData character = CharacterGenerator.Generate ();
+		SetupTestAvatar (character);
+	}
 
+	public void SetupTestAvatar(CharacterData character){
 		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(character.avatar);
 		AvatarTestGenderDisplay.Instance.UpdateText (character);
 	}
