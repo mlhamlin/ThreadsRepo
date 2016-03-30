@@ -13,13 +13,15 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	const string SHOULDER_PATH = 	"Avatars/Pieces JSON/Shoulders";
 	const string CLOTHES_PATH = 	"Avatars/Pieces JSON/Clothes";
 	const string HEAD_PATH = 		"Avatars/Pieces JSON/Heads";
+	const string EAR_PATH = 		"Avatars/Pieces JSON/Ears";
 	const string BEARD_PATH = 		"Avatars/Pieces JSON/Beards";
 	const string MOUTH_PATH = 		"Avatars/Pieces JSON/Mouths";
 	const string MOUSTACHE_PATH = 	"Avatars/Pieces JSON/Moustaches";
 	const string NOSE_PATH = 		"Avatars/Pieces JSON/Noses";
 	const string BROW_PATH =	 	"Avatars/Pieces JSON/Brows";
 	const string EYE_PATH = 		"Avatars/Pieces JSON/Eyes";
-	const string IRIS_PATH = 		"Avatars/Pieces JSON/Irises";
+	const string IRIS_LEFT_PATH = 	"Avatars/Pieces JSON/IrisLeft";
+	const string IRIS_RIGHT_PATH = 	"Avatars/Pieces JSON/IrisRight";
 	const string PUPIL_PATH = 		"Avatars/Pieces JSON/Pupils";
 	const string LENS_PATH = 		"Avatars/Pieces JSON/Lenses";
 	const string FRAME_PATH = 		"Avatars/Pieces JSON/Frames";
@@ -39,13 +41,15 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	public Dictionary<string, AvatarPiece> shoulders;
 	public Dictionary<string, AvatarPiece> clothes;
 	public Dictionary<string, AvatarPiece> heads;
+	public Dictionary<string, AvatarPiece> ears;
 	public Dictionary<string, AvatarPiece> beards;
 	public Dictionary<string, AvatarPiece> mouths;
 	public Dictionary<string, AvatarPiece> moustaches;
 	public Dictionary<string, AvatarPiece> noses;
 	public Dictionary<string, AvatarPiece> brows;
 	public Dictionary<string, AvatarPiece> eyes;
-	public Dictionary<string, AvatarPiece> irises;
+	public Dictionary<string, AvatarPiece> irisLeft;
+	public Dictionary<string, AvatarPiece> irisRight;
 	public Dictionary<string, AvatarPiece> pupils;
 	public Dictionary<string, AvatarPiece> lenses;
 	public Dictionary<string, AvatarPiece> frames;
@@ -77,13 +81,15 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		shoulders =  LoadPieces(SHOULDER_PATH);
 		clothes = 	 LoadPieces(CLOTHES_PATH);
 		heads =		 LoadPieces(HEAD_PATH);
+		ears = 		 LoadPieces(EAR_PATH);
 		beards =	 LoadPieces(BEARD_PATH);
 		mouths = 	 LoadPieces(MOUTH_PATH);
 		moustaches = LoadPieces(MOUSTACHE_PATH);
 		noses =		 LoadPieces(NOSE_PATH);
 		brows =		 LoadPieces(BROW_PATH);
 		eyes =		 LoadPieces(EYE_PATH);
-		irises =	 LoadPieces(IRIS_PATH);
+		irisLeft =	 LoadPieces(IRIS_LEFT_PATH);
+		irisRight =  LoadPieces(IRIS_RIGHT_PATH);
 		pupils = 	 LoadPieces(PUPIL_PATH);
 		lenses =	 LoadPieces(LENS_PATH);
 		frames = 	 LoadPieces(FRAME_PATH);
@@ -119,6 +125,7 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		cData.avatar.AddPiece("Shoulders", 	GetRandomPiece(cData, shoulders));
 		cData.avatar.AddPiece("Clothes", 	GetRandomPiece(cData, clothes));
 		cData.avatar.AddPiece("Head", 		GetRandomPiece(cData, heads));
+		cData.avatar.AddPiece("Ears", 		GetRandomPiece(cData, ears));
 		cData.avatar.AddPiece("Beard", 		GetRandomPiece(cData, beards));
 		cData.avatar.AddPiece("Mouth", 		GetRandomPiece(cData, mouths));
 		cData.avatar.AddPiece("Moustache", 	GetRandomPiece(cData, moustaches));
@@ -126,7 +133,8 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		cData.avatar.AddPiece("Brows", 		GetRandomPiece(cData, brows));
 
 		cData.avatar.AddPiece("Eyes", 		GetRandomPiece(cData, eyes));
-		cData.avatar.AddPiece("Irises", 	GetRandomPiece(cData, irises));
+		cData.avatar.AddPiece("Iris Left", 	GetRandomPiece(cData, irisLeft));
+		cData.avatar.AddPiece("Iris Right", GetRandomPiece(cData, irisRight));
 		cData.avatar.AddPiece("Pupils", 	GetRandomPiece(cData, pupils));
 
 		cData.avatar.AddPiece("Frames", 	GetRandomPiece(cData, frames));
@@ -142,10 +150,18 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 		cData.avatar.AddSwatch("Lens", GetRandomSwatch(cData, lensSwatches));
 		cData.avatar.AddSwatch("Clothes", GetRandomSwatch(cData, clothesSwatches));
 
+		//Tries to add second hair color
 		if(Random.value > .1f){
 			cData.avatar.AddSwatch("Hair2", cData.avatar.GetSwatch("Hair"));
 		}else{
 			cData.avatar.AddSwatch("Hair2",GetRandomSwatch(cData, hairSwatches));
+		}
+
+		//Tries to add second iris color
+		if(Random.value > .1f){
+			cData.avatar.AddSwatch("Iris2", cData.avatar.GetSwatch("Iris"));
+		}else{
+			cData.avatar.AddSwatch("Iris2",GetRandomSwatch(cData, irisSwatches));
 		}
 
 		//Random chance to mirror characters horizontally
@@ -209,8 +225,10 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	public float CountCombinations(){
 		float faces = 1f;
 
+		faces *= (shoulders.Count - 1f);
 		faces *= (hairBacks.Count - 1f);
 		faces *= clothes.Count;
+		faces *= (ears.Count - 1f);
 		faces *= (beards.Count - 1f);
 		faces *= (mouths.Count - 1f);
 		faces *= moustaches.Count;
@@ -222,11 +240,11 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 
 		faces *= (skinSwatches.Count - 1f);
 		faces *= (hairSwatches.Count - 1f) * (hairSwatches.Count - 1f);
-		faces *= (irisSwatches.Count - 1f);
+		faces *= (irisSwatches.Count - 1f) * (irisSwatches.Count - 1f);
 		faces *= clothesSwatches.Count;
 		faces *= (lensSwatches.Count - 1f);
 
-		faces *= 2; //Horizontal flip
+		//faces *= 2; //Horizontal flip
 
 		return faces;
 	}

@@ -2,31 +2,37 @@
 	"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[AvatarPiece, Assembly-CSharp]], mscorlib",
 	"Default" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
-		"path": "shoulders",
+		"path": "ears1",
 		"swatchType": "skin",
 		"weight": 0,
 	},
-	"Shoulders 1" : {
+	"Ears 1" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
-		"path": "shoulders1",
+		"path": "ears1",
 		"swatchType": "skin",
 		"weight": 1,
 	},
-	"Shoulders 2" : {
+	"Ears 2" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
-		"path": "shoulders2",
+		"path": "ears2",
 		"swatchType": "skin",
 		"weight": 1,
 	},
-	"Shoulders 3" : {
+	"Ears 3" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
-		"path": "shoulders3",
+		"path": "ears3",
 		"swatchType": "skin",
 		"weight": 1,
 	},
-	"Shoulders 4" : {
+	"Ears 4" : {
 		"$type": "AvatarPiece, Assembly-CSharp",
-		"path": "shoulders4",
+		"path": "ears4",
+		"swatchType": "skin",
+		"weight": 1,
+	},
+	"Ears 5" : {
+		"$type": "AvatarPiece, Assembly-CSharp",
+		"path": "ears5",
 		"swatchType": "skin",
 		"weight": 1,
 	},
