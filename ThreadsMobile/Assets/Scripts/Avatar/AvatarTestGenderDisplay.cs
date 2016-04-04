@@ -6,5 +6,6 @@ public class AvatarTestGenderDisplay : UnitySingletonPersistent<AvatarTestGender
 
 	public void UpdateText(CharacterData cData){
 		GetComponent<Text> ().text = cData.gender.TraitName;
+		GetComponentInChildren<Image> ().sprite = cData.gender.Icon;
 	}
 }

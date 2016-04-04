@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class AvatarData {
 
+	public int seed;
+
 	Dictionary<string, AvatarPiece> pieces;
 	Dictionary<string, Swatch> swatches;
 

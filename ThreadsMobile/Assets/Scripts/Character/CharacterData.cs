@@ -15,6 +15,7 @@ public class CharacterData {
     public List<Like> likes;
     public List<Dislike> dislikes;
 
+	public int avatarSeed;
 	public AvatarData avatar;
 
 	#region Constructors
@@ -28,7 +29,7 @@ public class CharacterData {
 		this.dislikes = dislikes;
 	}
 
-	public CharacterData(string firstName, string lastName, string desc, string gender, List<string> quirks, List<string> likes, List<string> dislikes){
+	public CharacterData(string firstName, string lastName, string desc, string gender, List<string> quirks, List<string> likes, List<string> dislikes, int avatarSeed){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.description = desc;
@@ -49,6 +50,8 @@ public class CharacterData {
 		foreach(string s in dislikes){
 			this.dislikes.Add (TraitManager.GetTrait<Dislike>(s));
 		}
+
+		this.avatarSeed = avatarSeed;
 	}
 	#endregion
 
@@ -164,7 +167,9 @@ public class CharacterDataFromJSON {
 	public List<string> likes;
 	public List<string> dislikes;
 
+	public int avatarSeed;
+
 	public CharacterData ToCharacterData(){
-		return new CharacterData (firstName, lastName, desc, gender, quirks, likes, dislikes);
+		return new CharacterData (firstName, lastName, desc, gender, quirks, likes, dislikes, avatarSeed);
 	}
 }
