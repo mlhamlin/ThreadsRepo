@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Character\CharacterCore.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterData.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterGenerator.cs" />
+     <Compile Include="Assets\Scripts\Character\CharacterHappiness.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\ProbabilityArray.cs" />

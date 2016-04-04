@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Characters/Dislikes.json">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="94" Column="24" />
+      <File FileName="Assets/Resources/Characters/Dislikes.json" Line="1" Column="1" />
       <File FileName="Assets/Resources/Characters/Quirks.json" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Characters/Likes.json" Line="92" Column="80" />
+      <File FileName="Assets/Resources/Characters/Likes.json" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Characters/Genders.json" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
