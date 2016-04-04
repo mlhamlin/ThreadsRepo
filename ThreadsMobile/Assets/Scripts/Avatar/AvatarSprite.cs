@@ -19,7 +19,11 @@ public class AvatarSprite : MonoBehaviour {
 	public SpriteRenderer frames;
 	public SpriteRenderer hairFront;
 
+	public AvatarData avatarData;
+
 	public void Setup(AvatarData data){
+		avatarData = data;
+
 		SetupPiece(data, hairBack,	data.GetPiece("HairBack"));
 		SetupPiece(data, shoulders,	data.GetPiece("Shoulders"));
 		SetupPiece(data, clothes,	data.GetPiece("Clothes"));

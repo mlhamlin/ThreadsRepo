@@ -115,6 +115,12 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	private void GenerateLocal(ref CharacterData cData){
 		cData.avatar = new AvatarData();
 
+		if(cData.avatarSeed != null && cData.avatarSeed != 0){
+			Random.seed = cData.avatarSeed;
+		}
+
+		cData.avatar.seed = Random.seed;
+
 		//NOTE: May need reordering once conflicts are implemented
 		cData.avatar.AddPiece("Shoulders", 	GetRandomPiece(cData, shoulders));
 		cData.avatar.AddPiece("Clothes", 	GetRandomPiece(cData, clothes));
@@ -199,16 +205,6 @@ public class AvatarGenerator : UnitySingletonPersistent<AvatarGenerator> {
 	#endregion
 
 	#region Test Scene
-	public void TestGenerateAvatar(){
-		CharacterData character = CharacterGenerator.Generate ();
-		SetupTestAvatar (character);
-	}
-
-	public void SetupTestAvatar(CharacterData character){
-		GameObject.Find("Avatar").GetComponent<AvatarSprite>().Setup(character.avatar);
-		AvatarTestGenderDisplay.Instance.UpdateText (character);
-	}
-
 	public float CountCombinations(){
 		float faces = 1f;
 

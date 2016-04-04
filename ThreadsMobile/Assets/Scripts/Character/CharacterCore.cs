@@ -17,15 +17,16 @@ public class CharacterCore : MonoBehaviour {
     void Start () {
         currentShipWeb = ShipManager.SetUpWeb();
         currentShipWeb.members.Add(this);
-        Setup();
-	}
+		interaction = GetComponent<CharacterInteraction>();
+		happiness = GetComponent<CharacterHappiness>();
 
+        Setup(); //Call this from scene setup scripts
+	}
+		
     public void Setup()
     {
-        data = CharacterGenerator.Generate();
-       
-        interaction = GetComponent<CharacterInteraction>();
-        happiness = GetComponent<CharacterHappiness>();
+		data = CharacterGenerator.Generate(); //Move this to the random setup script
+
         interaction.Setup(this, data);
         ScoreRelationships();
     }
