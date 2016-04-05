@@ -49,8 +49,11 @@
      <Compile Include="Assets\Scripts\Avatar\AvatarGenerator.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarPiece.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarSprite.cs" />
+     <Compile Include="Assets\Scripts\Avatar\AvatarTestExport.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarTestFaceCounter.cs" />
      <Compile Include="Assets\Scripts\Avatar\AvatarTestGenderDisplay.cs" />
+     <Compile Include="Assets\Scripts\Avatar\AvatarTestManager.cs" />
+     <Compile Include="Assets\Scripts\Avatar\AvatarTestShowFolder.cs" />
      <Compile Include="Assets\Scripts\Avatar\Swatch.cs" />
      <Compile Include="Assets\Scripts\Background.cs" />
      <Compile Include="Assets\Scripts\BlockOnDebug.cs" />
