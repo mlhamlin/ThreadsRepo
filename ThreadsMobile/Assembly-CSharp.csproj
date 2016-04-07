@@ -66,6 +66,9 @@
      <Compile Include="Assets\Scripts\Character\CharacterHappiness.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterInteraction.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
+     <Compile Include="Assets\Scripts\GameLoading\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameLoading\PuzzleMenuButtons.cs" />
+     <Compile Include="Assets\Scripts\GameLoading\PuzzleSetup.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\ProbabilityArray.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\UnitySingleton.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\UnitySingletonPersistent.cs" />
@@ -77,6 +80,7 @@
      <Compile Include="Assets\Scripts\Relationships\ShipLinesManager.cs" />
      <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
      <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
+     <Compile Include="Assets\Scripts\SceneSwapper.cs" />
      <Compile Include="Assets\Scripts\Traits\DetailedTraitTooltip.cs" />
      <Compile Include="Assets\Scripts\Traits\Trait.cs" />
      <Compile Include="Assets\Scripts\Traits\TraitInteraction.cs" />

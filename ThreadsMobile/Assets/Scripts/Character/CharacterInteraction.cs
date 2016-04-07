@@ -21,7 +21,7 @@ public class CharacterInteraction : MonoBehaviour {
 
     public GameObject linePrefab;
     private RelationshipLine currentLine;
-    private bool DrawingLine;
+    private bool DrawingLine = false;
 
 	public AvatarSprite avatar;
 

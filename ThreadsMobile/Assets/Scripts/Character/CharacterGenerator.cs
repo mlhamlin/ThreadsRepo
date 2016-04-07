@@ -42,6 +42,11 @@ public class CharacterGenerator {
 		return cData;
 	}
 
+	public static CharacterData GenerateAvatar(CharacterData data) {
+		AvatarGenerator.Generate (ref data);
+		return data;
+	}
+
 	public static CharacterData Generate(int seed){
 		Random.seed = seed;
 

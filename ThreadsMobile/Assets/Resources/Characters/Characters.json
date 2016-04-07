@@ -6,9 +6,10 @@
       "lastName": "Skwigelf",
 	  "desc": "Taller than a tree",
       "gender": "Cis Man",
-	  "quirks": ["Sporty"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
+	  "avatarSeed": 2115373077,
+	  "quirks": ["Sporty", "Sporty", "Sporty", "Sporty", "Sporty"],
+	  "likes": ["Likes Geeky", "Likes Geeky", "Likes Geeky"],
+	  "dislikes": ["Dislikes Funny", "Dislikes Funny"],
   },
   "Toki" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -16,9 +17,10 @@
       "lastName": "Wartooth",
 	  "desc": "Not a bumblebee",
       "gender": "Cis Man",
-	  "quirks": ["Funny"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
+	  "avatarSeed": 2072654911,
+	  "quirks": ["Funny", "Funny", "Funny", "Funny", "Funny"],
+	  "likes": ["Likes Funny", "Likes Geeky", "Likes Geeky"],
+	  "dislikes": ["Dislikes Sporty", "Dislikes Intelligent"],
   },
   "Murderface" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -26,6 +28,7 @@
       "lastName": "Murderface",
 	  "desc": "Murderface, Murderface",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]
@@ -36,6 +39,7 @@
       "lastName": "The Drummer",
 	  "desc": "Doodly doodly",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]
@@ -46,27 +50,8 @@
       "lastName": "Explosion",
 	  "desc": "That's doable",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
-  },
-  "DoctorRockzo" : {
-      "$type": "CharacterDataFromJSON, Assembly-CSharp",
-      "firstName": "Lenard",
-      "lastName": "Rockzo",
-	  "desc": "I do cocaine",
-      "gender": "Cis Man",
-	  "quirks": ["Funny"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
-  },
-  "Offdensen" : {
-      "$type": "CharacterDataFromJSON, Assembly-CSharp",
-      "firstName": "Charles Foster",
-      "lastName": "Offdensen",
-	  "desc": "Thats my bread and butter you're fucking with",
-      "gender": "Cis Man",
-	  "quirks": ["Geeky"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]
   },
