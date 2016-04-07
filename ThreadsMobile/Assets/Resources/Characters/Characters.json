@@ -8,7 +8,7 @@
       "gender": "Cis Man",
 	  "quirks": ["Sporty", "Sporty", "Sporty", "Sporty", "Sporty"],
 	  "likes": ["Likes Geeky", "Likes Geeky", "Likes Geeky"],
-	  "dislikes": ["Dislikes Funny", "Dislikes Funny"]
+	  "dislikes": ["Dislikes Funny", "Dislikes Funny"],
   },
   "Toki" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -17,8 +17,8 @@
 	  "desc": "Not a bumblebee",
       "gender": "Cis Man",
 	  "quirks": ["Funny", "Funny", "Funny", "Funny", "Funny"],
-	  "likes": ["Likes Geeky", "Likes Geeky", "Likes Geeky"],
-	  "dislikes": ["Dislikes Funny", "Dislikes Funny"]
+	  "likes": ["Likes Funny", "Likes Geeky", "Likes Geeky"],
+	  "dislikes": ["Dislikes Sporty", "Dislikes Intelligent"],
   },
   "Murderface" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",

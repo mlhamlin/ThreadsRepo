@@ -5,29 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class PuzzleSetup : MonoBehaviour {
 
-	public List<CharacterCore> characters;
+	public CharacterCore character1;
+	public CharacterCore character2;
+	public CharacterCore character3;
+	public CharacterCore character4;
+	public CharacterCore character5;
 
 	// Use this for initialization
 	void Start () {
 		if (GameManager.Instance.getPuzzleType () == "Random") {
-			foreach (CharacterCore character in this.characters) {
-				character.RandomSetup ();
-			}
+			character1.setCharacterData (null);
+			character2.setCharacterData (null);
+			character3.setCharacterData (null);
+			character4.setCharacterData (null);
+			character5.setCharacterData (null);
 		} else if (GameManager.Instance.getPuzzleType () == "Campaign") {
 			PuzzleData puzzle = PuzzleManager.LoadPuzzle (GameManager.Instance.getPuzzleName ());
 			int numCharacters = puzzle.Characters.Count;
 			if (numCharacters == 2) {
-				characters [0].gameObject.SetActive (false);
-				characters [2].gameObject.SetActive (false);
-				characters [3].gameObject.SetActive (false);
+				Destroy (character1.gameObject);
+				Destroy (character3.gameObject);
+				Destroy (character4.gameObject);
 
-				characters [1].PuzzleSetup (puzzle.Characters [0]);
-				characters [4].PuzzleSetup (puzzle.Characters [1]);
+				character2.setCharacterData (puzzle.Characters [0]);
+				character5.setCharacterData (puzzle.Characters [1]);
 			} else if (numCharacters == 3) {
-				characters [0].gameObject.SetActive (false);
-				characters [4].gameObject.SetActive (false);
+				Destroy (character1.gameObject);
+				Destroy (character5.gameObject);
 			} else if (numCharacters == 4) {
-				characters [2].gameObject.SetActive (false);
+				Destroy (character3.gameObject);
 			}
 		}
 	}

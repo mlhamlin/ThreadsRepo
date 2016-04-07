@@ -15,35 +15,25 @@ public class CharacterCore : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-        currentShipWeb = ShipManager.SetUpWeb();
-        currentShipWeb.members.Add(this);
-		interaction = GetComponent<CharacterInteraction>();
-		happiness = GetComponent<CharacterHappiness>();
 
         //Setup(); //Call this from scene setup scripts
 	}
 
-	public void PuzzleSetup(CharacterData characterData) {
+	public void setCharacterData(CharacterData characterData) {
 		currentShipWeb = ShipManager.SetUpWeb();
 		currentShipWeb.members.Add(this);
 		interaction = GetComponent<CharacterInteraction>();
 		happiness = GetComponent<CharacterHappiness>();
 		data = characterData;
-		interaction.Setup (this, data);
-		ScoreRelationships ();
-	}
-		
-    public void RandomSetup()
-	{
-		currentShipWeb = ShipManager.SetUpWeb();
-		currentShipWeb.members.Add(this);
-		interaction = GetComponent<CharacterInteraction>();
-		happiness = GetComponent<CharacterHappiness>();
-		data = CharacterGenerator.Generate(); //Move this to the random setup script
 
-        interaction.Setup(this, data);
-        ScoreRelationships();
-    }
+		if (data == null) {
+			data = CharacterGenerator.Generate ();
+		} else {
+			data = CharacterGenerator.GenerateAvatar (data);
+		}
+		interaction.Setup(this, data);
+		ScoreRelationships();
+	}
 
 	private void PrintCharacterDataInfo()
 	{
@@ -72,5 +62,10 @@ public class CharacterCore : MonoBehaviour {
         happiness.score = score;
 
 		return score;
+	}
+
+	public void Disable() {
+		currentShipWeb.gameObject.SetActive (false);
+		this.gameObject.SetActive (false);
 	}
 }
