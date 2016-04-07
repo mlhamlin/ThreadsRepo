@@ -20,11 +20,25 @@ public class CharacterCore : MonoBehaviour {
 		interaction = GetComponent<CharacterInteraction>();
 		happiness = GetComponent<CharacterHappiness>();
 
-        Setup(); //Call this from scene setup scripts
+        //Setup(); //Call this from scene setup scripts
+	}
+
+	public void PuzzleSetup(CharacterData characterData) {
+		currentShipWeb = ShipManager.SetUpWeb();
+		currentShipWeb.members.Add(this);
+		interaction = GetComponent<CharacterInteraction>();
+		happiness = GetComponent<CharacterHappiness>();
+		data = characterData;
+		interaction.Setup (this, data);
+		ScoreRelationships ();
 	}
 		
-    public void Setup()
-    {
+    public void RandomSetup()
+	{
+		currentShipWeb = ShipManager.SetUpWeb();
+		currentShipWeb.members.Add(this);
+		interaction = GetComponent<CharacterInteraction>();
+		happiness = GetComponent<CharacterHappiness>();
 		data = CharacterGenerator.Generate(); //Move this to the random setup script
 
         interaction.Setup(this, data);
