@@ -7,7 +7,7 @@
       "icon": "Traits/funny",
 	  "weight":1
   },
-  "Geeky" : {
+  "Gamer" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Gamer",
       "traitDescription": "Loves to constantly play videogames.",
@@ -77,7 +77,7 @@
       "icon": "Traits/traveller",
 	  "weight":1
   },
-	  "Geeky" : {
+  "Geeky" : {
       "$type": "Quirk, Assembly-CSharp",
       "traitName": "Geeky",
       "traitDescription": "Is really enthusiastic about a particular subject, like math or programming.",

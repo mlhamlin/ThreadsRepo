@@ -7,9 +7,9 @@
 	  "desc": "Taller than a tree",
       "gender": "Cis Man",
 	  "avatarSeed": 2115373077,
-	  "quirks": ["Sporty", "Sporty", "Sporty", "Sporty", "Sporty"],
-	  "likes": ["Likes Geeky", "Likes Geeky", "Likes Geeky"],
-	  "dislikes": ["Dislikes Funny", "Dislikes Funny"],
+	  "quirks": ["Geeky", "Creative", "Musical", "Bookworm", "Traveller"],
+	  "likes": ["Likes Musical", "Likes Men", "Likes Foodie"],
+	  "dislikes": ["Dislikes Funny", "Dislikes Monogamy"],
   },
   "Toki" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -18,9 +18,9 @@
 	  "desc": "Not a bumblebee",
       "gender": "Cis Man",
 	  "avatarSeed": 2072654911,
-	  "quirks": ["Funny", "Funny", "Funny", "Funny", "Funny"],
-	  "likes": ["Likes Funny", "Likes Geeky", "Likes Geeky"],
-	  "dislikes": ["Dislikes Sporty", "Dislikes Intelligent"],
+	  "quirks": ["Musical", "Animal Lover", "Funny", "Creative", "Geeky"],
+	  "likes": ["Likes Musical", "Likes Men", "Likes Creative"],
+	  "dislikes": ["Dislikes Polyamory", "Dislikes Foodie"],
   },
   "Murderface" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -29,9 +29,9 @@
 	  "desc": "Murderface, Murderface",
       "gender": "Cis Man",
 	  "avatarSeed": 2072654911,
-	  "quirks": ["Sporty"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
+	  "quirks": ["Intelligent", "Musical", "Foodie", "Traveller", "Geeky"],
+	  "likes": ["Likes Traveller", "Likes Polyamory", "Likes Geeky"],
+	  "dislikes": ["Dislikes Sporty", "Dislikes Intelligent"],
   },
   "Pickles" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -40,9 +40,9 @@
 	  "desc": "Doodly doodly",
       "gender": "Cis Man",
 	  "avatarSeed": 2072654911,
-	  "quirks": ["Sporty"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
+	  "quirks": ["Musical", "Intelligent", "Funny", "Foodie", "Traveller"],
+	  "likes": ["Likes Polyamory", "Likes Traveller", "Likes Intelligent"],
+	  "dislikes": ["Dislikes Outdoorsy", "Dislikes Monogamy"],
   },
   "Nathan" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -51,8 +51,8 @@
 	  "desc": "That's doable",
       "gender": "Cis Man",
 	  "avatarSeed": 2072654911,
-	  "quirks": ["Sporty"],
-	  "likes": ["Likes Geeky"],
-	  "dislikes": ["Dislikes Funny"]
+	  "quirks": ["Musical", "Intelligent", "Sporty", "Creative", "Outdoorsy"],
+	  "likes": ["Likes Musical", "Likes Women", "Likes Sporty"],
+	  "dislikes": ["Dislikes Traveller", "Dislikes Geeky"],
   },
 }
