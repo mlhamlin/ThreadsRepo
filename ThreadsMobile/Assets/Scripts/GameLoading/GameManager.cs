@@ -16,9 +16,6 @@ public class GameManager : UnitySingletonPersistent<GameManager> {
 
 	public void setPuzzleName(string name) {
 		puzzleName = name;
-
-		Debug.Log ("Puzzle type is: " + puzzleType);
-		Debug.Log ("Puzzle name is: " + puzzleName);
 	}
 
 	public string getPuzzleType() {

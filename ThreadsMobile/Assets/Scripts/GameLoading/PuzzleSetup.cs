@@ -13,13 +13,7 @@ public class PuzzleSetup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (GameManager.Instance.getPuzzleType () == "Random") {
-			character1.setCharacterData (null);
-			character2.setCharacterData (null);
-			character3.setCharacterData (null);
-			character4.setCharacterData (null);
-			character5.setCharacterData (null);
-		} else if (GameManager.Instance.getPuzzleType () == "Campaign") {
+		if (GameManager.Instance.getPuzzleType () == "Campaign") {
 			PuzzleData puzzle = PuzzleManager.LoadPuzzle (GameManager.Instance.getPuzzleName ());
 			int numCharacters = puzzle.Characters.Count;
 			if (numCharacters == 2) {
@@ -32,9 +26,28 @@ public class PuzzleSetup : MonoBehaviour {
 			} else if (numCharacters == 3) {
 				Destroy (character1.gameObject);
 				Destroy (character5.gameObject);
+				character2.setCharacterData (puzzle.Characters [0]);
+				character3.setCharacterData (puzzle.Characters [1]);
+				character4.setCharacterData (puzzle.Characters [2]);
 			} else if (numCharacters == 4) {
 				Destroy (character3.gameObject);
+				character1.setCharacterData (puzzle.Characters [0]);
+				character2.setCharacterData (puzzle.Characters [1]);
+				character4.setCharacterData (puzzle.Characters [2]);
+				character5.setCharacterData (puzzle.Characters [3]);
+			} else {
+				character1.setCharacterData (puzzle.Characters [0]);
+				character2.setCharacterData (puzzle.Characters [1]);
+				character3.setCharacterData (puzzle.Characters [2]);
+				character4.setCharacterData (puzzle.Characters [3]);
+				character5.setCharacterData (puzzle.Characters [4]);
 			}
+		} else {
+			character1.setCharacterData (null);
+			character2.setCharacterData (null);
+			character3.setCharacterData (null);
+			character4.setCharacterData (null);
+			character5.setCharacterData (null);
 		}
 	}
 	

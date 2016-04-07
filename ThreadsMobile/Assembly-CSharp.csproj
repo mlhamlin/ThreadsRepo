@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\Relationships\ShipLinesManager.cs" />
      <Compile Include="Assets\Scripts\Relationships\ShipManager.cs" />
      <Compile Include="Assets\Scripts\SceneNavigation\SceneControl.cs" />
+     <Compile Include="Assets\Scripts\SceneSwapper.cs" />
      <Compile Include="Assets\Scripts\Traits\DetailedTraitTooltip.cs" />
      <Compile Include="Assets\Scripts\Traits\Trait.cs" />
      <Compile Include="Assets\Scripts\Traits\TraitInteraction.cs" />

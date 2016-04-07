@@ -179,7 +179,7 @@ public class CharacterInteraction : MonoBehaviour {
             tapBack.Tapped += tapBackHandler;
         }
 
-//        Destroy(currentLine.gameObject);
+        Destroy(currentLine.gameObject);
     }
 
     private void tapBackHandler(object sender, EventArgs e)

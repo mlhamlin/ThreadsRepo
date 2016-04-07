@@ -6,6 +6,7 @@
       "lastName": "Skwigelf",
 	  "desc": "Taller than a tree",
       "gender": "Cis Man",
+	  "avatarSeed": 2115373077,
 	  "quirks": ["Sporty", "Sporty", "Sporty", "Sporty", "Sporty"],
 	  "likes": ["Likes Geeky", "Likes Geeky", "Likes Geeky"],
 	  "dislikes": ["Dislikes Funny", "Dislikes Funny"],
@@ -16,6 +17,7 @@
       "lastName": "Wartooth",
 	  "desc": "Not a bumblebee",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Funny", "Funny", "Funny", "Funny", "Funny"],
 	  "likes": ["Likes Funny", "Likes Geeky", "Likes Geeky"],
 	  "dislikes": ["Dislikes Sporty", "Dislikes Intelligent"],
@@ -26,6 +28,7 @@
       "lastName": "Murderface",
 	  "desc": "Murderface, Murderface",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]
@@ -36,6 +39,7 @@
       "lastName": "The Drummer",
 	  "desc": "Doodly doodly",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]
@@ -46,6 +50,7 @@
       "lastName": "Explosion",
 	  "desc": "That's doable",
       "gender": "Cis Man",
+	  "avatarSeed": 2072654911,
 	  "quirks": ["Sporty"],
 	  "likes": ["Likes Geeky"],
 	  "dislikes": ["Dislikes Funny"]

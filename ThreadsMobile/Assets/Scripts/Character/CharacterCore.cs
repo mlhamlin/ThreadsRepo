@@ -14,10 +14,7 @@ public class CharacterCore : MonoBehaviour {
     public CharacterHappiness happiness;
     
     // Use this for initialization
-    void Start () {
-
-        //Setup(); //Call this from scene setup scripts
-	}
+    void Start () {}
 
 	public void setCharacterData(CharacterData characterData) {
 		currentShipWeb = ShipManager.SetUpWeb();
@@ -62,10 +59,5 @@ public class CharacterCore : MonoBehaviour {
         happiness.score = score;
 
 		return score;
-	}
-
-	public void Disable() {
-		currentShipWeb.gameObject.SetActive (false);
-		this.gameObject.SetActive (false);
 	}
 }
