@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
+//using UnityEditor;
 
 public class AvatarTestShowFolder : MonoBehaviour {
 
@@ -8,6 +8,6 @@ public class AvatarTestShowFolder : MonoBehaviour {
 		string itemPath = Application.persistentDataPath;
 		//itemPath = itemPath.Replace(@"/", @"\");   // explorer doesn't like front slashes
 		//System.Diagnostics.Process.Start("explorer.exe", "/select,"+itemPath);
-		EditorUtility.RevealInFinder (itemPath);
+		//EditorUtility.RevealInFinder (itemPath);
 	}
 }

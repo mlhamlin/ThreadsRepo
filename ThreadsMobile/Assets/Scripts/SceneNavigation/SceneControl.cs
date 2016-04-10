@@ -9,14 +9,10 @@ public class SceneControl: MonoBehaviour {
     public Reporter rep;
     public GameObject ScoreWindow;
     public Text ScoreText;
-    private Background back;
-    private TapGesture tapBack;
 
     public void Start()
     {
         rep = FindObjectOfType<Reporter>();
-        back = Background.Instance;
-        tapBack = back.GetComponent<TapGesture>();
     }
 
     public void Restart()

@@ -10,7 +10,6 @@ public class TraitInteraction : MonoBehaviour {
 
 	private TraitToolTipData tooltip;
     private CharacterCore chara;
-	private GameObject background;
 
     private Trait trait;
 	private TapGesture tapBack;
@@ -37,10 +36,9 @@ public class TraitInteraction : MonoBehaviour {
 			press = GetComponent<LongPressGesture> ();
 		}
 
-        if (background == null)
+        if (tapBack == null)
         {
-            background = Background.Instance.gameObject;
-            tapBack = background.GetComponent<TapGesture>();
+            tapBack = Background.getTapGesture();
         }
 
 		tap.Tapped += tappedHandler;

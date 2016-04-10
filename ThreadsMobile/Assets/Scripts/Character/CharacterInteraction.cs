@@ -10,7 +10,6 @@ public class CharacterInteraction : MonoBehaviour {
     public GameObject UI;
     public TraitToolTipData ToolTip;
 
-    private GameObject background;
     private CharacterCore charCore;
     private CharacterData data;
     private PressGesture press;
@@ -75,13 +74,10 @@ public class CharacterInteraction : MonoBehaviour {
 
     private void OnEnable()
     {
-        if (background == null)
-            background = Background.Instance.gameObject;
-
         press = GetComponent<PressGesture>();
         metaGestures = GetComponent<MetaGesture>();
         release = GetComponent <ReleaseGesture>();
-        tapBack = background.GetComponent<TapGesture>();
+        tapBack = Background.getTapGesture();
 
         press.Pressed += PressHandler;
         ShipLinesManager.Instance.closeAllUI += CloseUI;
@@ -90,8 +86,12 @@ public class CharacterInteraction : MonoBehaviour {
     private void OnDisable()
     {
         press.Pressed -= PressHandler;
+        if (ShipLinesManager.Instance != null)
+        {
+            ShipLinesManager.Instance.closeAllUI -= CloseUI;
+        }
     }
-    
+
     //clean this up with helpers as well
     private void PressHandler(object sender, EventArgs e)
     {
@@ -175,7 +175,9 @@ public class CharacterInteraction : MonoBehaviour {
         }
         else
         {
+
             UI.SetActive(true);
+            Debug.Log("set up tap back " + tapBack);
             tapBack.Tapped += tapBackHandler;
         }
 
@@ -184,14 +186,18 @@ public class CharacterInteraction : MonoBehaviour {
 
     private void tapBackHandler(object sender, EventArgs e)
     {
+        Debug.Log("Boom I tapped back");
         CloseUI();
     }
 
     private void CloseUI()
     {
-        UI.SetActive(false);
-        ToolTip.gameObject.SetActive(false);
-        tapBack.Tapped -= tapBackHandler;
+        if (UI.activeSelf)
+        {
+            UI.SetActive(false);
+            ToolTip.gameObject.SetActive(false);
+            tapBack.Tapped -= tapBackHandler;
+        }
     }
 
 }

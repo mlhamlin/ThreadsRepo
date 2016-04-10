@@ -31,10 +31,7 @@ public class CharacterHappiness : MonoBehaviour {
     void Awake ()
     {
         scaleCount = ScaleImages.Length;
-        Debug.Log("ScaleCount " + scaleCount);
         StepSize = (MAX - MIN) / scaleCount;
-        Debug.Log("StepSize " + StepSize);
-
     }
 
     private void UpdateImage()
