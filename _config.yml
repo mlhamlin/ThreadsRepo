@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Threads
+description: > # this means to ignore newlines until "baseurl:"
+
+  Threads is a matchmaking game built for Android.  Threads is an
+  inclusive game, designed to incorporate people of different sexual
+  orientations and gender identities.  The game offers near limitless
+  playtime, as it contains a level generator.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mlhamlin.github.io/threads" # the base hostname & protocol for your site
+github_usernames:  [mlhamlin, joeygoode, erenn16, toderco, DylanMayerchak]
+
+
+# Build settings
+markdown: kramdown
