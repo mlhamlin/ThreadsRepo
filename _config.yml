@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
   playtime, as it contains a level generator.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mlhamlin.github.io/threads" # the base hostname & protocol for your site
+url: "http://mlhamlin.github.io/ThreadsRepo" # the base hostname & protocol for your site
 github_usernames:  [mlhamlin, joeygoode, erenn16, toderco, DylanMayerchak]
 
 
