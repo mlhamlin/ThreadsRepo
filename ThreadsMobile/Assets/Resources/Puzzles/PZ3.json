@@ -1,0 +1,7 @@
+{
+    "$type": "PuzzleData, Assembly-CSharp",
+	"puzzleName": "PZ3",
+	"puzzleDesc": "Complexity",
+	"starPointReqs": [50, 250, 700],
+	"characterStrings": ["TonyV2", "Steve", "Bucky", "Pepper", "Natasha"]
+}

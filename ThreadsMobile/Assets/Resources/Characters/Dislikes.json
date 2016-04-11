@@ -9,10 +9,10 @@
 	  "conflicts": ["Likes Funny"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Funny": -10,
+		"Funny": -10
 	  }
   },
-  "Dislikes Geeky" : {
+  "Dislikes Gamer" : {
       "$type": "Dislike, Assembly-CSharp",
       "traitName": "Dislikes Gamer",
       "traitDescription": "Dislikes a partner that enjoys playing videogames.",
@@ -21,7 +21,7 @@
 	  "conflicts": ["Likes Gamer"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Gamer": -10,
+		"Gamer": -10
 	  }
   },
   "Dislikes Foodie" : {
@@ -33,7 +33,7 @@
 	  "conflicts": ["Likes Foodie"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Foodie": -10,
+		"Foodie": -10
 	  }
   },
   "Dislikes Sporty" : {
@@ -45,7 +45,7 @@
 	  "conflicts": ["Likes Sporty"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Sporty": -10,
+		"Sporty": -10
 	  }
   },
   "Dislikes Outdoorsy" : {
@@ -57,21 +57,22 @@
 	  "conflicts": ["Likes Outdoorsy"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Outdoorsy": -10,
+		"Outdoorsy": -10
 	  }
   },
-  "Dislikes Trans" : {
+  "Dislikes Nonbinary" : {
       "$type": "Dislike, Assembly-CSharp",
-      "traitName": "Dislikes Trans",
+      "traitName": "Dislikes Nonbinary",
       "traitDescription": "Not comfortable with people outside the gender binary.",
-      "icon": "Genders/trans",
+      "icon": "Genders/nonbinary",
 	  "weight":1,
+	  "conflicts": [],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Trans Woman": -10,
-		"Trans Man": -10,
+		"Trans Woman":-20,
+		"Trans Man":-20,
+		"Agender":-20
       },
-	  "conflicts": ["Likes Men", "Likes Women"],
   },
   "Dislikes Animal Lover" : {
       "$type": "Dislike, Assembly-CSharp",
@@ -91,11 +92,11 @@
 	    "traitDescription": "Dislikes a partner who loves reading a good book.",
 	    "icon": "Traits/bookworm",
 	 	"weight":1,
-	  "conflicts": ["Likes Bookworm"],
-	  "scoring":{
-		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Bookworm": -10,
-	  }
+		"conflicts": ["Likes Bookworm"],
+		"scoring":{
+			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+			"Bookworm": -10,
+		}
 	},
 	"Dislikes Creative" : {
 	    "$type": "Dislike, Assembly-CSharp",
@@ -151,7 +152,7 @@
 		"traitDescription": "Dislikes a partner who is interested in a monogamous relationship.",
 		"icon": "Traits/monogamy",
 		"weight":3,
-		"mono":-10,
+		"mono":-20,
 	    "conflicts": ["Dislikes Polyamory", "Likes Monogamy", "Likes Polyamory"],
 	},
 	"Dislikes Polyamory" : {
@@ -160,7 +161,7 @@
 		"traitDescription": "Dislikes a partner who is interested in a polyamorous relationship.",
 		"icon": "Traits/polyamory",
 		"weight":3,
-		"poly":-10,
+		"poly":-30,
 	    "conflicts": ["Dislikes Monogamy", "Likes Monogamy", "Likes Polyamory"],
 	},
 	"Dislikes Geeky" : {
@@ -172,7 +173,34 @@
 	  	"conflicts": ["Likes Geeky"],
 	  "scoring":{
 		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-		"Geeky": -10,
+		"Geeky":-10,
+	  }
+	},
+
+		"Dislikes Men" : {
+	    "$type": "Dislike, Assembly-CSharp",
+	    "traitName": "Dislikes Men",
+	    "traitDescription": "Dislikes dating people who identify as male.",
+	    "icon": "Genders/male",
+		"weight":1,
+	  	"conflicts": ["Likes Men"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Trans Man":-20,
+		"Cis Man":-20,
+	  }
+	},
+	"Dislikes Women" : {
+	    "$type": "Dislike, Assembly-CSharp",
+	    "traitName": "Dislikes Women",
+	    "traitDescription": "Dislikes dating people who identify as female.",
+	    "icon": "Genders/female",
+		"weight":1,
+	  	"conflicts": ["Likes Women"],
+	  "scoring":{
+		"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
+		"Trans Woman":-20,
+		"Cis Woman":-20,
 	  }
 	},
 }

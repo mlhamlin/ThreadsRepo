@@ -61,14 +61,14 @@ public class TraitManager : UnitySingletonPersistent<TraitManager> {
 	private void LoadAll(){
 		settings = new JsonSerializerSettings();
 		settings.TypeNameHandling = TypeNameHandling.Objects;
-		
-		Dictionary<string, Gender> genders = Load<Gender> (GENDER_PATH);
-		Dictionary<string, Quirk> quirks = Load<Quirk> (QUIRK_PATH);
-		Dictionary<string, Like> likes = Load<Like> (LIKE_PATH);
-		Dictionary<string, Dislike> dislikes = Load<Dislike> (DISLIKE_PATH);
 
-		//Seting up all Probability Arrays
-		genderProbabilities = TraitDictionaryToProbabilityArray<Gender>(genders);
+		Dictionary<string, Gender> genders = Load<Gender> (GENDER_PATH);
+        Dictionary<string, Quirk> quirks = Load<Quirk> (QUIRK_PATH);
+        Dictionary<string, Like> likes = Load<Like> (LIKE_PATH);
+        Dictionary<string, Dislike> dislikes = Load<Dislike> (DISLIKE_PATH);
+
+        //Seting up all Probability Arrays
+        genderProbabilities = TraitDictionaryToProbabilityArray<Gender>(genders);
 		quirkProbabilities = TraitDictionaryToProbabilityArray<Quirk>(quirks);
 		likeProbabilities = TraitDictionaryToProbabilityArray<Like>(likes);
 		dislikeProbabilities = TraitDictionaryToProbabilityArray<Dislike>(dislikes);

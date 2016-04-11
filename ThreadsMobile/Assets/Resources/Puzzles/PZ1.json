@@ -1,0 +1,7 @@
+{
+    "$type": "PuzzleData, Assembly-CSharp",
+	"puzzleName": "PZ1",
+	"puzzleDesc": "Intro",
+	"starPointReqs": [50, 250, 700],
+	"characterStrings": ["Pepper", "Tony"]
+}

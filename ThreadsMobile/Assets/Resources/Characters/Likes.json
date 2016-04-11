@@ -8,7 +8,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Funny": 10,
+			"Funny": 10
 		}
 	},
 	"Likes Gamer" : {
@@ -19,7 +19,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Geeky": 10,
+			"Geeky": 10
 		}
 	},
 	"Likes Foodie" : {
@@ -30,7 +30,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Foodie": 10,
+			"Foodie": 10
 		}
 	},
 	"Likes Sporty" : {
@@ -41,7 +41,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Sporty": 10,
+			"Sporty": 10
 		}
 	},
 	"Likes Outdoorsy" : {
@@ -52,7 +52,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Outdoorsy": 10,
+			"Outdoorsy": 10
 		}
 	},
 	"Likes Men" : {
@@ -64,7 +64,7 @@
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Cis Man": 10,
-			"Trans Man": 10,
+			"Trans Man": 10
 		},
 	    "conflicts": ["Likes Women"],
 	},
@@ -77,7 +77,7 @@
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
 			"Cis Woman": 10,
-			"Trans Woman": 10,
+			"Trans Woman": 10
 		},
 	    "conflicts": ["Likes Men"],
 	},
@@ -87,7 +87,7 @@
 		"traitDescription": "Likes a partner who is interested in a monogamous relationship.",
 		"icon": "Traits/monogamy",
 		"weight":3,
-		"mono":10,
+		"mono":20,
 	    "conflicts": ["Likes Polyamory", "Dislikes Monogamy", "Dislikes Polyamory"],
 	},
 	"Likes Polyamory" : {
@@ -96,7 +96,7 @@
 		"traitDescription": "Likes a partner who is interested in a polyamorous relationship.",
 		"icon": "Traits/polyamory",
 		"weight":3,
-		"poly":10,
+		"poly":20,
 	    "conflicts": ["Likes Monogamy", "Dislikes Monogamy", "Dislikes Polyamory"],
 	},
   	"Likes Animal Lover" : {
@@ -107,7 +107,7 @@
 	  	"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Animal Lover": 10,
+			"Animal Lover": 10
 		}
 	},
 	"Likes Bookworm" : {
@@ -118,7 +118,7 @@
 	 	"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Bookworm": 10,
+			"Bookworm": 10
 		}
 	},
 	"Likes Creative" : {
@@ -129,7 +129,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Creative": 10,
+			"Creative": 10
 		}
 	},
 	"Likes Intelligent" : {
@@ -140,7 +140,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Intelligent": 10,
+			"Intelligent": 10
 		}
 	},
 	"Likes Musical" : {
@@ -151,7 +151,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Musical": 10,
+			"Musical": 10
 		}
 	},
 	"Likes Traveller" : {
@@ -162,7 +162,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Traveller": 10,
+			"Traveller": 10
 		}
 	},
 	"Likes Geeky" : {
@@ -173,7 +173,7 @@
 		"weight":1,
 		"scoring":{
 			"$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32, mscorlib]], mscorlib",
-			"Geeky": 10,
+			"Geeky": 10
 		}
 	},
 }

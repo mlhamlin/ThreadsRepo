@@ -1,0 +1,7 @@
+{
+    "$type": "PuzzleData, Assembly-CSharp",
+	"puzzleName": "PZ2",
+	"puzzleDesc": "Intro to choice and poly",
+	"starPointReqs": [50, 250, 700],
+	"characterStrings": ["Tony", "PepperV2", "Natasha"]
+}

@@ -8,8 +8,8 @@ public class CharacterHappiness : MonoBehaviour {
 
     public SpriteRenderer img;
 
-    private int MIN = -20;
-    private int MAX = 30;
+    private int MIN = -25;
+    private int MAX = 35;
     private int StepSize;
 
     private int scaleCount;
@@ -38,7 +38,6 @@ public class CharacterHappiness : MonoBehaviour {
     {
         int index = Mathf.FloorToInt((scoreVal - MIN) / StepSize);
         index = Mathf.Clamp(index, 0, ScaleImages.Length - 1);
-        Debug.Log("index " + index);
         img.sprite = ScaleImages[index];
     }
 }
