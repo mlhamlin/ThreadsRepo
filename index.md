@@ -15,3 +15,6 @@ gender identities, and even polyamorous characters.  With a short
 campaign to introduce you to the game and generated levels, Threads
 offers near limitless playtime.  Come meet the characters of Threads.
 
+<div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/2QX-wlBW6Yw" frameborder="0" allowfullscreen></iframe></div>
+
+Best of all, it's free! [Download Now!](April13Build.apk)
