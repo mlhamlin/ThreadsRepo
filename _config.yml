@@ -14,8 +14,8 @@ description: > # this means to ignore newlines until "baseurl:"
   orientations and gender identities.  The game offers near limitless
   playtime, as it contains a level generator.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mlhamlin.github.io/ThreadsRepo" # the base hostname & protocol for your site
+baseurl: "ThreadsRepo" # the subpath of your site, e.g. /blog
+url: "http://mlhamlin.github.io/" # the base hostname & protocol for your site
 github_usernames:  [mlhamlin, joeygoode, erenn16, toderco, DylanMayerchak]
 
 
