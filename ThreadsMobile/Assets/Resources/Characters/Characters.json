@@ -64,7 +64,7 @@
 	  "avatarSeed": -1399072853,
 	  "quirks": ["Funny", "Intelligent", "Creative", "Foodie", "Geeky"],
 	  "likes": ["Likes Intelligent", "Likes Creative", "Likes Geeky"],
-	  "dislikes": ["Dislikes Traveller", "Dislikes Outdoorsy"],
+	  "dislikes": ["Dislikes Sporty", "Dislikes Outdoorsy"],
   },
   "TonyV2" : {
       "$type": "CharacterDataFromJSON, Assembly-CSharp",
@@ -85,7 +85,7 @@
       "gender": "Cis Woman",
 	  "avatarSeed": 1415881336,
 	  "quirks": ["Foodie", "Intelligent", "Traveller", "Creative", "Animal Lover"],
-	  "likes": ["Likes Intelligent", "Likes Creative", "Likes Animal Lover"],
+	  "likes": ["Likes Intelligent", "Likes Creative", "Likes Foodie"],
 	  "dislikes": ["Dislikes Funny", "Dislikes Sporty"],
   },
   "PepperV2" : {
@@ -107,7 +107,7 @@
       "gender": "Cis Woman",
 	  "avatarSeed": -1782752299,
 	  "quirks": ["Traveller", "Intelligent", "Creative", "Outdoorsy", "Animal Lover"],
-	  "likes": ["Likes Intelligent", "Likes Traveller", "Likes Animal Lover"],
+	  "likes": ["Likes Monogamy", "Likes Traveller", "Likes Animal Lover"],
 	  "dislikes": ["Dislikes Men", "Dislikes Funny"],
   },
   "Bucky" : {
