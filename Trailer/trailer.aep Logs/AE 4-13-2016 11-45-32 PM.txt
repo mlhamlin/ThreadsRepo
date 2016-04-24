@@ -1,0 +1,12 @@
+Adobe After Effects v13.5.1 Windows 64 render log for project “trailer.aep”
+
+Rendering started on 4/13/2016 at 11:45:32 PM
+
+  4/13/2016 11:45:34 PM: Starting composition “master2”.
+
+  Output To: C:\Users\Owner\Documents\avatars.png    4/13/2016 11:45:44 PM: Finished composition “master2”.
+
+
+  Total Time Elapsed: 12 Seconds
+Log closed on 4/13/2016 at 11:45:44 PM
+
