@@ -9,7 +9,7 @@ public class CharacterHappiness : MonoBehaviour {
     public SpriteRenderer img;
 
     private int MIN = -25;
-    private int MAX = 35;
+    private int MAX = 30;
     private int StepSize;
 
     private int scaleCount;
